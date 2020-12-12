@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><link rel="icon" href="/favicon_main.svg"><meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" /><meta property="og:url"  content="https://example.com/2015/11/11/note-taking-with-pdf-tools/" />
+    <meta property="og:type" content="article" /><meta property="og:title" content="Note Taking with PDF Tools" /><meta property="og:description" content="" /><meta property="og:image:width"  content="375" />
+        <meta property="og:image:height" content="250" /><meta property="og:image" content="https://example.com/images/default_summary_hu2be732aee21a2469ead3fe1f2df8caca_2088687_600x0_resize_q75_box.jpg" /><title>History Hacker - Note Taking with PDF Tools</title>
+
+    
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet"><link rel="stylesheet" type="text/css" href="/css/style.3924c953d2259a0f0beef52fc023daabdac50a4f62f4446859e57153d998e5b0.css" integrity="sha256-OSTJU9Ilmg8L7vUvwCPaq9rFCk9i9ERoWeVxU9mY5bA=">
+<link rel="stylesheet" type="text/css" href="/css/monokai-sublime.9.15.8.min.91376415864fdd3a92be524052267afece4bdb1bb8c6c754f5e60c5ac28e93be.css" integrity="sha256-kTdkFYZP3TqSvlJAUiZ6/s5L2xu4xsdU9eYMWsKOk74=">
+<link rel="stylesheet" type="text/css" href="/css/icons.f72c0103ff9598115ab2a76351494b950570479ce3f1795fec13fc62e4185dcf.css" integrity="sha256-9ywBA/&#43;VmBFasqdjUUlLlQVwR5zj8Xlf7BP8YuQYXc8=">
+<link rel="stylesheet" type="text/css" href="/css/refresh.ccfd23f8053a1571a3e474a6877f42a6a1924c6bbf1b64c7704b49a0353b4650.css" integrity="sha256-zP0j&#43;AU6FXGj5HSmh39CpqGSTGu/G2THcEtJoDU7RlA=">
+<link rel="stylesheet" type="text/css" href="/css/devicon.min.149016fbf45c8bc157d6f55ce3ee875feaa3f90446bf7d151fbc16a9f21a8859.css" integrity="sha256-FJAW&#43;/Rci8FX1vVc4&#43;6HX&#43;qj&#43;QRGv30VH7wWqfIaiFk=">
+    
+
+  </head>
+  <body>
+     
+
+    <div id="preloader">
+      <div id="status"></div>
+    </div><nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+
+      
+      
+      
+      <a class="navbar-item">
+        <div class="menu-icon-wrapper left-menu-icon-wrapper" style="visibility: visible;">
+          <svg width="1000px" height="1000px">
+            <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+            <path class="path2" d="M 300 500 L 700 500"></path>
+            <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+          </svg>
+          <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+        </div>
+        <div class="navbar-item left-menu-icon-wrapper">
+          Tags
+        </div>
+      </a>
+
+      <div class="navbar-item is-expanded"></div>
+      <a class="navbar-item is-hidden-desktop">  
+        <div data-target="navbar-menu" class="navbar-item right-menu-icon-wrapper is-hidden-desktop">
+          Menu
+        </div>
+        <div data-target="navbar-menu" class="menu-icon-wrapper right-menu-icon-wrapper" style="visibility: visible;">
+          <svg width="1000px" height="1000px">
+            <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+            <path class="path2" d="M 300 500 L 700 500"></path>
+            <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+          </svg>
+          <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+        </div>
+      </a>
+    </div><div id="navbar-menu" class="navbar-menu is-static">
+      
+      <div class="navbar-end">
+        
+          <a href="/" class="navbar-item is-secondary">Home</a><a href="/projects/" class="navbar-item is-secondary">Projects</a><a href="/cv/cv/" class="navbar-item is-secondary">CV</a><a href="/teaching/" class="navbar-item is-secondary">Teaching</a><a href="/posts/" class="navbar-item is-secondary">Posts</a><a href="/publication/" class="navbar-item is-secondary">Publications</a>
+        
+        
+        <div class="navbar-item">
+          <div class="dropdown is-hoverable is-centered" >
+            <div class="dropdown-trigger" >
+              <button class="button is-active" 
+              style="color:#999;  
+                    border-color:#F39200; 
+                    box-shadow: none ;
+                    padding-right: 0.625em ; 
+                    padding-left: 0.625em  ;
+                    ">
+
+                <span>EN</span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu" role="menu" style="min-width: 0em;">
+              <div class="dropdown-content" style="padding: 0rem;">
+                
+                  
+                
+                  
+                <a href="https://example.com/ru/" class="dropdown-item" 
+                style="text-align: center; color:#999; padding-right: 0.82em !important ; padding-left: 0.82em !important;">
+                  RU
+                </a>
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+<nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
+  <div class="container">
+      <div class="navbar-brand">
+  
+        
+        
+        
+        <a class="navbar-item">
+          <div class="menu-icon-wrapper left-menu-icon-wrapper" style="visibility: visible;">
+            <svg width="1000px" height="1000px">
+              <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+              <path class="path2" d="M 300 500 L 700 500"></path>
+              <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+            </svg>
+            <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+          </div>
+          <div class="navbar-item left-menu-icon-wrapper">
+            Tags
+          </div>
+        </a>
+  
+        <div class="navbar-item is-expanded"></div>
+        <a class="navbar-item is-hidden-desktop">  
+          <div data-target="cloned-navbar-menu" class="navbar-item right-menu-icon-wrapper is-hidden-desktop">
+            Menu
+          </div>
+          <div data-target="cloned-navbar-menu" class="menu-icon-wrapper right-menu-icon-wrapper" style="visibility: visible;">
+            <svg width="1000px" height="1000px">
+              <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+              <path class="path2" d="M 300 500 L 700 500"></path>
+              <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+            </svg>
+            <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+          </div>
+        </a>
+      </div><div id="cloned-navbar-menu" class="navbar-menu is-static">
+        <div class="navbar-end"><a href="/" class="navbar-item is-secondary">Home</a><a href="/projects/" class="navbar-item is-secondary">Projects</a><a href="/cv/cv/" class="navbar-item is-secondary">CV</a><a href="/teaching/" class="navbar-item is-secondary">Teaching</a><a href="/posts/" class="navbar-item is-secondary">Posts</a><a href="/publication/" class="navbar-item is-secondary">Publications</a>
+          
+          
+          <div class="navbar-item">
+            <div class="dropdown is-hoverable is-centered" >
+              <div class="dropdown-trigger" >
+                <button class="button is-active" 
+                style="color:#999;  
+                      border-color:#F39200; 
+                      box-shadow: none ;
+                      padding-right: 0.625em ; 
+                      padding-left: 0.625em  ;
+                      ">
+  
+                  <span>EN</span>
+                </button>
+              </div>
+              <div class="dropdown-menu" id="dropdown-menu" role="menu" style="min-width: 0em;">
+                <div class="dropdown-content" style="padding: 0rem;">
+                  
+                    
+                  
+                    
+                  <a href="https://example.com/ru/" class="dropdown-item" 
+                  style="text-align: center; color:#999; padding-right: 0.82em !important ; padding-left: 0.82em !important;">
+                    RU
+                  </a>
+                  
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        
+        </div>
+      </div>
+    </div>
+  </nav>
+<section class="section is-medium">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-centered-tablet-portrait">
+        <h1 class="title is-2 section-title">Note Taking with PDF Tools</h1>
+        <h5 class="subtitle is-5 is-muted"></h5>
+        <div class="divider"></div>
+        
+        <section class="section content has-text-justified">
+          <p><strong>NOTE:</strong> This post has been modified as of <span class="timestamp-wrapper"><span class="timestamp">2015-11-22 Sun </span></span> – the new code is a little cleaner, and I think the discussion a little fuller.</p>
+<p>Almost all of my job-related reading is now done on a screen. There are still disadvantages – I find it much harder to concentrate when reading online – but in other ways it is markedly more convenient.</p>
+<p>In particular, it is now much easier to assemble quotations from sources; and now that I’ve found <a href="https://github.com/politza/pdf-tools">PDF Tools</a>, it has become even easier. I’ve just started to use it to extract annotations from my PDF’s, and it works much better than the lousy command-line hack I was using previously.</p>
+<p>As we’re mid-semester, most of my reading is for classes I teach. My current workflow is as follows:</p>
+<ul class="org-ul">
+  <li>
+    Assemble the relevant readings in a Dropbox-synced directory (ClassName/Readings)
+  </li>
+  <li>
+    Using <a href="http://m.cerience.com/reader/">Repligo Reader</a> (apparently no longer available in the app store?), highlight the passages I&rsquo;m interested in.
+  </li>
+  <li>
+    execute code block (see below) to insert org headings with all highlights from one or more pdfs
+  </li>
+  <li>
+    Assemble reveal.js lecture presentation around those highlights, using <a href="https://github.com/yjwen/org-reveal">org-reveal</a> or Pandoc.
+  </li>
+</ul>
+<div id="outline-container-orgheadline1" class="outline-2">
+  <h2 id="orgheadline1">
+    Activating PDF Tools
+  </h2>
+  <div class="outline-text-2" id="text-orgheadline1">
+    <p>
+      Begin by installing pdf-tools and org-pdfview from ELPA with <code>package-list~packages</code> or <code>package-install</code>.
+    </p>
+<pre><code>&lt;p&gt;
+  Then make sure they are activated by adding these lines in your init file:
+&lt;/p&gt;
+
+&lt;div class=&quot;org-src-container&quot;&gt;
+  &lt;pre class=&quot;src src-emacs-lisp&quot;&gt;&lt;span style=&quot;color: #707183;&quot;&gt;(&lt;/span&gt;pdf-tools-install&lt;span style=&quot;color: #707183;&quot;&gt;)&lt;/span&gt;
+</code></pre>
+<p><span style="color: #707183;">(</span>eval-after-load &lsquo;org &lsquo;<span style="color: #707183;">(</span><span style="color: #a020f0;">require</span> &lsquo;<span style="color: #008b8b;">org-pdfview</span><span style="color: #707183;">))</span>
+<span style="color: #707183;">(</span>add-to-list &lsquo;org-file-apps &lsquo;<span style="color: #707183;">(</span><span style="color: #8b2252;">&quot;\.pdf\'&quot;</span> . org-pdfview-open<span style="color: #707183;">))</span>
+<span style="color: #707183;">(</span>add-to-list &lsquo;org-file-apps &lsquo;<span style="color: #707183;">(</span><span style="color: #8b2252;">&quot;\.pdf::</span><span style="color: #8b2252; font-weight: bold;">\</span><span style="color: #8b2252; font-weight: bold;">(</span><span style="color: #8b2252;">[[:digit:]]+</span><span style="color: #8b2252; font-weight: bold;">\</span><span style="color: #8b2252; font-weight: bold;">)</span><span style="color: #8b2252;">\'&quot;</span> . org-pdfview-open<span style="color: #707183;">))</span>
+</pre>
+</div></p>
+  </div>
+</div>
+<div id="outline-container-orgheadline2" class="outline-2">
+  <h2 id="orgheadline2">
+    Switching to PDF Tools for annotating and extracting PDF&rsquo;s
+  </h2>
+  <div class="outline-text-2" id="text-orgheadline2">
+    <p>
+      Last month Penguim proposed some changes in a <a href="https://github.com/politza/pdf-tools/pull/133">pull request</a>, that export annotations as a set of org headlines. It&rsquo;s potentially very interesting but not quite what I want to do, so I modified this code. <code>pdf-annot-markups-as-org-text</code> extracts the text of an annotation (stored as the <code>subject</code> attribute in an alist), and also generates a link back to the page in the pdf. <code>mwp/pdf-multi-extract</code> is just a helper function that makes it easier to construct elisp source blocks the way I&rsquo;m used to doing:
+    </p>
+<pre><code>&lt;div class=&quot;org-src-container&quot;&gt;
+  &lt;pre class=&quot;src src-emacs-lisp&quot;&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;;; &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;modified from https://github.com/politza/pdf-tools/pull/133 &lt;/span&gt;
+</code></pre>
+<p><span style="color: #707183;">(</span><span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">mwp/pdf-multi-extract</span> <span style="color: #707183;">(</span>sources<span style="color: #707183;">)</span>
+<span style="color: #8b2252;">&ldquo;Helper function to print highlighted text from a list of pdf&rsquo;s, with one org header per pdf, </span>
+<span style="color: #8b2252;">and links back to page of highlight.&quot;</span>
+<span style="color: #707183;">(</span><span style="color: #a020f0;">let</span> <span style="color: #707183;">(</span>
+<span style="color: #707183;">(</span>output <span style="color: #8b2252;">&quot;&quot;</span><span style="color: #707183;">))</span>
+<span style="color: #707183;">(</span><span style="color: #a020f0;">dolist</span> <span style="color: #707183;">(</span>thispdf sources<span style="color: #707183;">)</span>
+<span style="color: #707183;">(</span><span style="color: #a020f0;">setq</span> output <span style="color: #707183;">(</span>concat output <span style="color: #707183;">(</span>pdf-annot-markups-as-org-text thispdf nil level <span style="color: #707183;">))))</span>
+<span style="color: #707183;">(</span>princ output<span style="color: #707183;">))</span>
+<span style="color: #707183;">)</span></p>
+<p><span style="color: #b22222;">;; </span><span style="color: #b22222;">this is stolen from <a href="https://github.com/pinguim06/pdf-tools/commit/22629c746878f4e554d4e530306f3433d594a654">https://github.com/pinguim06/pdf-tools/commit/22629c746878f4e554d4e530306f3433d594a654</a></span>
+<span style="color: #707183;">(</span><span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">pdf-annot-edges-to-region</span> <span style="color: #707183;">(</span>edges<span style="color: #707183;">)</span>
+<span style="color: #8b2252;">&ldquo;Attempt to get 4-entry region (LEFT TOP RIGHT BOTTOM) from several edges.</span>
+<span style="color: #8b2252;">We need this to import annotations and to get marked-up text, because annotations</span>
+<span style="color: #8b2252;">are referenced by its edges, but functions for these tasks need region.&quot;</span></p>
+<p><span style="color: #707183;">(</span><span style="color: #a020f0;">let</span> <span style="color: #707183;">((</span>left0 <span style="color: #707183;">(</span>nth 0 <span style="color: #707183;">(</span>car edges<span style="color: #707183;">)))</span>
+<span style="color: #707183;">(</span>top0 <span style="color: #707183;">(</span>nth 1 <span style="color: #707183;">(</span>car edges<span style="color: #707183;">)))</span>
+<span style="color: #707183;">(</span>bottom0 <span style="color: #707183;">(</span>nth 3 <span style="color: #707183;">(</span>car edges<span style="color: #707183;">)))</span>
+<span style="color: #707183;">(</span>top1 <span style="color: #707183;">(</span>nth 1 <span style="color: #707183;">(</span>car <span style="color: #707183;">(</span>last edges<span style="color: #707183;">))))</span>
+<span style="color: #707183;">(</span>right1 <span style="color: #707183;">(</span>nth 2 <span style="color: #707183;">(</span>car <span style="color: #707183;">(</span>last edges<span style="color: #707183;">))))</span>
+<span style="color: #707183;">(</span>bottom1 <span style="color: #707183;">(</span>nth 3 <span style="color: #707183;">(</span>car <span style="color: #707183;">(</span>last edges<span style="color: #707183;">))))</span>
+<span style="color: #707183;">(</span>n <span style="color: #707183;">(</span>safe-length edges<span style="color: #707183;">)))</span>
+<span style="color: #b22222;">;; </span><span style="color: #b22222;">we try to guess the line height to move</span>
+<span style="color: #b22222;">;; </span><span style="color: #b22222;">the region away from the boundary and</span>
+<span style="color: #b22222;">;; </span><span style="color: #b22222;">avoid double lines</span>
+<span style="color: #707183;">(</span>list left0
+<span style="color: #707183;">(</span>+ top0 <span style="color: #707183;">(</span>/ <span style="color: #707183;">(</span>- bottom0 top0<span style="color: #707183;">)</span> 2<span style="color: #707183;">))</span>
+right1
+<span style="color: #707183;">(</span>- bottom1 <span style="color: #707183;">(</span>/ <span style="color: #707183;">(</span>- bottom1 top1<span style="color: #707183;">)</span> 2 <span style="color: #707183;">)))))</span></p>
+<p><span style="color: #707183;">(</span><span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">pdf-annot-markups-as-org-text</span> <span style="color: #707183;">(</span>pdfpath <span style="color: #228b22;">&amp;optional</span> title level<span style="color: #707183;">)</span>
+<span style="color: #8b2252;">&ldquo;Acquire highligh annotations as text, and return as org-heading&rdquo;</span></p>
+<p><span style="color: #707183;">(</span><span style="color: #a020f0;">interactive</span> <span style="color: #8b2252;">&ldquo;fPath to PDF: &ldquo;</span><span style="color: #707183;">)</span><br>
+<span style="color: #707183;">(</span><span style="color: #a020f0;">let*</span> <span style="color: #707183;">((</span>outputstring <span style="color: #8b2252;">&quot;&quot;</span><span style="color: #707183;">)</span> <span style="color: #b22222;">;; </span><span style="color: #b22222;">the text to be returned</span>
+<span style="color: #707183;">(</span>title <span style="color: #707183;">(</span><span style="color: #a020f0;">or</span> title <span style="color: #707183;">(</span>replace-regexp-in-string <span style="color: #8b2252;">&quot;-&quot;</span> <span style="color: #8b2252;">&rdquo; &ldquo;</span> <span style="color: #707183;">(</span>file-name-base pdfpath <span style="color: #707183;">))))</span>
+<span style="color: #707183;">(</span>level <span style="color: #707183;">(</span><span style="color: #a020f0;">or</span> level <span style="color: #707183;">(</span>1+ <span style="color: #707183;">(</span>org-current-level<span style="color: #707183;">))))</span> <span style="color: #b22222;">;; </span><span style="color: #b22222;">I guess if we&rsquo;re not in an org-buffer this will fail</span>
+<span style="color: #707183;">(</span>levelstring <span style="color: #707183;">(</span>make-string level ?*<span style="color: #707183;">))</span> <span style="color: #b22222;">;; </span><span style="color: #b22222;">set headline to proper level</span>
+<span style="color: #707183;">(</span>annots <span style="color: #707183;">(</span>sort <span style="color: #707183;">(</span>pdf-info-getannots nil pdfpath<span style="color: #707183;">)</span>  <span style="color: #b22222;">;; </span><span style="color: #b22222;">get and sort all annots</span>
+&lsquo;pdf-annot-compare-annotations<span style="color: #707183;">))</span>
+<span style="color: #707183;">)</span>
+<span style="color: #b22222;">;; </span><span style="color: #b22222;">create the header</span>
+<span style="color: #707183;">(</span><span style="color: #a020f0;">setq</span> outputstring <span style="color: #707183;">(</span>concat levelstring <span style="color: #8b2252;">&rdquo; Quotes From &ldquo;</span> title <span style="color: #8b2252;">&quot;\n\n&rdquo;</span><span style="color: #707183;">))</span> <span style="color: #b22222;">;; </span><span style="color: #b22222;">create heading</span></p>
+<pre><code>&lt;span style=&quot;color: #b22222;&quot;&gt;;; &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;extract text&lt;/span&gt;
+&lt;span style=&quot;color: #707183;&quot;&gt;(&lt;/span&gt;mapc
+ &lt;span style=&quot;color: #707183;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #a020f0;&quot;&gt;lambda&lt;/span&gt; &lt;span style=&quot;color: #707183;&quot;&gt;(&lt;/span&gt;annot&lt;span style=&quot;color: #707183;&quot;&gt;)&lt;/span&gt; &lt;span style=&quot;color: #b22222;&quot;&gt;;; &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;traverse all annotations&lt;/span&gt;
+   &lt;span style=&quot;color: #707183;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #a020f0;&quot;&gt;if&lt;/span&gt; &lt;span style=&quot;color: #707183;&quot;&gt;(&lt;/span&gt;eq 'highlight &lt;span style=&quot;color: #707183;&quot;&gt;(&lt;/span&gt;assoc-default 'type annot&lt;span style=&quot;color: #707183;&quot;&gt;))&lt;/span&gt;
+       &lt;span style=&quot;color: #707183;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #a020f0;&quot;&gt;let*&lt;/span&gt; &lt;span style=&quot;color: #707183;&quot;&gt;((&lt;/span&gt;page &lt;span style=&quot;color: #707183;&quot;&gt;(&lt;/span&gt;assoc-default 'page annot&lt;span style=&quot;color: #707183;&quot;&gt;))&lt;/span&gt;
+              &lt;span style=&quot;color: #b22222;&quot;&gt;;; &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;use pdf-annot-edges-to-region to get correct boundaries of highlight&lt;/span&gt;
+              &lt;span style=&quot;color: #707183;&quot;&gt;(&lt;/span&gt;real-edges &lt;span style=&quot;color: #707183;&quot;&gt;(&lt;/span&gt;pdf-annot-edges-to-region
+                           &lt;span style=&quot;color: #707183;&quot;&gt;(&lt;/span&gt;pdf-annot-get annot 'markup-edges&lt;span style=&quot;color: #707183;&quot;&gt;)))&lt;/span&gt;
+              &lt;span style=&quot;color: #707183;&quot;&gt;(&lt;/span&gt;text &lt;span style=&quot;color: #707183;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #a020f0;&quot;&gt;or&lt;/span&gt; &lt;span style=&quot;color: #707183;&quot;&gt;(&lt;/span&gt;assoc-default 'subject annot&lt;span style=&quot;color: #707183;&quot;&gt;)&lt;/span&gt; &lt;span style=&quot;color: #707183;&quot;&gt;(&lt;/span&gt;assoc-default 'content annot&lt;span style=&quot;color: #707183;&quot;&gt;)&lt;/span&gt;
+                        &lt;span style=&quot;color: #707183;&quot;&gt;(&lt;/span&gt;replace-regexp-in-string &lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;\n&quot;&lt;/span&gt; &lt;span style=&quot;color: #8b2252;&quot;&gt;&quot; &quot;&lt;/span&gt; &lt;span style=&quot;color: #707183;&quot;&gt;(&lt;/span&gt;pdf-info-gettext page real-edges nil pdfpath&lt;span style=&quot;color: #707183;&quot;&gt;)&lt;/span&gt;
+                                                  &lt;span style=&quot;color: #707183;&quot;&gt;)&lt;/span&gt; &lt;span style=&quot;color: #707183;&quot;&gt;))&lt;/span&gt;
+
+              &lt;span style=&quot;color: #707183;&quot;&gt;(&lt;/span&gt;height &lt;span style=&quot;color: #707183;&quot;&gt;(&lt;/span&gt;nth 1 real-edges&lt;span style=&quot;color: #707183;&quot;&gt;))&lt;/span&gt; &lt;span style=&quot;color: #b22222;&quot;&gt;;; &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;distance down the page&lt;/span&gt;
+              &lt;span style=&quot;color: #b22222;&quot;&gt;;; &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;use pdfview link directly to page number&lt;/span&gt;
+              &lt;span style=&quot;color: #707183;&quot;&gt;(&lt;/span&gt;linktext &lt;span style=&quot;color: #707183;&quot;&gt;(&lt;/span&gt;concat &lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;[[pdfview:&quot;&lt;/span&gt; pdfpath &lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;::&quot;&lt;/span&gt; &lt;span style=&quot;color: #707183;&quot;&gt;(&lt;/span&gt;number-to-string page&lt;span style=&quot;color: #707183;&quot;&gt;)&lt;/span&gt; 
+                                &lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;++&quot;&lt;/span&gt; &lt;span style=&quot;color: #707183;&quot;&gt;(&lt;/span&gt;number-to-string height&lt;span style=&quot;color: #707183;&quot;&gt;)&lt;/span&gt; &lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;][&quot;&lt;/span&gt; title  &lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;]]&quot;&lt;/span&gt; &lt;span style=&quot;color: #707183;&quot;&gt;))&lt;/span&gt;
+              &lt;span style=&quot;color: #707183;&quot;&gt;)&lt;/span&gt;
+         &lt;span style=&quot;color: #707183;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #a020f0;&quot;&gt;setq&lt;/span&gt; outputstring &lt;span style=&quot;color: #707183;&quot;&gt;(&lt;/span&gt;concat outputstring text &lt;span style=&quot;color: #8b2252;&quot;&gt;&quot; (&quot;&lt;/span&gt;
+                                    linktext &lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;, &quot;&lt;/span&gt; &lt;span style=&quot;color: #707183;&quot;&gt;(&lt;/span&gt;number-to-string page&lt;span style=&quot;color: #707183;&quot;&gt;)&lt;/span&gt; &lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;)\n\n&quot;&lt;/span&gt;&lt;span style=&quot;color: #707183;&quot;&gt;))&lt;/span&gt;
+         &lt;span style=&quot;color: #707183;&quot;&gt;)))&lt;/span&gt;
+ annots&lt;span style=&quot;color: #707183;&quot;&gt;)&lt;/span&gt;
+outputstring &lt;span style=&quot;color: #b22222;&quot;&gt;;; &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;return the header&lt;/span&gt;
+&lt;span style=&quot;color: #707183;&quot;&gt;)&lt;/span&gt;
+</code></pre>
+<p><span style="color: #707183;">)</span>
+</pre>
+</div></p>
+  </div>
+</div>
+<div id="outline-container-orgheadline3" class="outline-2">
+  <h2 id="orgheadline3">
+    Using in Org with a Source Block
+  </h2>
+  <div class="outline-text-2" id="text-orgheadline3">
+    <p>
+      Now it&rsquo;s more or less trivial to quickly generate the org headers using a source block:
+    </p>
+<pre><code>&lt;pre class=&quot;example&quot;&gt;
+</code></pre>
+<p>#+BEGIN_SRC elisp :results output raw :var level=(1+ (org-current-level))
+(mwp/pdf-multi-extract &lsquo;(
+&ldquo;/home/matt/HackingHistory/readings/Troper-becoming-immigrant-city.pdf&rdquo;  &ldquo;/home/matt/HackingHistory/readings/historical-authority-hampton.pdf&rdquo;))</p>
+<p>#+END_SRC
+</pre></p>
+<pre><code>&lt;p&gt;
+  And the output gives something like
+&lt;/p&gt;
+
+&lt;p&gt;
+  #+BEGIN_EXAMPLE
+&lt;/p&gt;
+</code></pre>
+  </div>
+</div>
+<div id="outline-container-orgheadline4" class="outline-2">
+  <h2 id="orgheadline4">
+    Quotes From Troper becoming immigrant city
+  </h2>
+  <div class="outline-text-2" id="text-orgheadline4">
+    <p>
+      Included in the Greater Toronto Area multiethnic mix are an estimated 450,000 Chinese, 400,000 Italians, and 250,000 African Canadians, the largest component of which are ofCar- ibbean background, although a separate and distinct infusion of Soma- lis, Ethiopians, and other Africans is currently taking place. (<a href="http://matt.hackinghistory.ca/wp-content/uploads/2015/11/wpid-Troper-becoming-immigrant-city.pdf">Troper becoming immigrant city</a>, 3)
+    </p>
+<pre><code>&lt;p&gt;
+  Although Toronto is Canada&amp;rsquo;s leading immigrant-receiving centre, city officials have neither a hands-on role in immigrant selection nor an official voice in deciding immigration policy. In Canada, immigration policy and administration is a constitutional responsibility of the fed- eral government, worked out in consultation with the provinces. (&lt;a href=&quot;http://matt.hackinghistory.ca/wp-content/uploads/2015/11/wpid-Troper-becoming-immigrant-city.pdf&quot;&gt;Troper becoming immigrant city&lt;/a&gt;, 4)
+&lt;/p&gt;
+
+&lt;p&gt;
+  #+END_EXAMPLE
+&lt;/p&gt;
+</code></pre>
+  </div>
+</div>
+<div id="outline-container-orgheadline5" class="outline-2">
+  <h2 id="orgheadline5">
+    Alternative: Temporary buffer with custom link type
+  </h2>
+  <div class="outline-text-2" id="text-orgheadline5">
+    <p>
+      An alternative workflow would be to pop to a second, temporary buffer and insert the annotations there; one could do this with a custom link type. PDF-Tools already has a mechanism for listing annotations in a separate buffer, but it&rsquo;s not designed for quick access to all annotations at once. Anyway, here&rsquo;s one way to do this; I&rsquo;m not really using it at the moment.
+    </p>
+<pre><code>&lt;div class=&quot;org-src-container&quot;&gt;
+  &lt;pre class=&quot;src src-emacs-lisp&quot;&gt;&lt;span style=&quot;color: #707183;&quot;&gt;(&lt;/span&gt;org-add-link-type &lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;pdfquote&quot;&lt;/span&gt; 'org-pdfquote-open 'org-pdfquote-export&lt;span style=&quot;color: #707183;&quot;&gt;)&lt;/span&gt;
+</code></pre>
+<p><span style="color: #707183;">(</span><span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">org-pdfquote-open</span> <span style="color: #707183;">(</span>link<span style="color: #707183;">)</span>
+<span style="color: #8b2252;">&ldquo;Open a new buffer with all markup annotations in an org headline.&quot;</span>
+<span style="color: #707183;">(</span><span style="color: #a020f0;">interactive</span><span style="color: #707183;">)</span>
+<span style="color: #707183;">(</span>pop-to-buffer
+<span style="color: #707183;">(</span>format <span style="color: #8b2252;">&quot;<em>Quotes from %s</em>&quot;</span>
+<span style="color: #707183;">(</span>file-name-base link<span style="color: #707183;">)))</span>
+<span style="color: #707183;">(</span>org-mode<span style="color: #707183;">)</span>
+<span style="color: #707183;">(</span>erase-buffer<span style="color: #707183;">)</span>
+<span style="color: #707183;">(</span>insert <span style="color: #707183;">(</span>pdf-annot-markups-as-org-text link nil 1<span style="color: #707183;">))</span>
+<span style="color: #707183;">(</span>goto-char 0<span style="color: #707183;">)</span>
+<span style="color: #707183;">)</span></p>
+<p><span style="color: #707183;">(</span><span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">org-pdfquote-export</span> <span style="color: #707183;">(</span>link description format<span style="color: #707183;">)</span>
+<span style="color: #8b2252;">&ldquo;Export the pdfview LINK with DESCRIPTION for FORMAT from Org files.&quot;</span>
+<span style="color: #707183;">(</span><span style="color: #a020f0;">let*</span> <span style="color: #707183;">((</span>path <span style="color: #707183;">(</span><span style="color: #a020f0;">when</span> <span style="color: #707183;">(</span>string-match <span style="color: #8b2252;">&quot;</span><span style="color: #8b2252; font-weight: bold;">\</span><span style="color: #8b2252; font-weight: bold;">(</span><span style="color: #8b2252;">.+</span><span style="color: #8b2252; font-weight: bold;">\</span><span style="color: #8b2252; font-weight: bold;">)</span><span style="color: #8b2252;">::.+&quot;</span> link<span style="color: #707183;">)</span>
+<span style="color: #707183;">(</span>match-string 1 link<span style="color: #707183;">)))</span>
+<span style="color: #707183;">(</span>desc <span style="color: #707183;">(</span><span style="color: #a020f0;">or</span> description link<span style="color: #707183;">)))</span>
+<span style="color: #707183;">(</span><span style="color: #a020f0;">when</span> <span style="color: #707183;">(</span>stringp path<span style="color: #707183;">)</span>
+<span style="color: #707183;">(</span><span style="color: #a020f0;">setq</span> path <span style="color: #707183;">(</span>org-link-escape <span style="color: #707183;">(</span>expand-file-name path<span style="color: #707183;">)))</span>
+<span style="color: #707183;">(</span><span style="color: #a020f0;">cond</span>
+<span style="color: #707183;">((</span>eq format &lsquo;html<span style="color: #707183;">)</span> <span style="color: #707183;">(</span>format <span style="color: #8b2252;">&quot;&lt;a href=&quot;%s&quot;&gt;%s&lt;/a&gt;&quot;</span> path desc<span style="color: #707183;">))</span>
+<span style="color: #707183;">((</span>eq format &lsquo;latex<span style="color: #707183;">)</span> <span style="color: #707183;">(</span>format <span style="color: #8b2252;">&quot;\href{%s}{%s}&quot;</span> path desc<span style="color: #707183;">))</span>
+<span style="color: #707183;">((</span>eq format &lsquo;ascii<span style="color: #707183;">)</span> <span style="color: #707183;">(</span>format <span style="color: #8b2252;">&quot;%s (%s)&quot;</span> desc path<span style="color: #707183;">))</span>
+<span style="color: #707183;">(</span>t path<span style="color: #707183;">)))))</span></p>
+<p><span style="color: #707183;">(</span><span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">org-pdfquote-complete-link</span> <span style="color: #707183;">()</span>
+<span style="color: #8b2252;">&ldquo;Use the existing file name completion for file.</span>
+<span style="color: #8b2252;">Links to get the file name, then ask the user for the page number</span>
+<span style="color: #8b2252;">and append it.&quot;</span></p>
+<p><span style="color: #707183;">(</span>replace-regexp-in-string <span style="color: #8b2252;">&quot;^file:&quot;</span> <span style="color: #8b2252;">&ldquo;pdfquote:&quot;</span> <span style="color: #707183;">(</span>org-file-complete-link<span style="color: #707183;">)))</span>
+</pre>
+</div></p>
+<pre><code>&lt;p&gt;
+  I&amp;rsquo;ve also added two bindings to make highlighting easier from the PDF buffer:
+&lt;/p&gt;
+
+&lt;div class=&quot;org-src-container&quot;&gt;
+  &lt;pre class=&quot;src src-emacs-lisp&quot;&gt;&lt;span style=&quot;color: #707183;&quot;&gt;(&lt;/span&gt;eval-after-load 'pdf-view 
+                '&lt;span style=&quot;color: #707183;&quot;&gt;(&lt;/span&gt;define-key pdf-view-mode-map &lt;span style=&quot;color: #707183;&quot;&gt;(&lt;/span&gt;kbd &lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;M-h&quot;&lt;/span&gt;&lt;span style=&quot;color: #707183;&quot;&gt;)&lt;/span&gt; 'pdf-annot-add-highlight-markup-annotation&lt;span style=&quot;color: #707183;&quot;&gt;))&lt;/span&gt;
+</code></pre>
+<p><span style="color: #707183;">(</span>eval-after-load &lsquo;pdf-view
+&lsquo;<span style="color: #707183;">(</span>define-key pdf-view-mode-map <span style="color: #707183;">(</span>kbd <span style="color: #8b2252;">&quot;&lt;tab&gt;&quot;</span><span style="color: #707183;">)</span> &lsquo;pdf-annot-add-highlight-markup-annotation<span style="color: #707183;">))</span>
+</pre>
+</div></p>
+<pre><code>&lt;p&gt;
+  All of this is getting me very close to using Emacs for all my PDF work. I am doing maybe 50% of my PDF work in Emacs instead of on my tablet. It&amp;rsquo;s incredibly convenient, although I still find it a little harder to concentrate on my laptop than on the tablet (for reasons ergonomic, optical, and psychological). Here are the remaining papercuts from my perspective:
+&lt;/p&gt;
+
+&lt;ul class=&quot;org-ul&quot;&gt;
+  &lt;li&gt;
+    Highlighting text with the mouse is more awkward and less intimate than using my fingertip on a laptop. I often find mouse movement a little awkward in Emacs, but pdf-view purposely relies on the mouse for movement (for good reasons).
+  &lt;/li&gt;
+  &lt;li&gt;
+    Scrolling in pdf-view is also a bit awkward, and there&amp;rsquo;s no &amp;ldquo;continuous&amp;rdquo; mode as one might find in Evince or acroread. Again, I often find scrolling an issue in Emacs, so this might not be so easy to fix.
+  &lt;/li&gt;
+  &lt;li&gt;
+    Finally, the laptop screen is just harder on my eyes than my high-res tablet. pdf-view hasa &amp;ldquo;midnight mode&amp;rdquo; which makes it a little easier to read, but it&amp;rsquo;s not quite enough.
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+  So, for the time being I will probably do much of my reading on the tablet. But for short pieces and for review (e.g., papers that I&amp;rsquo;m reading for the third year in a row in a graduate seminar&amp;#x2026;) PDF Tools is now my main interface. Which is pretty sweet.
+&lt;/p&gt;
+</code></pre>
+  </div>
+</div>
+<div id="outline-container-orgheadline6" class="outline-2">
+  <h2 id="orgheadline6">
+    Todo
+  </h2>
+  <div class="outline-text-2" id="text-orgheadline6">
+    <p>
+      <b>UPDATE:</b> <del>I would like to extend the pdfview link type (in org-pdfview) to permit me to specify the precise location of an annotation, so I can jump precisely to that part of the page.</del> This has now been <a href="https://github.com/markus1189/org-pdfview/pull/7">done</a> and the code above has been updated to reflect the new syntax.
+    </p>
+<pre><code>&lt;p&gt;
+  &lt;b&gt;UPDATE:&lt;/b&gt; &lt;del&gt;Also, now that I think about it, it might be interesting to just have a link type that pops up a temporary buffer with all of the annotations; I could then cut and paste the annotations into the master document. This might be even more convenient.&lt;/del&gt; OK, I&amp;rsquo;ve implemented this, see above!
+&lt;/p&gt;
+
+&lt;p&gt;
+  &lt;b&gt;Update &lt;span class=&quot;timestamp-wrapper&quot;&gt;&lt;span class=&quot;timestamp&quot;&gt;2015-11-22 Sun&lt;/span&gt;&lt;/span&gt;:&lt;/b&gt; I&amp;rsquo;ve cleaned up some of the code, and added a bit more commentary at the end.
+&lt;/p&gt;
+</code></pre>
+  </div>
+</div>
+
+        </section>
+      </div>
+    </div>
+  </div>  
+  <div class="container">
+    <div class="columns">
+      <div class="column has-text-right is-family-monospace is-centered-tablet-portrait">
+        Last modified:&nbsp;11 November 2015</div>
+    </div>
+  </div></section>
+<footer class="footer footer-dark">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <img src="/footer.svg" alt="">
+        
+      </div>
+      
+    <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+              <h3>Website</h3>
+          </div>
+          <ul class="link-list"><li>
+              <a href="/"><span class="icon"><i class="fa fa-home"></i></span> Home</a>
+            </li><li></li>
+            <li><a href="/tags/">
+                <span class="icon"><i class="fa fa-tag"></i></span> 
+                All Tags
+              </a></li>
+          </ul>
+        </div>
+      </div>
+    
+      
+      <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+              <h3>Contacts</h3>
+          </div>
+          <ul class="link-list">
+            
+            <li>
+              <a href="https://www.linkedin.com/your_linkedin_profile" target="_blank">
+                <span class="icon"><i class="fa fa-linkedin"></i></span>
+                
+                  My LinkedIn
+                
+              </a>
+            </li>
+            
+                         
+            
+            <li>
+              <a href="mailto:name.surname@domain.com" target="_blank">
+                <span class="icon"><i class="fa fa-envelope"></i></span>
+                
+                  My Email
+                
+              </a>
+            </li>
+            
+                   
+                   
+                   
+          </ul>
+        </div>
+      </div>
+      
+
+      
+      <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+              <h3>Copyright</h3>
+          </div>
+          <ul class="link-list">
+            <li>
+              <a>
+                <span class="icon"><i class="fa fa-copyright"></i></span>
+                Matt Price - 2020
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+</footer>
+    <div id="backtotop"><a href="#"></a></div><div class="sidebar scroll">
+  <div class="sidebar-header"><img src="/sidebar.svg" alt="">
+    
+    <a class="sidebar-close" href="javascript:void(0);">
+      <i data-feather="x"></i>
+    </a>
+  </div>
+  <div class="inner">
+    <ul class="sidebar-menu">
+      <li class="no-children"><a href="/tags/"><div class="columns">
+              <table width="100%">  
+                <tr>
+                  <td class="">
+                    <span class="icon"><i class="fa fa-cubes"></i></span>
+                    All Tags
+                  </td>
+                  <td class="has-text-right" >
+                      
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </a></ul>
+  </div>
+</div>
+<script src="/js/jquery-2.2.4.893e90f6230962e42231635df650f20544ad22affc3ee396df768eaa6bc5a6a2.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="></script>
+  <script src="/js/feather.4.22.0.1ab07abeb9975f283f6b5f29451981be680fbf77ea778f991d457511d210476a.js" integrity="sha256-GrB6vrmXXyg/a18pRRmBvmgPv3fqd4&#43;ZHUV1EdIQR2o="></script>
+  <script src="/js/modernizr-3.6.0.e013a1e54e3c19d83537ba42b900d34451e5e4b2e789be27a02ac9b152edb741.js" integrity="sha256-4BOh5U48Gdg1N7pCuQDTRFHl5LLnib4noCrJsVLtt0E="></script>
+  <script src="/js/refresh.62c1a9b7d85bcf4d944cd585a01dfa8fb15112a7d2cf9fb819db20493bfe7484.js" integrity="sha256-YsGpt9hbz02UTNWFoB36j7FREqfSz5&#43;4GdsgSTv&#43;dIQ="></script><script>
+  window.MathJax = {
+    loader: {
+      load: ['core', 'input/tex-base', 'output/chtml'],  
+      source: {
+        'core': '\/js\/mathjax\/core.d48fedf25c74c54fa6bf79646de92b02155872bdc4f5f7d0bbfc662523d8b4f5.js',
+        'input/tex-base': '\/js\/mathjax\/tex-base.1b68b8741dfc54e8f7222f88bea8ffcfc57ac54b2a2d8f4edf6800aa44d49441.js',
+        'output/chtml': '\/js\/mathjax\/chtml.926cd166e0f8c1f8a566a718d60c9c58a2b7142b156d30d5f02cec7c3b0ad60a.js',
+        'output/chtml/fonts/tex': '\/js\/mathjax\/tex_out.b8b2bb939c0dae84bf1390bfe6d32af13e83f647cdac01d544d2a7a517477e9d.js'
+      },
+    },
+    chtml: {
+      fontURL: '/fonts' 
+    },
+  };
+</script><script src="/js/mathjax/startup.234a2513e6bdbc1eee06ca19abceca30fe4034e82afb373c08274c1ba2feb1a6.js" integrity="sha256-I0olE&#43;a9vB7uBsoZq87KMP5ANOgq&#43;zc8CCdMG6L&#43;saY="></script>
+  <script src="/js/highlight.9.18.1.b1c58829c55afcc1f568022af4b08ed8976da404d2990b7535bd8e19c0e3310c.js" integrity="sha256-scWIKcVa/MH1aAIq9LCO2JdtpATSmQt1Nb2OGcDjMQw="></script>
+  <script src="/js/highlightjs-line-numbers.2.7.0.min.ddfe282e07b7ec1ed069c23f92c7c8216ddb3f1879c4e962d37fd52adbd15a05.js" integrity="sha256-3f4oLge37B7QacI/ksfIIW3bPxh5xOli03/VKtvRWgU="></script><script>
+  hljs.initHighlightingOnLoad();
+  hljs.initLineNumbersOnLoad();
+  document.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelectorAll('.codeinline').forEach((block) => {
+      hljs.highlightBlock(block);
+    });
+  });
+</script>
+
+</body>
+</html>

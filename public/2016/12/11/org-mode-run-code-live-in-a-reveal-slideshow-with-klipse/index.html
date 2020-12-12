@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><link rel="icon" href="/favicon_main.svg"><meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" /><meta property="og:url"  content="https://example.com/2016/12/11/org-mode-run-code-live-in-a-reveal-slideshow-with-klipse/" />
+    <meta property="og:type" content="article" /><meta property="og:title" content="Org-Mode: Run Code Live in a Reveal slideshow with Klipse" /><meta property="og:description" content="" /><meta property="og:image:width"  content="375" />
+        <meta property="og:image:height" content="250" /><meta property="og:image" content="https://example.com/images/default_summary_hu2be732aee21a2469ead3fe1f2df8caca_2088687_600x0_resize_q75_box.jpg" /><title>History Hacker - Org-Mode: Run Code Live in a Reveal slideshow with Klipse</title>
+
+    
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet"><link rel="stylesheet" type="text/css" href="/css/style.3924c953d2259a0f0beef52fc023daabdac50a4f62f4446859e57153d998e5b0.css" integrity="sha256-OSTJU9Ilmg8L7vUvwCPaq9rFCk9i9ERoWeVxU9mY5bA=">
+<link rel="stylesheet" type="text/css" href="/css/monokai-sublime.9.15.8.min.91376415864fdd3a92be524052267afece4bdb1bb8c6c754f5e60c5ac28e93be.css" integrity="sha256-kTdkFYZP3TqSvlJAUiZ6/s5L2xu4xsdU9eYMWsKOk74=">
+<link rel="stylesheet" type="text/css" href="/css/icons.f72c0103ff9598115ab2a76351494b950570479ce3f1795fec13fc62e4185dcf.css" integrity="sha256-9ywBA/&#43;VmBFasqdjUUlLlQVwR5zj8Xlf7BP8YuQYXc8=">
+<link rel="stylesheet" type="text/css" href="/css/refresh.ccfd23f8053a1571a3e474a6877f42a6a1924c6bbf1b64c7704b49a0353b4650.css" integrity="sha256-zP0j&#43;AU6FXGj5HSmh39CpqGSTGu/G2THcEtJoDU7RlA=">
+<link rel="stylesheet" type="text/css" href="/css/devicon.min.149016fbf45c8bc157d6f55ce3ee875feaa3f90446bf7d151fbc16a9f21a8859.css" integrity="sha256-FJAW&#43;/Rci8FX1vVc4&#43;6HX&#43;qj&#43;QRGv30VH7wWqfIaiFk=">
+    
+
+  </head>
+  <body>
+     
+
+    <div id="preloader">
+      <div id="status"></div>
+    </div><nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+
+      
+      
+      
+      <a class="navbar-item">
+        <div class="menu-icon-wrapper left-menu-icon-wrapper" style="visibility: visible;">
+          <svg width="1000px" height="1000px">
+            <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+            <path class="path2" d="M 300 500 L 700 500"></path>
+            <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+          </svg>
+          <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+        </div>
+        <div class="navbar-item left-menu-icon-wrapper">
+          Tags
+        </div>
+      </a>
+
+      <div class="navbar-item is-expanded"></div>
+      <a class="navbar-item is-hidden-desktop">  
+        <div data-target="navbar-menu" class="navbar-item right-menu-icon-wrapper is-hidden-desktop">
+          Menu
+        </div>
+        <div data-target="navbar-menu" class="menu-icon-wrapper right-menu-icon-wrapper" style="visibility: visible;">
+          <svg width="1000px" height="1000px">
+            <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+            <path class="path2" d="M 300 500 L 700 500"></path>
+            <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+          </svg>
+          <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+        </div>
+      </a>
+    </div><div id="navbar-menu" class="navbar-menu is-static">
+      
+      <div class="navbar-end">
+        
+          <a href="/" class="navbar-item is-secondary">Home</a><a href="/projects/" class="navbar-item is-secondary">Projects</a><a href="/cv/cv/" class="navbar-item is-secondary">CV</a><a href="/teaching/" class="navbar-item is-secondary">Teaching</a><a href="/posts/" class="navbar-item is-secondary">Posts</a><a href="/publication/" class="navbar-item is-secondary">Publications</a>
+        
+        
+        <div class="navbar-item">
+          <div class="dropdown is-hoverable is-centered" >
+            <div class="dropdown-trigger" >
+              <button class="button is-active" 
+              style="color:#999;  
+                    border-color:#F39200; 
+                    box-shadow: none ;
+                    padding-right: 0.625em ; 
+                    padding-left: 0.625em  ;
+                    ">
+
+                <span>EN</span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu" role="menu" style="min-width: 0em;">
+              <div class="dropdown-content" style="padding: 0rem;">
+                
+                  
+                
+                  
+                <a href="https://example.com/ru/" class="dropdown-item" 
+                style="text-align: center; color:#999; padding-right: 0.82em !important ; padding-left: 0.82em !important;">
+                  RU
+                </a>
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+<nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
+  <div class="container">
+      <div class="navbar-brand">
+  
+        
+        
+        
+        <a class="navbar-item">
+          <div class="menu-icon-wrapper left-menu-icon-wrapper" style="visibility: visible;">
+            <svg width="1000px" height="1000px">
+              <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+              <path class="path2" d="M 300 500 L 700 500"></path>
+              <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+            </svg>
+            <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+          </div>
+          <div class="navbar-item left-menu-icon-wrapper">
+            Tags
+          </div>
+        </a>
+  
+        <div class="navbar-item is-expanded"></div>
+        <a class="navbar-item is-hidden-desktop">  
+          <div data-target="cloned-navbar-menu" class="navbar-item right-menu-icon-wrapper is-hidden-desktop">
+            Menu
+          </div>
+          <div data-target="cloned-navbar-menu" class="menu-icon-wrapper right-menu-icon-wrapper" style="visibility: visible;">
+            <svg width="1000px" height="1000px">
+              <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+              <path class="path2" d="M 300 500 L 700 500"></path>
+              <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+            </svg>
+            <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+          </div>
+        </a>
+      </div><div id="cloned-navbar-menu" class="navbar-menu is-static">
+        <div class="navbar-end"><a href="/" class="navbar-item is-secondary">Home</a><a href="/projects/" class="navbar-item is-secondary">Projects</a><a href="/cv/cv/" class="navbar-item is-secondary">CV</a><a href="/teaching/" class="navbar-item is-secondary">Teaching</a><a href="/posts/" class="navbar-item is-secondary">Posts</a><a href="/publication/" class="navbar-item is-secondary">Publications</a>
+          
+          
+          <div class="navbar-item">
+            <div class="dropdown is-hoverable is-centered" >
+              <div class="dropdown-trigger" >
+                <button class="button is-active" 
+                style="color:#999;  
+                      border-color:#F39200; 
+                      box-shadow: none ;
+                      padding-right: 0.625em ; 
+                      padding-left: 0.625em  ;
+                      ">
+  
+                  <span>EN</span>
+                </button>
+              </div>
+              <div class="dropdown-menu" id="dropdown-menu" role="menu" style="min-width: 0em;">
+                <div class="dropdown-content" style="padding: 0rem;">
+                  
+                    
+                  
+                    
+                  <a href="https://example.com/ru/" class="dropdown-item" 
+                  style="text-align: center; color:#999; padding-right: 0.82em !important ; padding-left: 0.82em !important;">
+                    RU
+                  </a>
+                  
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        
+        </div>
+      </div>
+    </div>
+  </nav>
+<section class="section is-medium">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-centered-tablet-portrait">
+        <h1 class="title is-2 section-title">Org-Mode: Run Code Live in a Reveal slideshow with Klipse</h1>
+        <h5 class="subtitle is-5 is-muted"></h5>
+        <div class="divider"></div>
+        
+        <section class="section content has-text-justified">
+          <nav id="table-of-contents"> 
+<h2 id="table-of-contents">Table of Contents</h2>
+<div id="text-table-of-contents">
+  <ul>
+    <li>
+      <a href="#org7713ada">The Basics: ox-reveal</a>
+    </li>
+    <li>
+      <a href="#org80f4b5b">Running Code in Klipse</a> <ul>
+        <li>
+          <a href="#org45d7e1d">Add Support for Third-Party Plugins</a>
+        </li>
+        <li>
+          <a href="#org35a8a7f">Rewrite org-reveal-src-block</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div></nav> 
+<p>Slide-based presentations are pretty useful and in any case <em>de rigeur</em> for contemporary lecturing, but it can be a REAL pain to switch form a slideshow to a code editor and then back again to a web browser to show the results of the code… Much better would be to have all the code embedded directly in your presentation. This also makes it easier to check over your code when you’re rewriting your lectures from year to year, and also helps with literate programming.</p>
+<p>It turns out that there are actually several solutions for doing this with Org. They are:</p>
+<ul class="org-ul">
+  <li>
+    directly embed JSBin in your slideshow
+  </li>
+  <li>
+    Use RevealEditor for HTML, CSS, and JS that you want to render in a web page.
+  </li>
+  <li>
+    Use the new klipse plugin for code that you want to <i>evaluate</i> (rather than render)
+  </li>
+</ul>
+<p>Each method has advantages and disadvantages, and each requires a certain amount of setup in your config. In this post I’m talking about using Klipse because I’ve bene able to make it actually work!</p>
+<div id="outline-container-org7713ada" class="outline-2">
+  <h2 id="org7713ada">
+    The Basics: ox-reveal
+  </h2>
+  <div class="outline-text-2" id="text-org7713ada">
+    <p>
+      To start with, you will need to install <a href="https://github.com/yjwen/org-reveal#requirements-and-installation">org-reveal</a> as well as its dependencies (org-mode and reveal.js). I install <code>org-reveal</code> from github instead of from ELPA, in part because I need to make modifications to both it and <code>reveal.js</code>.
+    </p>
+<pre><code>&lt;p&gt;
+  Follow the detailed instructions until you have a working export to reveal. Make sure that you have activated the &amp;ldquo;highlight&amp;rdquo; plugin in &lt;code&gt;org-reveal-plugins&lt;/code&gt;, which you can do with &lt;code&gt;M-x customize-variable org-reveal-plugins&lt;/code&gt;. None of the tricks described below will work without that plugin!
+&lt;/p&gt;
+</code></pre>
+  </div>
+</div>
+<div id="outline-container-org80f4b5b" class="outline-2">
+  <h2 id="org80f4b5b">
+    Running Code in Klipse
+  </h2>
+  <div class="outline-text-2" id="text-org80f4b5b">
+    <p>
+      <a href="https://github.com/viebel/klipse">Klipse</a> is a web repl that supports a handful of languages, and can be extended to support more. Code is embedded in a CodeMirror instance and evaluated as you type (pretty cool).
+    </p>
+<pre><code>&lt;p&gt;
+  Unfortunately CodeMirror and Reveal don&amp;rsquo;t get along very well so it&amp;rsquo;s not completely straightforward to embed Klipse directly into a reveal.js slideshow. The workaround is to replace a code-snippet tag with an &lt;code&gt;iframe&lt;/code&gt; element containing the code in a form that klipse can read. Klipse&amp;rsquo;s author @viebel has kindly provided an example of how to do this &lt;a href=&quot;http://viebel.github.io/klipse/examples/klipse_reveal.js&quot;&gt;here&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+  The next trick is to set up org-reveal to use this snippet. After messing around for a bit it became obvious that org-mode&amp;rsquo;s standard &lt;a href=&quot;http://orgmode.org/worg/exporters/filter-markup.html&quot;&gt;Export filters&lt;/a&gt; were going to be pretty hard to use, so I decided to rewrite some of &lt;code&gt;org-reveal&lt;/code&gt;&amp;rsquo;s functionality:
+&lt;/p&gt;
+</code></pre>
+  </div>
+  <div id="outline-container-org45d7e1d" class="outline-3">
+    <h3 id="org45d7e1d">
+      Add Support for Third-Party Plugins
+    </h3>
+<pre><code>&lt;div class=&quot;outline-text-3&quot; id=&quot;text-org45d7e1d&quot;&gt;
+  &lt;p&gt;
+    Org-reveal has excellent support for reveal.js&amp;rsquo;s &amp;ldquo;build-in&amp;rdquo; plugins, but using third-party plugins requires you to use the &lt;code&gt;or-reveal~postamble&lt;/code&gt; variable~, which didn&amp;rsquo;t seem right to me. So I &lt;a href=&quot;https://github.com/yjwen/org-reveal/pull/256&quot;&gt;added a defcustom&lt;/a&gt; and a few small generic tricks to support loading third-party plugins. Then I downloaded @viebel&amp;rsquo;s &lt;code&gt;klipse_reveal.js&lt;/code&gt; script and saved it to the &lt;code&gt;plugin&lt;/code&gt; folder of my &lt;code&gt;reveal.js&lt;/code&gt; installation. Finally, I set org-reveal-external-plugins to &lt;code&gt;((klipse . &quot;{src: '%splugin/klipse_reveal.js'}&quot;))&lt;/code&gt; using the customize-variable interface.
+  &lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+  </div>
+  <div id="outline-container-org35a8a7f" class="outline-3">
+    <h3 id="org35a8a7f">
+      Rewrite org-reveal-src-block
+    </h3>
+<pre><code>&lt;div class=&quot;outline-text-3&quot; id=&quot;text-org35a8a7f&quot;&gt;
+  &lt;p&gt;
+    At this point, the plugin loads, but it couldn&amp;rsquo;t find the exported src blocks. As I mentioned above, I was unable to find a satisfactory solution using export filters, so in the end I just rewrote the function &lt;code&gt;org-reveal-src-block&lt;/code&gt;, which ox-reveal uses to process src blocks. I decided to keep the original &lt;code&gt;&amp;lt;pre&amp;gt;&amp;lt;code&amp;gt;&lt;/code&gt; syntax and simply add on an additional &lt;code&gt;&amp;lt;klipse-snippet&lt;/code&gt; block, using the &lt;code&gt;display:none&lt;/code&gt; CSS property for the old code block. This ensures compatibility with the reveal-editor solution (which isn&amp;rsquo;t currently working for me, but offers some other features.
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    Here&amp;rsquo;s my modified function:
+  &lt;/p&gt;
+  
+  &lt;div class=&quot;org-src-container&quot;&gt;
+    &lt;pre class=&quot;src src-emacs-lisp&quot;&gt;&lt;span style=&quot;color: #8c8c8c;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #00ffff;&quot;&gt;defun&lt;/span&gt; &lt;span style=&quot;color: #87cefa;&quot;&gt;org-reveal-src-block&lt;/span&gt; &lt;span style=&quot;color: #8c8c8c;&quot;&gt;(&lt;/span&gt;src-block contents info&lt;span style=&quot;color: #8c8c8c;&quot;&gt;)&lt;/span&gt;
+</code></pre>
+<p><span style="color: #ffa07a;">&ldquo;Transcode a SRC-BLOCK element from Org to Reveal.</span>
+<span style="color: #ffa07a;">CONTENTS holds the contents of the item.  INFO is a plist holding</span>
+<span style="color: #ffa07a;">contextual information.&quot;</span>
+<span style="color: #8c8c8c;">(</span><span style="color: #00ffff;">if</span> <span style="color: #8c8c8c;">(</span>org-export-read-attribute <span style="color: #b0c4de;">:attr_html</span> src-block <span style="color: #b0c4de;">:textarea</span><span style="color: #8c8c8c;">)</span>
+<span style="color: #8c8c8c;">(</span>org-html&ndash;textarea-block src-block<span style="color: #8c8c8c;">)</span>
+<span style="color: #8c8c8c;">(</span><span style="color: #00ffff;">let*</span> <span style="color: #8c8c8c;">((</span>use-highlight <span style="color: #8c8c8c;">(</span>org-reveal&ndash;using-highlight.js info<span style="color: #8c8c8c;">))</span>
+<span style="color: #8c8c8c;">(</span>lang <span style="color: #8c8c8c;">(</span>org-element-property <span style="color: #b0c4de;">:language</span> src-block<span style="color: #8c8c8c;">))</span>
+<span style="color: #8c8c8c;">(</span>caption <span style="color: #8c8c8c;">(</span>org-export-get-caption src-block<span style="color: #8c8c8c;">))</span>
+<span style="color: #8c8c8c;">(</span>code <span style="color: #8c8c8c;">(</span><span style="color: #00ffff;">if</span> <span style="color: #8c8c8c;">(</span>not use-highlight<span style="color: #8c8c8c;">)</span>
+<span style="color: #8c8c8c;">(</span>org-html-format-code src-block info<span style="color: #8c8c8c;">)</span>
+<span style="color: #8c8c8c;">(</span><span style="color: #00ffff;">cl-letf</span> <span style="color: #8c8c8c;">(((</span>symbol-function &lsquo;org-html-htmlize-region-for-paste<span style="color: #8c8c8c;">)</span>
+#&lsquo;buffer-substring<span style="color: #8c8c8c;">))</span>
+<span style="color: #8c8c8c;">(</span>org-html-format-code src-block info<span style="color: #8c8c8c;">))))</span>
+<span style="color: #8c8c8c;">(</span>frag <span style="color: #8c8c8c;">(</span>org-export-read-attribute <span style="color: #b0c4de;">:attr_reveal</span> src-block <span style="color: #b0c4de;">:frag</span><span style="color: #8c8c8c;">))</span>
+<span style="color: #8c8c8c;">(</span>code-attribs <span style="color: #8c8c8c;">(</span><span style="color: #00ffff;">or</span> <span style="color: #8c8c8c;">(</span>org-export-read-attribute
+<span style="color: #b0c4de;">:attr_reveal</span> src-block <span style="color: #b0c4de;">:code_attribs</span><span style="color: #8c8c8c;">)</span> <span style="color: #ffa07a;">&quot;&quot;</span><span style="color: #8c8c8c;">))</span>
+<span style="color: #8c8c8c;">(</span>label <span style="color: #8c8c8c;">(</span><span style="color: #00ffff;">let</span> <span style="color: #8c8c8c;">((</span>lbl <span style="color: #8c8c8c;">(</span>org-element-property <span style="color: #b0c4de;">:name</span> src-block<span style="color: #8c8c8c;">)))</span>
+<span style="color: #8c8c8c;">(</span><span style="color: #00ffff;">if</span> <span style="color: #8c8c8c;">(</span>not lbl<span style="color: #8c8c8c;">)</span> <span style="color: #ffa07a;">&quot;&quot;</span>
+<span style="color: #8c8c8c;">(</span>format <span style="color: #ffa07a;">&rdquo; id=&quot;%s&quot;&quot;</span> lbl<span style="color: #8c8c8c;">))))</span>
+<span style="color: #8c8c8c;">(</span>klipsify  <span style="color: #8c8c8c;">(</span><span style="color: #00ffff;">and</span> <span style="color: #8c8c8c;">(</span>assoc &lsquo;klipse org-reveal-external-plugins<span style="color: #8c8c8c;">)</span>
+<span style="color: #8c8c8c;">(</span>member lang &lsquo;<span style="color: #8c8c8c;">(</span><span style="color: #ffa07a;">&ldquo;javascript&rdquo;</span> <span style="color: #ffa07a;">&ldquo;ruby&rdquo;</span> <span style="color: #ffa07a;">&ldquo;scheme&rdquo;</span> <span style="color: #ffa07a;">&ldquo;clojure&rdquo;</span> <span style="color: #ffa07a;">&ldquo;php&rdquo;</span><span style="color: #8c8c8c;">))))</span>
+<span style="color: #8c8c8c;">)</span>
+<span style="color: #8c8c8c;">(</span><span style="color: #00ffff;">if</span> <span style="color: #8c8c8c;">(</span>not lang<span style="color: #8c8c8c;">)</span>
+<span style="color: #8c8c8c;">(</span>format <span style="color: #ffa07a;">&quot;&lt;pre %s%s&gt;\n%s&lt;/pre&gt;&quot;</span>
+<span style="color: #8c8c8c;">(</span><span style="color: #00ffff;">or</span> <span style="color: #8c8c8c;">(</span>frag-class frag info<span style="color: #8c8c8c;">)</span> <span style="color: #ffa07a;">&quot; class=&quot;example&quot;&quot;</span><span style="color: #8c8c8c;">)</span>
+label
+code<span style="color: #8c8c8c;">)</span>
+<span style="color: #8c8c8c;">(</span>format
+<span style="color: #ffa07a;">&quot;&lt;div %sclass=&quot;org-src-container&quot;&gt;\n%s%s\n&lt;/div&gt;%s&quot;</span>
+<span style="color: #8c8c8c;">(</span><span style="color: #00ffff;">if</span> klipsify <span style="color: #ffa07a;">&ldquo;style=&quot;display:none;&quot; &ldquo;</span> <span style="color: #ffa07a;">&quot;&quot;</span>)
+<span style="color: #8c8c8c;">(</span><span style="color: #00ffff;">if</span> <span style="color: #8c8c8c;">(</span>not caption<span style="color: #8c8c8c;">)</span> <span style="color: #ffa07a;">&quot;&quot;</span>
+<span style="color: #8c8c8c;">(</span>format <span style="color: #ffa07a;">&quot;&lt;label class=&quot;org-src-name&quot;&gt;%s&lt;/label&gt;&quot;</span>
+<span style="color: #8c8c8c;">(</span>org-export-data caption info<span style="color: #8c8c8c;">)))</span>
+<span style="color: #8c8c8c;">(</span><span style="color: #00ffff;">if</span> use-highlight
+<span style="color: #8c8c8c;">(</span>format <span style="color: #ffa07a;">&quot;\n&lt;pre%s%s&gt;&lt;code class=&quot;%s&quot; %s&gt;%s&lt;/code&gt;&lt;/pre&gt;&quot;</span>
+<span style="color: #8c8c8c;">(</span><span style="color: #00ffff;">or</span> <span style="color: #8c8c8c;">(</span>frag-class frag info<span style="color: #8c8c8c;">)</span> <span style="color: #ffa07a;">&quot;&quot;</span><span style="color: #8c8c8c;">)</span>
+label lang code-attribs code<span style="color: #8c8c8c;">)</span>
+<span style="color: #8c8c8c;">(</span>format <span style="color: #ffa07a;">&quot;\n&lt;pre %s%s&gt;%s&lt;/pre&gt;&quot;</span>
+<span style="color: #8c8c8c;">(</span><span style="color: #00ffff;">or</span> <span style="color: #8c8c8c;">(</span>frag-class frag info<span style="color: #8c8c8c;">)</span>
+<span style="color: #8c8c8c;">(</span>format <span style="color: #ffa07a;">&rdquo; class=&quot;src src-%s&quot;&quot;</span> lang<span style="color: #8c8c8c;">))</span>
+label code<span style="color: #8c8c8c;">)</span>
+<span style="color: #8c8c8c;">)</span>
+<span style="color: #8c8c8c;">(</span><span style="color: #00ffff;">if</span> klipsify <span style="color: #8c8c8c;">(</span>format <span style="color: #ffa07a;">&quot;&lt;klipse-snippet data-language=&quot;%s&quot;&gt;%s&lt;/klipse-snippet&gt;&quot;</span>
+lang code<span style="color: #8c8c8c;">)</span> <span style="color: #ffa07a;">&quot;&quot;</span><span style="color: #8c8c8c;">))))))</span>
+</pre>
+</div></p>
+<pre><code>  &lt;p&gt;
+    As you can see, it now decides whether or not to &amp;ldquo;klipsify&amp;rdquo; the code aafter checking if the klipse plugin is loaded, and if it supports the language of the src block. Klipsifying code just means hiding the original code block and instead showing the klipse-snippet, which will be replaced by an iframe in javascript. I guess I could just do that work right in this same elisp function! Oh well, maybe next time.
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    So far, this seems to work great, though I don&amp;rsquo;t have access to the DOM of the larger document ,which is sort of a drag.
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    &lt;b&gt;[UPDATE &lt;span class=&quot;timestamp-wrapper&quot;&gt;&lt;span class=&quot;timestamp&quot;&gt;2016-12-11 Sun&lt;/span&gt;&lt;/span&gt;]:&lt;/b&gt; However, @viebel pointed out to me that you can access the parent frame with:
+  &lt;/p&gt;
+  
+  &lt;div class=&quot;org-src-container&quot;&gt;
+    &lt;pre class=&quot;src src-js&quot;&gt;&lt;span style=&quot;color: #00ffff;&quot;&gt;var&lt;/span&gt; &lt;span style=&quot;color: #eedd82;&quot;&gt;d&lt;/span&gt; = parent.document
+</code></pre>
+<p></pre>
+</div></p>
+<pre><code>  &lt;p&gt;
+    Pretty cool! Note: klipse will hang if you try to type this in directly. It will only work if you pass the completed line in as part of the initial code block.
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    Also, this is not a solution that works for rendering HTML pages. For this we need something else. I would like to use RevealEditor, but am not quite there yet (can&amp;rsquo;t get its code to load properly). So for now I&amp;rsquo;m embedding a JSBin instance with preoaded code &amp;#x2013; I just add an iframe tag directly in my org-mode file. It&amp;rsquo;s not a s pretty or robust, and I can&amp;rsquo;t see my code when I&amp;rsquo;m writing, which is too bad, but it&amp;rsquo;s still pretty useful.
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    I would really like to hear what other people think! I&amp;rsquo;d especially like to hear about alternatives or improvements.
+  &lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+  </div>
+</div>
+        </section>
+      </div>
+    </div>
+  </div>  
+  <div class="container">
+    <div class="columns">
+      <div class="column has-text-right is-family-monospace is-centered-tablet-portrait">
+        Last modified:&nbsp;11 December 2016</div>
+    </div>
+  </div></section>
+<footer class="footer footer-dark">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <img src="/footer.svg" alt="">
+        
+      </div>
+      
+    <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+              <h3>Website</h3>
+          </div>
+          <ul class="link-list"><li>
+              <a href="/"><span class="icon"><i class="fa fa-home"></i></span> Home</a>
+            </li><li></li>
+            <li><a href="/tags/">
+                <span class="icon"><i class="fa fa-tag"></i></span> 
+                All Tags
+              </a></li>
+          </ul>
+        </div>
+      </div>
+    
+      
+      <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+              <h3>Contacts</h3>
+          </div>
+          <ul class="link-list">
+            
+            <li>
+              <a href="https://www.linkedin.com/your_linkedin_profile" target="_blank">
+                <span class="icon"><i class="fa fa-linkedin"></i></span>
+                
+                  My LinkedIn
+                
+              </a>
+            </li>
+            
+                         
+            
+            <li>
+              <a href="mailto:name.surname@domain.com" target="_blank">
+                <span class="icon"><i class="fa fa-envelope"></i></span>
+                
+                  My Email
+                
+              </a>
+            </li>
+            
+                   
+                   
+                   
+          </ul>
+        </div>
+      </div>
+      
+
+      
+      <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+              <h3>Copyright</h3>
+          </div>
+          <ul class="link-list">
+            <li>
+              <a>
+                <span class="icon"><i class="fa fa-copyright"></i></span>
+                Matt Price - 2020
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+</footer>
+    <div id="backtotop"><a href="#"></a></div><div class="sidebar scroll">
+  <div class="sidebar-header"><img src="/sidebar.svg" alt="">
+    
+    <a class="sidebar-close" href="javascript:void(0);">
+      <i data-feather="x"></i>
+    </a>
+  </div>
+  <div class="inner">
+    <ul class="sidebar-menu">
+      <li class="no-children"><a href="/tags/"><div class="columns">
+              <table width="100%">  
+                <tr>
+                  <td class="">
+                    <span class="icon"><i class="fa fa-cubes"></i></span>
+                    All Tags
+                  </td>
+                  <td class="has-text-right" >
+                      
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </a></ul>
+  </div>
+</div>
+<script src="/js/jquery-2.2.4.893e90f6230962e42231635df650f20544ad22affc3ee396df768eaa6bc5a6a2.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="></script>
+  <script src="/js/feather.4.22.0.1ab07abeb9975f283f6b5f29451981be680fbf77ea778f991d457511d210476a.js" integrity="sha256-GrB6vrmXXyg/a18pRRmBvmgPv3fqd4&#43;ZHUV1EdIQR2o="></script>
+  <script src="/js/modernizr-3.6.0.e013a1e54e3c19d83537ba42b900d34451e5e4b2e789be27a02ac9b152edb741.js" integrity="sha256-4BOh5U48Gdg1N7pCuQDTRFHl5LLnib4noCrJsVLtt0E="></script>
+  <script src="/js/refresh.62c1a9b7d85bcf4d944cd585a01dfa8fb15112a7d2cf9fb819db20493bfe7484.js" integrity="sha256-YsGpt9hbz02UTNWFoB36j7FREqfSz5&#43;4GdsgSTv&#43;dIQ="></script><script>
+  window.MathJax = {
+    loader: {
+      load: ['core', 'input/tex-base', 'output/chtml'],  
+      source: {
+        'core': '\/js\/mathjax\/core.d48fedf25c74c54fa6bf79646de92b02155872bdc4f5f7d0bbfc662523d8b4f5.js',
+        'input/tex-base': '\/js\/mathjax\/tex-base.1b68b8741dfc54e8f7222f88bea8ffcfc57ac54b2a2d8f4edf6800aa44d49441.js',
+        'output/chtml': '\/js\/mathjax\/chtml.926cd166e0f8c1f8a566a718d60c9c58a2b7142b156d30d5f02cec7c3b0ad60a.js',
+        'output/chtml/fonts/tex': '\/js\/mathjax\/tex_out.b8b2bb939c0dae84bf1390bfe6d32af13e83f647cdac01d544d2a7a517477e9d.js'
+      },
+    },
+    chtml: {
+      fontURL: '/fonts' 
+    },
+  };
+</script><script src="/js/mathjax/startup.234a2513e6bdbc1eee06ca19abceca30fe4034e82afb373c08274c1ba2feb1a6.js" integrity="sha256-I0olE&#43;a9vB7uBsoZq87KMP5ANOgq&#43;zc8CCdMG6L&#43;saY="></script>
+  <script src="/js/highlight.9.18.1.b1c58829c55afcc1f568022af4b08ed8976da404d2990b7535bd8e19c0e3310c.js" integrity="sha256-scWIKcVa/MH1aAIq9LCO2JdtpATSmQt1Nb2OGcDjMQw="></script>
+  <script src="/js/highlightjs-line-numbers.2.7.0.min.ddfe282e07b7ec1ed069c23f92c7c8216ddb3f1879c4e962d37fd52adbd15a05.js" integrity="sha256-3f4oLge37B7QacI/ksfIIW3bPxh5xOli03/VKtvRWgU="></script><script>
+  hljs.initHighlightingOnLoad();
+  hljs.initLineNumbersOnLoad();
+  document.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelectorAll('.codeinline').forEach((block) => {
+      hljs.highlightBlock(block);
+    });
+  });
+</script>
+
+</body>
+</html>

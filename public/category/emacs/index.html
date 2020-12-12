@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><link rel="icon" href="/favicon_main.svg"><meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" /><title>Matt Price - emacs</title>
+
+    
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet"><link rel="stylesheet" type="text/css" href="/css/style.3924c953d2259a0f0beef52fc023daabdac50a4f62f4446859e57153d998e5b0.css" integrity="sha256-OSTJU9Ilmg8L7vUvwCPaq9rFCk9i9ERoWeVxU9mY5bA=">
+<link rel="stylesheet" type="text/css" href="/css/monokai-sublime.9.15.8.min.91376415864fdd3a92be524052267afece4bdb1bb8c6c754f5e60c5ac28e93be.css" integrity="sha256-kTdkFYZP3TqSvlJAUiZ6/s5L2xu4xsdU9eYMWsKOk74=">
+<link rel="stylesheet" type="text/css" href="/css/icons.f72c0103ff9598115ab2a76351494b950570479ce3f1795fec13fc62e4185dcf.css" integrity="sha256-9ywBA/&#43;VmBFasqdjUUlLlQVwR5zj8Xlf7BP8YuQYXc8=">
+<link rel="stylesheet" type="text/css" href="/css/refresh.ccfd23f8053a1571a3e474a6877f42a6a1924c6bbf1b64c7704b49a0353b4650.css" integrity="sha256-zP0j&#43;AU6FXGj5HSmh39CpqGSTGu/G2THcEtJoDU7RlA=">
+<link rel="stylesheet" type="text/css" href="/css/devicon.min.149016fbf45c8bc157d6f55ce3ee875feaa3f90446bf7d151fbc16a9f21a8859.css" integrity="sha256-FJAW&#43;/Rci8FX1vVc4&#43;6HX&#43;qj&#43;QRGv30VH7wWqfIaiFk=">
+    
+
+  </head>
+  <body>
+     
+
+    <div id="preloader">
+      <div id="status"></div>
+    </div><nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+
+      
+      
+      
+      <a class="navbar-item">
+        <div class="menu-icon-wrapper left-menu-icon-wrapper" style="visibility: visible;">
+          <svg width="1000px" height="1000px">
+            <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+            <path class="path2" d="M 300 500 L 700 500"></path>
+            <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+          </svg>
+          <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+        </div>
+        <div class="navbar-item left-menu-icon-wrapper">
+          Tags
+        </div>
+      </a>
+
+      <div class="navbar-item is-expanded"></div>
+      <a class="navbar-item is-hidden-desktop">  
+        <div data-target="navbar-menu" class="navbar-item right-menu-icon-wrapper is-hidden-desktop">
+          Menu
+        </div>
+        <div data-target="navbar-menu" class="menu-icon-wrapper right-menu-icon-wrapper" style="visibility: visible;">
+          <svg width="1000px" height="1000px">
+            <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+            <path class="path2" d="M 300 500 L 700 500"></path>
+            <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+          </svg>
+          <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+        </div>
+      </a>
+    </div><div id="navbar-menu" class="navbar-menu is-static">
+      
+      <div class="navbar-end">
+        <a href="/posts/" class="navbar-item is-secondary">Posts</a><a href="/post/" class="navbar-item is-secondary">Posts</a><a href="/publication/" class="navbar-item is-secondary">Publications</a><a href="/talk/" class="navbar-item is-secondary">Recent &amp; Upcoming Talks</a>
+        
+        
+        <div class="navbar-item">
+          <div class="dropdown is-hoverable is-centered" >
+            <div class="dropdown-trigger" >
+              <button class="button is-active" 
+              style="color:#999;  
+                    border-color:#F39200; 
+                    box-shadow: none ;
+                    padding-right: 0.625em ; 
+                    padding-left: 0.625em  ;
+                    ">
+
+                <span>EN</span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu" role="menu" style="min-width: 0em;">
+              <div class="dropdown-content" style="padding: 0rem;">
+                
+                  
+                
+                  
+                <a href="/ru/" class="dropdown-item" 
+                style="text-align: center; color:#999; padding-right: 0.82em !important ; padding-left: 0.82em !important;">
+                  RU
+                </a>
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+<nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
+  <div class="container">
+      <div class="navbar-brand">
+  
+        
+        
+        
+        <a class="navbar-item">
+          <div class="menu-icon-wrapper left-menu-icon-wrapper" style="visibility: visible;">
+            <svg width="1000px" height="1000px">
+              <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+              <path class="path2" d="M 300 500 L 700 500"></path>
+              <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+            </svg>
+            <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+          </div>
+          <div class="navbar-item left-menu-icon-wrapper">
+            Tags
+          </div>
+        </a>
+  
+        <div class="navbar-item is-expanded"></div>
+        <a class="navbar-item is-hidden-desktop">  
+          <div data-target="cloned-navbar-menu" class="navbar-item right-menu-icon-wrapper is-hidden-desktop">
+            Menu
+          </div>
+          <div data-target="cloned-navbar-menu" class="menu-icon-wrapper right-menu-icon-wrapper" style="visibility: visible;">
+            <svg width="1000px" height="1000px">
+              <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+              <path class="path2" d="M 300 500 L 700 500"></path>
+              <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+            </svg>
+            <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+          </div>
+        </a>
+      </div><div id="cloned-navbar-menu" class="navbar-menu is-static">
+        <div class="navbar-end"><a href="/posts/" class="navbar-item is-secondary">Posts</a><a href="/post/" class="navbar-item is-secondary">Posts</a><a href="/publication/" class="navbar-item is-secondary">Publications</a><a href="/talk/" class="navbar-item is-secondary">Recent &amp; Upcoming Talks</a>
+          
+          
+          <div class="navbar-item">
+            <div class="dropdown is-hoverable is-centered" >
+              <div class="dropdown-trigger" >
+                <button class="button is-active" 
+                style="color:#999;  
+                      border-color:#F39200; 
+                      box-shadow: none ;
+                      padding-right: 0.625em ; 
+                      padding-left: 0.625em  ;
+                      ">
+  
+                  <span>EN</span>
+                </button>
+              </div>
+              <div class="dropdown-menu" id="dropdown-menu" role="menu" style="min-width: 0em;">
+                <div class="dropdown-content" style="padding: 0rem;">
+                  
+                    
+                  
+                    
+                  <a href="/ru/" class="dropdown-item" 
+                  style="text-align: center; color:#999; padding-right: 0.82em !important ; padding-left: 0.82em !important;">
+                    RU
+                  </a>
+                  
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        
+        </div>
+      </div>
+    </div>
+  </nav>
+<section class="section is-medium">
+        <div class="container">
+          
+            
+              <h1 class="title section-title">emacs</h1>
+              <h5 class="subtitle is-5 is-muted"></h5>
+              <div class="divider"></div>        
+              <div class="section is-small">
+                <div class="columns">
+                    <div class="column is-4"><div class="box">
+      <figure class="image is-3by2">
+        <a href="/2016/12/11/org-mode-run-code-live-in-a-reveal-slideshow-with-klipse/">
+        
+          <img src="/images/default_summary_hu2be732aee21a2469ead3fe1f2df8caca_2088687_600x0_resize_q75_lanczos.jpg" alt="">
+        
+        </a>
+      </figure>
+      <h3 class="title is-5 refresh-summary-title">
+        Org-Mode: Run Code Live in a Reveal slideshow with Klipse
+      </h3>
+      <p class="refresh-summary">Table of Contents   The Basics: ox-reveal   Running Code in Klipse   Add Support for Third-Party Plugins   Rewrite org-reveal-src-block      Slide-based presentations are pretty useful and in any case de rigeur for contemporary lecturing, but it can be a REAL pain to switch form a slideshow to a code editor and then back again to a web browser to show the results of the code… Much better would be to have all the code embedded directly in your presentation. This also makes it easier to check over your code when you’re rewriting your lectures from year to year, and also helps with literate programming.
+It turns out that there are actually several solutions for doing this with Org. They are:
+ directly embed JSBin in your slideshow   Use RevealEditor for HTML, CSS, and JS that you want to render in a web page.   Use the new klipse plugin for code that you want to evaluate (rather than render)   Each method has advantages and disadvantages, and each requires a certain amount of setup in your config. In this post I’m talking about using Klipse because I’ve bene able to make it actually work!
+The Basics: ox-reveal   To start with, you will need to install org-reveal as well as its dependencies (org-mode and reveal.js). I install org-reveal from github instead of from ELPA, in part because I need to make modifications to both it and reveal.js. &amp;lt;p&amp;gt; Follow the detailed instructions until you have a working export to reveal. Make sure that you have activated the &amp;amp;ldquo;highlight&amp;amp;rdquo; plugin in &amp;lt;code&amp;gt;org-reveal-plugins&amp;lt;/code&amp;gt;, which you can do with &amp;lt;code&amp;gt;M-x customize-variable org-reveal-plugins&amp;lt;/code&amp;gt;. None of the tricks described below will work without that plugin! &amp;lt;/p&amp;gt;    Running Code in Klipse   Klipse is a web repl that supports a handful of languages, and can be extended to support more. Code is embedded in a CodeMirror instance and evaluated as you type (pretty cool). &amp;lt;p&amp;gt; Unfortunately CodeMirror and Reveal don&amp;amp;rsquo;t get along very well so it&amp;amp;rsquo;s not completely straightforward to embed Klipse directly into a reveal.js slideshow. The workaround is to replace a code-snippet tag with an &amp;lt;code&amp;gt;iframe&amp;lt;/code&amp;gt; element containing the code in a form that klipse can read. Klipse&amp;amp;rsquo;s author @viebel has kindly provided an example of how to do this &amp;lt;a href=&amp;quot;http://viebel.github.io/klipse/examples/klipse_reveal.js&amp;quot;&amp;gt;here&amp;lt;/a&amp;gt;. &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; The next trick is to set up org-reveal to use this snippet. After messing around for a bit it became obvious that org-mode&amp;amp;rsquo;s standard &amp;lt;a href=&amp;quot;http://orgmode.org/worg/exporters/filter-markup.html&amp;quot;&amp;gt;Export filters&amp;lt;/a&amp;gt; were going to be pretty hard to use, so I decided to rewrite some of &amp;lt;code&amp;gt;org-reveal&amp;lt;/code&amp;gt;&amp;amp;rsquo;s functionality: &amp;lt;/p&amp;gt;   Add Support for Third-Party Plugins  &amp;lt;div class=&amp;quot;outline-text-3&amp;quot; id=&amp;quot;text-org45d7e1d&amp;quot;&amp;gt; &amp;lt;p&amp;gt; Org-reveal has excellent support for reveal.js&amp;amp;rsquo;s &amp;amp;ldquo;build-in&amp;amp;rdquo; plugins, but using third-party plugins requires you to use the &amp;lt;code&amp;gt;or-reveal~postamble&amp;lt;/code&amp;gt; variable~, which didn&amp;amp;rsquo;t seem right to me. So I &amp;lt;a href=&amp;quot;https://github.com/yjwen/org-reveal/pull/256&amp;quot;&amp;gt;added a defcustom&amp;lt;/a&amp;gt; and a few small generic tricks to support loading third-party plugins. Then I downloaded @viebel&amp;amp;rsquo;s &amp;lt;code&amp;gt;klipse_reveal.js&amp;lt;/code&amp;gt; script and saved it to the &amp;lt;code&amp;gt;plugin&amp;lt;/code&amp;gt; folder of my &amp;lt;code&amp;gt;reveal.js&amp;lt;/code&amp;gt; installation. Finally, I set org-reveal-external-plugins to &amp;lt;code&amp;gt;((klipse . &amp;quot;{src: &#39;%splugin/klipse_reveal.js&#39;}&amp;quot;))&amp;lt;/code&amp;gt; using the customize-variable interface. &amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt;   Rewrite org-reveal-src-block  &amp;lt;div class=&amp;quot;outline-text-3&amp;quot; id=&amp;quot;text-org35a8a7f&amp;quot;&amp;gt; &amp;lt;p&amp;gt; At this point, the plugin loads, but it couldn&amp;amp;rsquo;t find the exported src blocks. As I mentioned above, I was unable to find a satisfactory solution using export filters, so in the end I just rewrote the function &amp;lt;code&amp;gt;org-reveal-src-block&amp;lt;/code&amp;gt;, which ox-reveal uses to process src blocks. I decided to keep the original &amp;lt;code&amp;gt;&amp;amp;lt;pre&amp;amp;gt;&amp;amp;lt;code&amp;amp;gt;&amp;lt;/code&amp;gt; syntax and simply add on an additional &amp;lt;code&amp;gt;&amp;amp;lt;klipse-snippet&amp;lt;/code&amp;gt; block, using the &amp;lt;code&amp;gt;display:none&amp;lt;/code&amp;gt; CSS property for the old code block. This ensures compatibility with the reveal-editor solution (which isn&amp;amp;rsquo;t currently working for me, but offers some other features. &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; Here&amp;amp;rsquo;s my modified function: &amp;lt;/p&amp;gt; &amp;lt;div class=&amp;quot;org-src-container&amp;quot;&amp;gt; &amp;lt;pre class=&amp;quot;src src-emacs-lisp&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;color: #8c8c8c;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #00ffff;&amp;quot;&amp;gt;defun&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #87cefa;&amp;quot;&amp;gt;org-reveal-src-block&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #8c8c8c;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;src-block contents info&amp;lt;span style=&amp;quot;color: #8c8c8c;&amp;quot;&amp;gt;)&amp;lt;/span&amp;gt; &amp;ldquo;Transcode a SRC-BLOCK element from Org to Reveal. CONTENTS holds the contents of the item. INFO is a plist holding contextual information.&amp;quot; (if (org-export-read-attribute :attr_html src-block :textarea) (org-html&amp;ndash;textarea-block src-block) (let* ((use-highlight (org-reveal&amp;ndash;using-highlight.js info)) (lang (org-element-property :language src-block)) (caption (org-export-get-caption src-block)) (code (if (not use-highlight) (org-html-format-code src-block info) (cl-letf (((symbol-function &amp;lsquo;org-html-htmlize-region-for-paste) #&amp;lsquo;buffer-substring)) (org-html-format-code src-block info)))) (frag (org-export-read-attribute :attr_reveal src-block :frag)) (code-attribs (or (org-export-read-attribute :attr_reveal src-block :code_attribs) &amp;quot;&amp;quot;)) (label (let ((lbl (org-element-property :name src-block))) (if (not lbl) &amp;quot;&amp;quot; (format &amp;rdquo; id=&amp;quot;%s&amp;quot;&amp;quot; lbl)))) (klipsify (and (assoc &amp;lsquo;klipse org-reveal-external-plugins) (member lang &amp;lsquo;(&amp;ldquo;javascript&amp;rdquo; &amp;ldquo;ruby&amp;rdquo; &amp;ldquo;scheme&amp;rdquo; &amp;ldquo;clojure&amp;rdquo; &amp;ldquo;php&amp;rdquo;)))) ) (if (not lang) (format &amp;quot;&amp;lt;pre %s%s&amp;gt;\n%s&amp;lt;/pre&amp;gt;&amp;quot; (or (frag-class frag info) &amp;quot; class=&amp;quot;example&amp;quot;&amp;quot;) label code) (format &amp;quot;&amp;lt;div %sclass=&amp;quot;org-src-container&amp;quot;&amp;gt;\n%s%s\n&amp;lt;/div&amp;gt;%s&amp;quot; (if klipsify &amp;ldquo;style=&amp;quot;display:none;&amp;quot; &amp;ldquo; &amp;quot;&amp;quot;) (if (not caption) &amp;quot;&amp;quot; (format &amp;quot;&amp;lt;label class=&amp;quot;org-src-name&amp;quot;&amp;gt;%s&amp;lt;/label&amp;gt;&amp;quot; (org-export-data caption info))) (if use-highlight (format &amp;quot;\n&amp;lt;pre%s%s&amp;gt;&amp;lt;code class=&amp;quot;%s&amp;quot; %s&amp;gt;%s&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;quot; (or (frag-class frag info) &amp;quot;&amp;quot;) label lang code-attribs code) (format &amp;quot;\n&amp;lt;pre %s%s&amp;gt;%s&amp;lt;/pre&amp;gt;&amp;quot; (or (frag-class frag info) (format &amp;rdquo; class=&amp;quot;src src-%s&amp;quot;&amp;quot; lang)) label code) ) (if klipsify (format &amp;quot;&amp;lt;klipse-snippet data-language=&amp;quot;%s&amp;quot;&amp;gt;%s&amp;lt;/klipse-snippet&amp;gt;&amp;quot; lang code) &amp;quot;&amp;quot;))))))  
+ &amp;lt;p&amp;gt; As you can see, it now decides whether or not to &amp;amp;ldquo;klipsify&amp;amp;rdquo; the code aafter checking if the klipse plugin is loaded, and if it supports the language of the src block. Klipsifying code just means hiding the original code block and instead showing the klipse-snippet, which will be replaced by an iframe in javascript. I guess I could just do that work right in this same elisp function! Oh well, maybe next time. &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; So far, this seems to work great, though I don&amp;amp;rsquo;t have access to the DOM of the larger document ,which is sort of a drag. &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; &amp;lt;b&amp;gt;[UPDATE &amp;lt;span class=&amp;quot;timestamp-wrapper&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;timestamp&amp;quot;&amp;gt;2016-12-11 Sun&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;]:&amp;lt;/b&amp;gt; However, @viebel pointed out to me that you can access the parent frame with: &amp;lt;/p&amp;gt; &amp;lt;div class=&amp;quot;org-src-container&amp;quot;&amp;gt; &amp;lt;pre class=&amp;quot;src src-js&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;color: #00ffff;&amp;quot;&amp;gt;var&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #eedd82;&amp;quot;&amp;gt;d&amp;lt;/span&amp;gt; = parent.document  
+ &amp;lt;p&amp;gt; Pretty cool! Note: klipse will hang if you try to type this in directly. It will only work if you pass the completed line in as part of the initial code block. &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; Also, this is not a solution that works for rendering HTML pages. For this we need something else. I would like to use RevealEditor, but am not quite there yet (can&amp;amp;rsquo;t get its code to load properly). So for now I&amp;amp;rsquo;m embedding a JSBin instance with preoaded code &amp;amp;#x2013; I just add an iframe tag directly in my org-mode file. It&amp;amp;rsquo;s not a s pretty or robust, and I can&amp;amp;rsquo;t see my code when I&amp;amp;rsquo;m writing, which is too bad, but it&amp;amp;rsquo;s still pretty useful. &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; I would really like to hear what other people think! I&amp;amp;rsquo;d especially like to hear about alternatives or improvements. &amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt;   </p> 
+      <div class="action has-text-right">
+        <a href="/2016/12/11/org-mode-run-code-live-in-a-reveal-slideshow-with-klipse/" class="button is-primary">
+                Read more
+            </a>
+      </div>
+    </div>
+  </div>
+<div class="column is-4"><div class="box">
+      <figure class="image is-3by2">
+        <a href="/2016/11/30/using-mu4e-and-org-mime-together/">
+        
+          <img src="/images/default_summary_hu2be732aee21a2469ead3fe1f2df8caca_2088687_600x0_resize_q75_lanczos.jpg" alt="">
+        
+        </a>
+      </figure>
+      <h3 class="title is-5 refresh-summary-title">
+        Using mu4e and org-mime together
+      </h3>
+      <p class="refresh-summary">I use org-mime in my grading system, to email my comments on student papers. One frustrating element has always been that messages sent by org-mime were never saved to my sent-mail folder. I realized just recently that this was because I had failed to set emacs’s mail-user-agent, which I now do in my initial mu4e setup:
+(setq mail-user-agent &#39;mu4e-user-agent)
+Now org-mime attempts to send messages using mu4e’s internal compose functions. Unfortunately some of the information passed by org-mime is in a format that mu4e~compose-mail doesn’t like, so I had to make some very slight changes to that function:
+diff --git a/mu4e/mu4e-compose.el b/mu4e/mu4e-compose.el index a24e74a..0c7ec3c 100644 --- a/mu4e/mu4e-compose.el &#43;&#43;&#43; b/mu4e/mu4e-compose.el @@ -780,7 &#43;780,14 @@draft message.&#34; ;; add any other headers specified (when other-headers -(message-add-header other-headers)) &#43;(dolist (h other-headers other-headers) &#43;(if (symbolp (car h)) (setcar h (symbol-name (car h)))) &#43;(message-add-header (concat (capitalize (car h)) &amp;ldquo;: &amp;quot; (cdr h) &amp;ldquo;\n&amp;rdquo; )) &#43;) &#43;;; (dolist (h other-headers) &#43;;; (message-add-header h) ) &#43;;;(message-add-header other-headers) &#43;)
+;; yank message (if (bufferp yank-action) 
+ The commit is in its my org-mu4e-compose branch, contianing a couple of other fixes, and in its own branch on github, if prefer to pull from there. A patch has been submitted, we’ll see what dcjb thinks of it.
+With these changes, org-mime now works perfectly for me.
+</p> 
+      <div class="action has-text-right">
+        <a href="/2016/11/30/using-mu4e-and-org-mime-together/" class="button is-primary">
+                Read more
+            </a>
+      </div>
+    </div>
+  </div>
+<div class="column is-4"><div class="box">
+      <figure class="image is-3by2">
+        <a href="/2016/11/18/sending-html-mail-with-mu4e/">
+        
+          <img src="/images/default_summary_hu2be732aee21a2469ead3fe1f2df8caca_2088687_600x0_resize_q75_lanczos.jpg" alt="">
+        
+        </a>
+      </figure>
+      <h3 class="title is-5 refresh-summary-title">
+        Sending HTML Mail with mu4e
+      </h3>
+      <p class="refresh-summary">John Kitchin has a terrific post detailing some configuration/improvements to mu4e that make it easier to send html mail. This original post is really great, but I ran into quite a bit of trouble following this advice.
+He uses a cool feature of mu4e, org-mu4e-compose-org-mode, which toggles the major mode of the message buffer between org-mode (when you’re in the message body) and mu4e-compose-mode (when you’re in the headers area). With a couple of custom functions, it’s easy to convert the org text to html and send a mime-multipart email from Emacs, which is quite convenient. If you add org-mu4e-compose-org-mode as a hook to mu4e-compose-mode, you can compose in html by default, which is great.
+Unfortunately, org-mu4e-compose-org-mode is deprecated on account of its instability, and while John doesn’t have any problems with it, for me it was unworkable. It turns out that this “mode” isn’t really a standard emacs mode at all – instead, it’s a sly workaround that trickily adds an internal function to the ’post-command-hook in the draft buffer and switches major modes based on position. This is a neat hack, but since the function invokes the major modes directly, setting thefunction as a hook to mu4e-compose-mode leads to some funky, inadvertent looping effects. On my machine, for some reason, those effects send the underlying message-send function crazy, and instead of sending directly, I get this amazingly annoying question:
+ Already sent message via mail; resend? (y or n) y
+ On its own, that is already annoying; but worse, the sent message doesn’t get saved to my Sent folder. Instead, it’s lost completely.
+Anyway, after fruitless hours of paying around with this, I realized that the problem could be fixed by adding a new hook to the mu4e compose functions (rather than to the compose mode). I’ve submitted those changes as a pull request and hopefully they will be accepted; if not, though, feel free to navigate back to my branch and pull/install mu from there. With those small changes, I now have frictionless html email working very quickly within emacs, using this small bit of code. It is at least 90% stolen:
+;; this is stolen from John but it didn&#39;t work for me until I ;; made those changes to mu4e-compose.el (defun htmlize-and-send () &#34;When in an org-mu4e-compose-org-mode message, htmlize and send it.&#34; (interactive) (when (member &#39;org~mu4e-mime-switch-headers-or-body post-command-hook) (org-mime-htmlize) (org-mu4e-compose-org-mode) (mu4e-compose-mode) (message-send-and-exit))) ;; This overloads the amazing C-c C-c commands in org-mode with one more function ;; namely the htmlize-and-send, above. (add-hook &amp;lsquo;org-ctrl-c-ctrl-c-hook &amp;lsquo;htmlize-and-send t)
+;; Originally, I set the `mu4e-compose-mode-hook&amp;rsquo; here, but ;; this new hook works much, much better for me.  (add-hook &amp;lsquo;mu4e-compose-post-hook (defun do-compose-stuff () &amp;ldquo;My settings for message composition.&amp;quot; (org-mu4e-compose-org-mode))) 
+ It feels great to have gotten this far. There are still some small things I’d like to be able to improve; and I think I would like to add a few wrapper functions and keybindings to my setup, but for now I’m pretty efficient.
+Still missing:
+ a better HTML viewing interface! right now, html mails render as mostly text &amp;#x2013; it would be nice to have a rendered html message by default in emacs. This is an issue several times a day when I get promotional emails from organizations I work with &amp;#x2013; usually the html part is really important. I can access these in the browser but it&amp;rsquo;s comparatively awkward.   a way to forward these html emails to someone intact &amp;#x2013; right now, the html parts are discarded. No idea how hard it would be to do this.   Thanks John and Dirk-Jan for these great tools!
+</p> 
+      <div class="action has-text-right">
+        <a href="/2016/11/18/sending-html-mail-with-mu4e/" class="button is-primary">
+                Read more
+            </a>
+      </div>
+    </div>
+  </div>
+
+                          </div>
+                          <div class="columns">
+                            <div class="column is-4"><div class="box">
+      <figure class="image is-3by2">
+        <a href="/posts/2015-11-22-pdf-tools-post-amended/">
+        
+          <img src="/images/default_summary_hu2be732aee21a2469ead3fe1f2df8caca_2088687_600x0_resize_q75_lanczos.jpg" alt="">
+        
+        </a>
+      </figure>
+      <h3 class="title is-5 refresh-summary-title">
+        PDF Tools Post amended
+      </h3>
+      <p class="refresh-summary">I’ve updated my older post on PDF Tools with slightly cleaner code, for anyone who’s using this method of extracting annotations!
+</p> 
+      <div class="action has-text-right">
+        <a href="/posts/2015-11-22-pdf-tools-post-amended/" class="button is-primary">
+                Read more
+            </a>
+      </div>
+    </div>
+  </div>
+<div class="column is-4"><div class="box">
+      <figure class="image is-3by2">
+        <a href="/2015/11/22/elfeed/">
+        
+          <img src="/images/default_summary_hu2be732aee21a2469ead3fe1f2df8caca_2088687_600x0_resize_q75_lanczos.jpg" alt="">
+        
+        </a>
+      </figure>
+      <h3 class="title is-5 refresh-summary-title">
+        Elfeed
+      </h3>
+      <p class="refresh-summary">I’ve become pretty addicted to the Elfeed RSS reader. However, I haven’t made much use of its tagging capabilities until recently. I noticed that, whenever I thought I might want to keep track of the content of a blog, I would mark it “unread” after I’d read it, to make sure I didn’t lose it in the deep mists of time. This worked for the first 4 months or so, but now my list of unreads is growing enormously. So I wanted to have a “starred” tag which would do this work for me. I also wanted a keybinding that would apply the tag right away.
+The code below does that for me.
+(eval-after-load &#39;elfeed-search &#39;(define-key elfeed-search-mode-map (kbd &#34;&amp;lt;tab&amp;gt;&#34;) &#39;mwp/elfeed-star)) (defun mwp/elfeed-star () &amp;ldquo;add a star tag to marked&amp;rdquo;
+(interactive) (elfeed-search-tag-all (list starred)) )
+(defun mwp/elfeed-star () &amp;ldquo;Apply TAG to all selected entries.&amp;quot; (interactive ) (let* ((entries (elfeed-search-selected)) (tag (intern &amp;ldquo;starred&amp;rdquo;)))
+&amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #a020f0;&amp;quot;&amp;gt;cl-loop&amp;lt;/span&amp;gt; for entry in entries do &amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;elfeed-tag entry tag&amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;))&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;mapc #&#39;elfeed-search-update-entry entries&amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;)&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #a020f0;&amp;quot;&amp;gt;unless&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;use-region-p&amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;)&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;forward-line&amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;))))&amp;lt;/span&amp;gt;  
+ I also wanted a visual cue to tell me the tagging had been successful – now easy to do, thanks to a very recent commit. I filed an issue as a question – can I do this? – and within 24 hours skeeto had added the functionality. First you have to define an appropriate face for the tag:
+(defface elfeed-search-starred-title-face &#39;((t :foreground &#34;#f77&#34;)) &#34;Marks a starred Elfeed entry.&#34;)   And then simply add an entry to elfeed-search-face-alist. You can do this via Customize, or follow the instructions in the README, which instruct you to (push &#39;(starred elfeed-search-starred-title-face) elfeed-search-face-alist).
+All of this works great for me, and simplifies things quite a bit.
+</p> 
+      <div class="action has-text-right">
+        <a href="/2015/11/22/elfeed/" class="button is-primary">
+                Read more
+            </a>
+      </div>
+    </div>
+  </div>
+<div class="column is-4"><div class="box">
+      <figure class="image is-3by2">
+        <a href="/2015/11/11/note-taking-with-pdf-tools/">
+        
+          <img src="/images/default_summary_hu2be732aee21a2469ead3fe1f2df8caca_2088687_600x0_resize_q75_lanczos.jpg" alt="">
+        
+        </a>
+      </figure>
+      <h3 class="title is-5 refresh-summary-title">
+        Note Taking with PDF Tools
+      </h3>
+      <p class="refresh-summary">NOTE: This post has been modified as of 2015-11-22 Sun  – the new code is a little cleaner, and I think the discussion a little fuller.
+Almost all of my job-related reading is now done on a screen. There are still disadvantages – I find it much harder to concentrate when reading online – but in other ways it is markedly more convenient.
+In particular, it is now much easier to assemble quotations from sources; and now that I’ve found PDF Tools, it has become even easier. I’ve just started to use it to extract annotations from my PDF’s, and it works much better than the lousy command-line hack I was using previously.
+As we’re mid-semester, most of my reading is for classes I teach. My current workflow is as follows:
+ Assemble the relevant readings in a Dropbox-synced directory (ClassName/Readings)   Using Repligo Reader (apparently no longer available in the app store?), highlight the passages I&amp;rsquo;m interested in.   execute code block (see below) to insert org headings with all highlights from one or more pdfs   Assemble reveal.js lecture presentation around those highlights, using org-reveal or Pandoc.   Activating PDF Tools   Begin by installing pdf-tools and org-pdfview from ELPA with package-list~packages or package-install. &amp;lt;p&amp;gt; Then make sure they are activated by adding these lines in your init file: &amp;lt;/p&amp;gt; &amp;lt;div class=&amp;quot;org-src-container&amp;quot;&amp;gt; &amp;lt;pre class=&amp;quot;src src-emacs-lisp&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;pdf-tools-install&amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;)&amp;lt;/span&amp;gt;  (eval-after-load &amp;lsquo;org &amp;lsquo;(require &amp;lsquo;org-pdfview)) (add-to-list &amp;lsquo;org-file-apps &amp;lsquo;(&amp;quot;\.pdf\&#39;&amp;quot; . org-pdfview-open)) (add-to-list &amp;lsquo;org-file-apps &amp;lsquo;(&amp;quot;\.pdf::\([[:digit:]]&#43;\)\&#39;&amp;quot; . org-pdfview-open))  
+  Switching to PDF Tools for annotating and extracting PDF&amp;rsquo;s   Last month Penguim proposed some changes in a pull request, that export annotations as a set of org headlines. It&amp;rsquo;s potentially very interesting but not quite what I want to do, so I modified this code. pdf-annot-markups-as-org-text extracts the text of an annotation (stored as the subject attribute in an alist), and also generates a link back to the page in the pdf. mwp/pdf-multi-extract is just a helper function that makes it easier to construct elisp source blocks the way I&amp;rsquo;m used to doing: &amp;lt;div class=&amp;quot;org-src-container&amp;quot;&amp;gt; &amp;lt;pre class=&amp;quot;src src-emacs-lisp&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;modified from https://github.com/politza/pdf-tools/pull/133 &amp;lt;/span&amp;gt;  (defun mwp/pdf-multi-extract (sources) &amp;ldquo;Helper function to print highlighted text from a list of pdf&amp;rsquo;s, with one org header per pdf,  and links back to page of highlight.&amp;quot; (let ( (output &amp;quot;&amp;quot;)) (dolist (thispdf sources) (setq output (concat output (pdf-annot-markups-as-org-text thispdf nil level )))) (princ output)) )
+;; this is stolen from https://github.com/pinguim06/pdf-tools/commit/22629c746878f4e554d4e530306f3433d594a654 (defun pdf-annot-edges-to-region (edges) &amp;ldquo;Attempt to get 4-entry region (LEFT TOP RIGHT BOTTOM) from several edges. We need this to import annotations and to get marked-up text, because annotations are referenced by its edges, but functions for these tasks need region.&amp;quot;
+(let ((left0 (nth 0 (car edges))) (top0 (nth 1 (car edges))) (bottom0 (nth 3 (car edges))) (top1 (nth 1 (car (last edges)))) (right1 (nth 2 (car (last edges)))) (bottom1 (nth 3 (car (last edges)))) (n (safe-length edges))) ;; we try to guess the line height to move ;; the region away from the boundary and ;; avoid double lines (list left0 (&#43; top0 (/ (- bottom0 top0) 2)) right1 (- bottom1 (/ (- bottom1 top1) 2 )))))
+(defun pdf-annot-markups-as-org-text (pdfpath &amp;amp;optional title level) &amp;ldquo;Acquire highligh annotations as text, and return as org-heading&amp;rdquo;
+(interactive &amp;ldquo;fPath to PDF: &amp;ldquo;)
+(let* ((outputstring &amp;quot;&amp;quot;) ;; the text to be returned (title (or title (replace-regexp-in-string &amp;quot;-&amp;quot; &amp;rdquo; &amp;ldquo; (file-name-base pdfpath )))) (level (or level (1&#43; (org-current-level)))) ;; I guess if we&amp;rsquo;re not in an org-buffer this will fail (levelstring (make-string level ?*)) ;; set headline to proper level (annots (sort (pdf-info-getannots nil pdfpath) ;; get and sort all annots &amp;lsquo;pdf-annot-compare-annotations)) ) ;; create the header (setq outputstring (concat levelstring &amp;rdquo; Quotes From &amp;ldquo; title &amp;quot;\n\n&amp;rdquo;)) ;; create heading
+&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;extract text&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;mapc &amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #a020f0;&amp;quot;&amp;gt;lambda&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;annot&amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;)&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;traverse all annotations&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #a020f0;&amp;quot;&amp;gt;if&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;eq &#39;highlight &amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;assoc-default &#39;type annot&amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;))&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #a020f0;&amp;quot;&amp;gt;let*&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;((&amp;lt;/span&amp;gt;page &amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;assoc-default &#39;page annot&amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;))&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;use pdf-annot-edges-to-region to get correct boundaries of highlight&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;real-edges &amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;pdf-annot-edges-to-region &amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;pdf-annot-get annot &#39;markup-edges&amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;)))&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;text &amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #a020f0;&amp;quot;&amp;gt;or&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;assoc-default &#39;subject annot&amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;)&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;assoc-default &#39;content annot&amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;)&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;replace-regexp-in-string &amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot;\n&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot; &amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;pdf-info-gettext page real-edges nil pdfpath&amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;)&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;)&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;))&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;height &amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;nth 1 real-edges&amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;))&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;distance down the page&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;use pdfview link directly to page number&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;linktext &amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;concat &amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot;[[pdfview:&amp;quot;&amp;lt;/span&amp;gt; pdfpath &amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot;::&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;number-to-string page&amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;)&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot;&#43;&#43;&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;number-to-string height&amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;)&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot;][&amp;quot;&amp;lt;/span&amp;gt; title &amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot;]]&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;))&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;)&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #a020f0;&amp;quot;&amp;gt;setq&amp;lt;/span&amp;gt; outputstring &amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;concat outputstring text &amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot; (&amp;quot;&amp;lt;/span&amp;gt; linktext &amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot;, &amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;number-to-string page&amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;)&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot;)\n\n&amp;quot;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;))&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;)))&amp;lt;/span&amp;gt; annots&amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;)&amp;lt;/span&amp;gt; outputstring &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;return the header&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;)&amp;lt;/span&amp;gt;  )  
+  Using in Org with a Source Block   Now it&amp;rsquo;s more or less trivial to quickly generate the org headers using a source block: &amp;lt;pre class=&amp;quot;example&amp;quot;&amp;gt;  #&#43;BEGIN_SRC elisp :results output raw :var level=(1&#43; (org-current-level)) (mwp/pdf-multi-extract &amp;lsquo;( &amp;ldquo;/home/matt/HackingHistory/readings/Troper-becoming-immigrant-city.pdf&amp;rdquo; &amp;ldquo;/home/matt/HackingHistory/readings/historical-authority-hampton.pdf&amp;rdquo;))
+#&#43;END_SRC 
+&amp;lt;p&amp;gt; And the output gives something like &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; #&#43;BEGIN_EXAMPLE &amp;lt;/p&amp;gt;    Quotes From Troper becoming immigrant city   Included in the Greater Toronto Area multiethnic mix are an estimated 450,000 Chinese, 400,000 Italians, and 250,000 African Canadians, the largest component of which are ofCar- ibbean background, although a separate and distinct infusion of Soma- lis, Ethiopians, and other Africans is currently taking place. (Troper becoming immigrant city, 3) &amp;lt;p&amp;gt; Although Toronto is Canada&amp;amp;rsquo;s leading immigrant-receiving centre, city officials have neither a hands-on role in immigrant selection nor an official voice in deciding immigration policy. In Canada, immigration policy and administration is a constitutional responsibility of the fed- eral government, worked out in consultation with the provinces. (&amp;lt;a href=&amp;quot;http://matt.hackinghistory.ca/wp-content/uploads/2015/11/wpid-Troper-becoming-immigrant-city.pdf&amp;quot;&amp;gt;Troper becoming immigrant city&amp;lt;/a&amp;gt;, 4) &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; #&#43;END_EXAMPLE &amp;lt;/p&amp;gt;    Alternative: Temporary buffer with custom link type   An alternative workflow would be to pop to a second, temporary buffer and insert the annotations there; one could do this with a custom link type. PDF-Tools already has a mechanism for listing annotations in a separate buffer, but it&amp;rsquo;s not designed for quick access to all annotations at once. Anyway, here&amp;rsquo;s one way to do this; I&amp;rsquo;m not really using it at the moment. &amp;lt;div class=&amp;quot;org-src-container&amp;quot;&amp;gt; &amp;lt;pre class=&amp;quot;src src-emacs-lisp&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;org-add-link-type &amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot;pdfquote&amp;quot;&amp;lt;/span&amp;gt; &#39;org-pdfquote-open &#39;org-pdfquote-export&amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;)&amp;lt;/span&amp;gt;  (defun org-pdfquote-open (link) &amp;ldquo;Open a new buffer with all markup annotations in an org headline.&amp;quot; (interactive) (pop-to-buffer (format &amp;quot;Quotes from %s&amp;quot; (file-name-base link))) (org-mode) (erase-buffer) (insert (pdf-annot-markups-as-org-text link nil 1)) (goto-char 0) )
+(defun org-pdfquote-export (link description format) &amp;ldquo;Export the pdfview LINK with DESCRIPTION for FORMAT from Org files.&amp;quot; (let* ((path (when (string-match &amp;quot;\(.&#43;\)::.&#43;&amp;quot; link) (match-string 1 link))) (desc (or description link))) (when (stringp path) (setq path (org-link-escape (expand-file-name path))) (cond ((eq format &amp;lsquo;html) (format &amp;quot;&amp;lt;a href=&amp;quot;%s&amp;quot;&amp;gt;%s&amp;lt;/a&amp;gt;&amp;quot; path desc)) ((eq format &amp;lsquo;latex) (format &amp;quot;\href{%s}{%s}&amp;quot; path desc)) ((eq format &amp;lsquo;ascii) (format &amp;quot;%s (%s)&amp;quot; desc path)) (t path)))))
+(defun org-pdfquote-complete-link () &amp;ldquo;Use the existing file name completion for file. Links to get the file name, then ask the user for the page number and append it.&amp;quot;
+(replace-regexp-in-string &amp;quot;^file:&amp;quot; &amp;ldquo;pdfquote:&amp;quot; (org-file-complete-link)))  
+&amp;lt;p&amp;gt; I&amp;amp;rsquo;ve also added two bindings to make highlighting easier from the PDF buffer: &amp;lt;/p&amp;gt; &amp;lt;div class=&amp;quot;org-src-container&amp;quot;&amp;gt; &amp;lt;pre class=&amp;quot;src src-emacs-lisp&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;eval-after-load &#39;pdf-view &#39;&amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;define-key pdf-view-mode-map &amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;kbd &amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot;M-h&amp;quot;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;)&amp;lt;/span&amp;gt; &#39;pdf-annot-add-highlight-markup-annotation&amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;))&amp;lt;/span&amp;gt;  (eval-after-load &amp;lsquo;pdf-view &amp;lsquo;(define-key pdf-view-mode-map (kbd &amp;quot;&amp;lt;tab&amp;gt;&amp;quot;) &amp;lsquo;pdf-annot-add-highlight-markup-annotation))  
+&amp;lt;p&amp;gt; All of this is getting me very close to using Emacs for all my PDF work. I am doing maybe 50% of my PDF work in Emacs instead of on my tablet. It&amp;amp;rsquo;s incredibly convenient, although I still find it a little harder to concentrate on my laptop than on the tablet (for reasons ergonomic, optical, and psychological). Here are the remaining papercuts from my perspective: &amp;lt;/p&amp;gt; &amp;lt;ul class=&amp;quot;org-ul&amp;quot;&amp;gt; &amp;lt;li&amp;gt; Highlighting text with the mouse is more awkward and less intimate than using my fingertip on a laptop. I often find mouse movement a little awkward in Emacs, but pdf-view purposely relies on the mouse for movement (for good reasons). &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; Scrolling in pdf-view is also a bit awkward, and there&amp;amp;rsquo;s no &amp;amp;ldquo;continuous&amp;amp;rdquo; mode as one might find in Evince or acroread. Again, I often find scrolling an issue in Emacs, so this might not be so easy to fix. &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; Finally, the laptop screen is just harder on my eyes than my high-res tablet. pdf-view hasa &amp;amp;ldquo;midnight mode&amp;amp;rdquo; which makes it a little easier to read, but it&amp;amp;rsquo;s not quite enough. &amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; &amp;lt;p&amp;gt; So, for the time being I will probably do much of my reading on the tablet. But for short pieces and for review (e.g., papers that I&amp;amp;rsquo;m reading for the third year in a row in a graduate seminar&amp;amp;#x2026;) PDF Tools is now my main interface. Which is pretty sweet. &amp;lt;/p&amp;gt;    Todo   UPDATE: I would like to extend the pdfview link type (in org-pdfview) to permit me to specify the precise location of an annotation, so I can jump precisely to that part of the page. This has now been done and the code above has been updated to reflect the new syntax. &amp;lt;p&amp;gt; &amp;lt;b&amp;gt;UPDATE:&amp;lt;/b&amp;gt; &amp;lt;del&amp;gt;Also, now that I think about it, it might be interesting to just have a link type that pops up a temporary buffer with all of the annotations; I could then cut and paste the annotations into the master document. This might be even more convenient.&amp;lt;/del&amp;gt; OK, I&amp;amp;rsquo;ve implemented this, see above! &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; &amp;lt;b&amp;gt;Update &amp;lt;span class=&amp;quot;timestamp-wrapper&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;timestamp&amp;quot;&amp;gt;2015-11-22 Sun&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;:&amp;lt;/b&amp;gt; I&amp;amp;rsquo;ve cleaned up some of the code, and added a bit more commentary at the end. &amp;lt;/p&amp;gt;    </p> 
+      <div class="action has-text-right">
+        <a href="/2015/11/11/note-taking-with-pdf-tools/" class="button is-primary">
+                Read more
+            </a>
+      </div>
+    </div>
+  </div>
+
+                          </div>
+                          <div class="columns">
+                            <div class="column is-4"><div class="box">
+      <figure class="image is-3by2">
+        <a href="/2015/07/15/mailing-subtrees-with-attachments/">
+        
+          <img src="/images/default_summary_hu2be732aee21a2469ead3fe1f2df8caca_2088687_600x0_resize_q75_lanczos.jpg" alt="">
+        
+        </a>
+      </figure>
+      <h3 class="title is-5 refresh-summary-title">
+        Mailing subtrees with Attachments
+      </h3>
+      <p class="refresh-summary">This is pretty exciting; I’ve figured out how to quickly send org-mode subtrees as MIME-encoded emails. That means that, essentially, I can write in org, as plain text, and very quickly export to HTML, add attachments, and send. The exciting part about this for me is that it should streamline my communications with students, while also letting me stay in Org and keep my records in order. Let’s walk through the process.
+Use-case   For the moment, I still use Thunderbird as my primary MUA. It&amp;rsquo;s pretty easy to use, minimal configuration compared to all things Emacs, and if something goes wrong with it I don&amp;rsquo;t have to quit Emacs (!), just Thunderbird. &amp;lt;p&amp;gt; In some cases, though, Thunderbird makes for an awkward workflow. That&amp;amp;rsquo;s certainly the case for grading, whih has many, poorly-integrated elements. To mark an assignment I need to: &amp;lt;/p&amp;gt; &amp;lt;ul class=&amp;quot;org-ul&amp;quot;&amp;gt; &amp;lt;li&amp;gt; log in to Blackboard (in Firefox; I wonder if I could do that in Emacs?) &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; download the set of student papers (one at a time, 2 clicks per paper) to &amp;lt;code&amp;gt;Downlads&amp;lt;/code&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; move papers to a directory (usually ~/COURSENAME/Grading/ASSIGNMENTNAME ) &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; Read papers in LigreOffice, comment inline &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; record mark in Libreoffice Calc spreadsheet &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; email paper back to student with comments &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; upload marks back into Blackboard &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; find a place to archive the student paper in case I need it later, e.g. for a contested grade. &amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; &amp;lt;p&amp;gt; The while process basically sucks. I spend maybe 20% of my time fussing with paths and mouse clicks and email addresses. So I am experimenting with moving as much of this process into Emacs. So far, I don&amp;amp;rsquo;t think there&amp;amp;rsquo;s any way at all to bulk-download the papers &amp;amp;#x2013; that sucks, but I can live with it I guess (I have to!). So I start the optimization at the point where I have all my papers ready to go in a subdir. &amp;lt;/p&amp;gt;    Org-mime   Org-mime is the library that allows org buffers and other elements to be quickly converted to HTML and prepared for multi-part messaging. Load it and set it up (see http://orgmode.org/worg/org-contrib/org-mime.html): &amp;lt;div class=&amp;quot;org-src-container&amp;quot;&amp;gt; &amp;lt;pre class=&amp;quot;src src-emacs-lisp&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;enable HTML email from org&amp;lt;/span&amp;gt;  (require &amp;lsquo;org-mime) ;; setup org-mime for wanderlust ;; (setq org-mime-library &amp;lsquo;semi) ;; or for gnus/message-mode (setq org-mime-library &amp;lsquo;mml)
+;; easy access to htmlize in message-mode (add-hook &amp;lsquo;message-mode-hook (lambda () (local-set-key &amp;quot;\C-c\M-o&amp;quot; &amp;lsquo;org-mime-htmlize)))
+;; uncomment this to use the org-mome native functions for htmlizing. ;; (add-hook &amp;lsquo;org-mode-hook ;; (lambda () ;; (local-set-key &amp;ldquo;\C-c\M-o&amp;rdquo; &amp;lsquo;org-mime-org-buffer-htmlize)))
+;; uncomment to displyay src blocks with a dark background ;; (add-hook &amp;lsquo;org-mime-html-hook ;; (lambda () ;; (org-mime-change-element-style ;; &amp;ldquo;pre&amp;rdquo; (format &amp;ldquo;color: %s; background-color: %s; padding: 0.5em;&amp;quot; ;; &amp;quot;#E6E1DC&amp;rdquo; &amp;ldquo;#232323&amp;rdquo;))))
+;; pretty blockquotes (add-hook &amp;lsquo;org-mime-html-hook (lambda () (org-mime-change-element-style
+ &amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot;blockquote&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot;border-left: 2px solid gray; padding-left: 4px;&amp;quot;&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;)))&amp;lt;/span&amp;gt;   
+  Fix htmlization   Upstream org-mime-htmlize unfortunately can&amp;rsquo;t be called uninteractively (bummer!), so we have to rewrite it to make programmatic calls work properly. I found the solution Emacs Stackexchange. &amp;lt;div class=&amp;quot;org-src-container&amp;quot;&amp;gt; &amp;lt;pre class=&amp;quot;src src-emacs-lisp&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #a020f0;&amp;quot;&amp;gt;defun&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #0000ff;&amp;quot;&amp;gt;org-mime-htmlize&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #228b22;&amp;quot;&amp;gt;&amp;amp;optional&amp;lt;/span&amp;gt; arg&amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;)&amp;lt;/span&amp;gt;  &amp;ldquo;Export a portion of an email body composed using &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #008b8b;&amp;quot;&amp;gt;mml-mode&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&#39; to&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;html using org-mode&amp;rsquo;. If called with an active region only export that region, otherwise export the entire body.&amp;quot; (interactive &amp;ldquo;P&amp;rdquo;) (require &amp;lsquo;ox-org) (require &amp;lsquo;ox-html) (let* ((region-p (org-region-active-p)) (html-start (or (and region-p (region-beginning)) (save-excursion (goto-char (point-min)) (search-forward mail-header-separator) (&#43; (point) 1)))) (html-end (or (and region-p (region-end)) ;; TODO: should catch signature&amp;hellip; (point-max))) (raw-body (concat org-mime-default-header (buffer-substring html-start html-end))) (tmp-file (make-temp-name (expand-file-name &amp;ldquo;mail&amp;rdquo; temporary-file-directory))) (body (org-export-string-as raw-body &amp;lsquo;org t)) ;; because we probably don&amp;rsquo;t want to export a huge style file (org-export-htmlize-output-type &amp;lsquo;inline-css) ;; makes the replies with &amp;ldquo;&amp;gt;&amp;ldquo;s look nicer (org-export-preserve-breaks org-mime-preserve-breaks) ;; dvipng for inline latex because MathJax doesn&amp;rsquo;t work in mail (org-html-with-latex &amp;lsquo;dvipng) ;; to hold attachments for inline html images (html-and-images (org-mime-replace-images (org-export-string-as raw-body &amp;lsquo;html t) tmp-file)) (html-images (unless arg (cdr html-and-images))) (html (org-mime-apply-html-hook (if arg (format org-mime-fixedwith-wrap body) (car html-and-images))))) (delete-region html-start html-end) (save-excursion (goto-char html-start) (insert (org-mime-multipart body html (mapconcat &amp;lsquo;identity html-images &amp;quot;\n&amp;rdquo;))))))  
+  Actually perform the export!   These functions are crude helpers that gather extra information about the org subtree, of which org-mime is unaware. &amp;lt;ul class=&amp;quot;org-ul&amp;quot;&amp;gt; &amp;lt;li&amp;gt; &amp;lt;code&amp;gt;mwp-org-get-parent-headline&amp;lt;/code&amp;gt; traverses the tree to the ancestor headline, because that&amp;amp;rsquo;s what I want to set the subject to. &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;code&amp;gt;mwp-org-attachment-list&amp;lt;/code&amp;gt; is stolen directly from the Gnorb package, which looks cool, awesome ,and kinda complex; it just iterates through a subtree&amp;amp;rsquo;s attachments and grabs URLs. &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;code&amp;gt;mwp-send-subtree-with-attachments&amp;lt;/code&amp;gt; performs the export and is bound to &amp;lt;code&amp;gt;C-c M-o&amp;lt;/code&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; &amp;lt;p&amp;gt; So, if I want to mail a subtree, I just &amp;lt;code&amp;gt;C-c M-o&amp;lt;/code&amp;gt; and I&amp;amp;rsquo;m almost done &amp;amp;#x2013; the html mail is ready to go, and all org attachments are also attached to the email. &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; Note there are some real weaknesses here: &amp;lt;code&amp;gt;mwp-org-get-parent-headline&amp;lt;/code&amp;gt; actually gets the top-level &amp;lt;i&amp;gt;ancestor&amp;lt;/i&amp;gt; &amp;amp;#x2013; which only happens to be what I want right now. Better would be to use org-element to locate the parent (and other headline attributes) directly, but I&amp;amp;rsquo;m not sure how to do that. &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; Similarly, the initial greeting is generated from the current headline value &amp;amp;#x2013; so this only works because I name my subtrees after the addressee (which I only do because of my use case). &amp;lt;/p&amp;gt; &amp;lt;div class=&amp;quot;org-src-container&amp;quot;&amp;gt; &amp;lt;pre class=&amp;quot;src src-emacs-lisp&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #a020f0;&amp;quot;&amp;gt;defun&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #0000ff;&amp;quot;&amp;gt;mwp-org-get-parent-headline&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;()&amp;lt;/span&amp;gt;  &amp;ldquo;Acquire the parent headline &amp;amp; return.&amp;quot; (save-excursion (org-mark-subtree) (re-search-backward &amp;quot;^\* &amp;ldquo;) (nth 4 (org-heading-components))))
+(defun mwp-send-subtree-with-attachments () &amp;ldquo;org-mime-subtree and HTMLize&amp;rdquo; (interactive) (org-mark-subtree) (let ((attachments (mwp-org-attachment-list)) (subject (mwp-org-get-parent-headline))) (insert &amp;ldquo;Hello &amp;ldquo; (nth 4 org-heading-components) &amp;rdquo;,\n&amp;rdquo;) (org-mime-subtree) (insert &amp;quot;\nBest,\nMP.\n&amp;rdquo;) (message &amp;ldquo;subject is&amp;rdquo; ) (message subject) ;;(message-to) (org-mime-htmlize) ;; this comes from gnorb ;; I will reintroduce it if I want to reinstate questions. ;; (map-y-or-n-p ;; ;; (lambda (a) (format &amp;ldquo;Attach %s to outgoing message? &amp;ldquo; ;; ;; (file-name-nondirectory a))) ;; (lambda (a) ;; (mml-attach-file a (mm-default-file-encoding a) ;; nil &amp;ldquo;attachment&amp;rdquo;)) ;; attachments ;; &#39;(&amp;ldquo;file&amp;rdquo; &amp;ldquo;files&amp;rdquo; &amp;ldquo;attach&amp;rdquo;)) ;; (message &amp;ldquo;Attachments: %s&amp;rdquo; attachments) (dolist (a attachments) (message &amp;ldquo;Attachment: %s&amp;rdquo; a) (mml-attach-file a (mm-default-file-encoding a) nil &amp;ldquo;attachment&amp;rdquo;)) (message-goto-to) ))
+;; add a keybinding for org-mode (add-hook &amp;lsquo;org-mode-hook (lambda () (local-set-key &amp;quot;\C-c\M-o&amp;rdquo; &amp;lsquo;mwp-send-subtree-with-attachments)))
+;; stolen from gnorb; finds attachments in subtree (defun mwp-org-attachment-list (&amp;amp;optional id) &amp;ldquo;Get a list of files (absolute filenames) attached to the current heading, or the heading indicated by optional argument ID.&amp;quot; (when (featurep &amp;lsquo;org-attach) (let* ((attach-dir (save-excursion (when id (org-id-goto id)) (org-attach-dir t))) (files (mapcar (lambda (f) (expand-file-name f attach-dir)) (org-attach-file-list attach-dir)))) files)))  
+  Contacts   That&amp;rsquo;s a good start, but there are still some steps to make this truly convenient. For instance, I certainly don&amp;rsquo;t want to type in students&amp;rsquo; email addresses by hand. So I imported my contacts from thunderbird to org-contacts. This was a pain &amp;#x2013; the process was Thunderbird &amp;rarr; Gmail (via gsync plugin) &amp;rarr; vcard (via gmail export) &amp;rarr; org-contacts (via Titus&amp;#8217;s python importer). I wish there was a CSV importer for org-contacts; probably this would be easy to write but I&amp;rsquo;m so slooooowwww at coding. My org contacts live in GTD/Contacts.org, which is set in Customize, and org reads them on startup with this line &amp;lt;div class=&amp;quot;org-src-container&amp;quot;&amp;gt; &amp;lt;pre class=&amp;quot;src src-emacs-lisp&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #a020f0;&amp;quot;&amp;gt;require&amp;lt;/span&amp;gt; &#39;&amp;lt;span style=&amp;quot;color: #008b8b;&amp;quot;&amp;gt;org-contacts&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;)&amp;lt;/span&amp;gt;   
+&amp;lt;p&amp;gt; With this single line, org-contacts now provides &amp;lt;kbd&amp;gt;TAB&amp;lt;/kbd&amp;gt; completion in message-mode to headers. It&amp;amp;rsquo;s very fast, so feels more convenient than Thunderbird. &amp;lt;/p&amp;gt; &amp;lt;dl class=&amp;quot;org-dl&amp;quot;&amp;gt; &amp;lt;dt&amp;gt; Making it better &amp;lt;/dt&amp;gt; &amp;lt;dd&amp;gt; I wish I could get org-contacts to provide tab completion in my subtrees (see below). I would need to access the completion function directly and somehow set the binding for &amp;lt;kbd&amp;gt;TAB&amp;lt;/kbd&amp;gt; to that completion function. &amp;lt;/dd&amp;gt; &amp;lt;/dl&amp;gt;    Adding Attachments with Drag &amp; Drop   After I make inline comments, I fill out a grading template and attach the paper to the resultant subtree (C-c C-a a PATH). This is OK, but sometimes it would nice to be able to drag and drom the files, so I am working on these functions. &amp;lt;dl class=&amp;quot;org-dl&amp;quot;&amp;gt; &amp;lt;dt&amp;gt; Even better &amp;lt;/dt&amp;gt; &amp;lt;dd&amp;gt; an even better solution be to add the attachments programmatically. The studnet papes follow a strict naming convention, so I should be able to crawl the directory and find the most recent paper with the student&amp;amp;rsquo;s name in it&amp;amp;#x2026; I&amp;amp;rsquo;m worried it wil lbe too error prone though. &amp;lt;/dd&amp;gt; &amp;lt;/dl&amp;gt; &amp;lt;p&amp;gt; Anyway: unfortunately the following code doesn&amp;amp;rsquo;t work right, so &amp;lt;b&amp;gt;don&amp;amp;#8217;t just cut and paste this code!). I *ought&amp;lt;/b&amp;gt; to be able to bind the drag and drop action to a function &amp;amp;#x2013; even several functions &amp;amp;#x2013; and, if conditions are right, attach the dragged file to the current org header. John Kitchin describes this method &amp;lt;a href=&amp;quot;http://kitchingroup.cheme.cmu.edu/blog/2015/07/10/Drag-images-and-files-onto-org-mode-and-insert-a-link-to-them/&amp;quot;&amp;gt;here&amp;lt;/a&amp;gt;. But I do the following instead, which is also broken right now: &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; Start by loading org-download, which downloads dragged images as attachments and inserts a link. (yay). THen a modification which fixes handling of file links allowing me to drag-n-drop files links onto org as attachments. Unfortunately, I can&amp;amp;rsquo;t get org-attach to process the URI&amp;amp;rsquo;s properly. Darn it. &amp;lt;/p&amp;gt; &amp;lt;div class=&amp;quot;org-src-container&amp;quot;&amp;gt; &amp;lt;pre class=&amp;quot;src src-emacs-lisp&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #a020f0;&amp;quot;&amp;gt;require&amp;lt;/span&amp;gt; &#39;&amp;lt;span style=&amp;quot;color: #008b8b;&amp;quot;&amp;gt;org-download&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;)&amp;lt;/span&amp;gt;  (require &amp;lsquo;org-attach) ;; extending the dnd functionality ;; but doesn&amp;rsquo;t actually work&amp;hellip;  (defun mwp-org-file-link-dnd (uri action) &amp;ldquo;When in `org-mode&amp;rsquo; and URI points to local file,  add as attachment and also add a link. Otherwise,  pass URI and Action back to dnd dispatch&amp;rdquo; (let ((img-regexp &amp;quot;\(png$\|jp[e]?g$\)&amp;quot;) (newuri (replace-regexp-in-string &amp;ldquo;file:///&amp;quot; &amp;quot;/&amp;quot; uri))) (cond ((eq major-mode &amp;lsquo;org-mode) (message &amp;ldquo;Hi! newuri: %s &amp;ldquo; (file-relative-name newuri)) (cond ((string-match img-regexp newuri) (insert &amp;quot;#&#43;ATTR_ORG: :width 300\n&amp;rdquo;) (insert (concat &amp;quot;#&#43;CAPTION: &amp;ldquo; (read-input &amp;ldquo;Caption: &amp;ldquo;) &amp;quot;\n&amp;rdquo;)) (insert (format &amp;quot;[[%s]]&amp;quot; uri)) (org-display-inline-images t t)) (t (org-attach-new newuri) (insert (format &amp;quot;[[%s]]&amp;quot; uri)))) ) (t (let ((dnd-protocol-alist (rassq-delete-all &amp;lsquo;mwp-org-file-link-dnd (copy-alist dnd-protocol-alist)))) (dnd-handle-one-url nil action uri))) )))
+;; add a new function that DOESN&amp;rsquo;T open the attachment! (defun org-attach-new-dont-open (file) &amp;ldquo;Create a new attachment FILE for the current task. The attachment is created as an Emacs buffer.&amp;quot; (interactive &amp;ldquo;sCreate attachment named: &amp;ldquo;) (when (and org-attach-file-list-property (not org-attach-inherited)) (org-entry-add-to-multivalued-property (point) org-attach-file-list-property file)) )
+(defun mwp-org-file-link-enable () &amp;ldquo;Enable file drag and drop attachments.&amp;quot; (unless (eq (cdr (assoc &amp;quot;^\(file\)://&amp;quot; dnd-protocol-alist)) &amp;lsquo;mwp-org-file-link-dnd) (setq dnd-protocol-alist `((&amp;quot;^\(file\)://&amp;quot; . mwp-org-file-link-dnd) ,@dnd-protocol-alist))))
+(defun mwp-org-file-link-disable () &amp;ldquo;Enable file drag and drop attachments.&amp;quot; (if (eq (cdr (assoc &amp;quot;^\(file\)://&amp;quot; dnd-protocol-alist)) &amp;lsquo;mwp-org-file-link-dnd) (rassq-delete-all &amp;lsquo;mwp-org-file-link-dnd dnd-protocol-alist)
+&amp;lt;span style=&amp;quot;color: #707183;&amp;quot;&amp;gt;))&amp;lt;/span&amp;gt;  (mwp-org-file-link-enable)  
+ </p> 
+      <div class="action has-text-right">
+        <a href="/2015/07/15/mailing-subtrees-with-attachments/" class="button is-primary">
+                Read more
+            </a>
+      </div>
+    </div>
+  </div>
+<div class="column is-4"><div class="box">
+      <figure class="image is-3by2">
+        <a href="/2015/07/11/temporary-exporting/">
+        
+          <img src="/images/default_summary_hu2be732aee21a2469ead3fe1f2df8caca_2088687_600x0_resize_q75_lanczos.jpg" alt="">
+        
+        </a>
+      </figure>
+      <h3 class="title is-5 refresh-summary-title">
+        Exporting org-files to a temporary location
+      </h3>
+      <p class="refresh-summary">I have a private journal, which lives in an encrypted file in a Dropbox-backed-up directory. I use html export to examine the contents sometimes – there are some big old tables that are hard to read in org-mode – but I don’t want the html file to end up in Dropbox.
+So I just copied the definition of org-export-html-as-html and made trivial modifications. There’s probably a better way to do this.
+;; export html to tmp dir(defun mwp-org-html-to-tmp(&amp;optional async subtreep visible-only body-only ext-plist)&#34;Export current buffer to a HTML file in the tmp directory.If narrowing is active in the current buffer, only export its narrowed part.
+If a region is active, export that region.
+A non-nil optional argument ASYNC means the process should happen asynchronously. The resulting file should be accessible through the `org-export-stack&#39; interface.
+When optional argument SUBTREEP is non-nil, export the sub-tree at point, extracting information from the headline properties first.
+When optional argument VISIBLE-ONLY is non-nil, don&amp;rsquo;t export contents of hidden elements.
+When optional argument BODY-ONLY is non-nil, only write code between &amp;quot;&amp;lt;body&amp;gt;&amp;quot; and &amp;quot;&amp;lt;/body&amp;gt;&amp;quot; tags.
+EXT-PLIST, when provided, is a property list with external parameters overriding Org default settings, but still inferior to file-local settings.
+Return output file&amp;rsquo;s name.&amp;quot; (interactive) (let* ((extension (concat &amp;quot;.&amp;quot; (or (plist-get ext-plist :html-extension) org-html-extension &amp;ldquo;html&amp;rdquo;))) ;; this is the code I&amp;rsquo;ve changed from the original function.  (file (org-export-output-file-name extension subtreep &amp;quot;/home/matt/tmp/&amp;quot;))
+ (org-export-coding-system org-html-coding-system))(org-export-to-file &#39;html fileasync subtreep visible-only body-only ext-plist)(org-open-file file))) (org-defkey org-mode-map (kbd &amp;ldquo;C-c 0&amp;rdquo;) &amp;lsquo;mwp-org-html-to-tmp) 
+</p> 
+      <div class="action has-text-right">
+        <a href="/2015/07/11/temporary-exporting/" class="button is-primary">
+                Read more
+            </a>
+      </div>
+    </div>
+  </div>
+<div class="column is-4"><div class="box">
+      <figure class="image is-3by2">
+        <a href="/2015/07/11/creating-and-publishing-presentations-with-org-reveal/">
+        
+          <img src="/images/default_summary_hu2be732aee21a2469ead3fe1f2df8caca_2088687_600x0_resize_q75_lanczos.jpg" alt="">
+        
+        </a>
+      </figure>
+      <h3 class="title is-5 refresh-summary-title">
+        Creating and Publishing Presentations with Org-reveal
+      </h3>
+      <p class="refresh-summary">For several years, I’ve been using Org-mode to compose slides for my lectures. This method is great, because I get to work in plain-text and focus on the content of my lectures rather than animations; but it’s meant that when I want to share my presentations with others, there’s a certain amount of work involved as I move from a local copy on my computer to a web-based version. (This has largely been an issue because I sometimes compose my lectures sitting in a café with lousy Internet, and I sometimes give my lectures in a horrible classroom at U of T with terrible Internet reception.) I’ve now largely solved this problem, though there is hopefully an improvement coming down the pipe which will make it even easier.
+Org-mode has the capacity to export to a number of slide-like formats, including the LaTeX-based Beamer format, which also makes good PDF presentations, a couple of Emacs-based presentation tools, and a number of HTML5 formats. Since I teach about the web all the time, the HTML5 formats have always been the most appealing to me.
+Org-Reveal Setup   I have used and still very much like deck.js (exporter here), but have recently switched to org-reveal, which I really like a lot. It&amp;rsquo;s not part of the official org distribution, so installation and setup are a little more involved, but not difficult. I just cloned the org-reveal and reveal.js repositories: &amp;lt;div class=&amp;quot;org-src-container&amp;quot;&amp;gt; &amp;lt;pre class=&amp;quot;src src-sh&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;cd&amp;lt;/span&amp;gt; ~/src  git clone https://github.com/hakimel/reveal.js.git git clone https://github.com/yjwen/org-reveal.git  
+&amp;lt;p&amp;gt; and put this in my &amp;lt;code&amp;gt;emacs-init.el&amp;lt;/code&amp;gt;: &amp;lt;/p&amp;gt; &amp;lt;div class=&amp;quot;org-src-container&amp;quot;&amp;gt; &amp;lt;pre class=&amp;quot;src src-emacs-lisp&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;org-reveal&amp;lt;/span&amp;gt;  (add-to-list &amp;lsquo;load-path &amp;quot;~/src/org-reveal&amp;quot;) (require &amp;lsquo;ox-reveal) ;; set local root (setq org-reveal-root &amp;ldquo;file:///home/matt/src/reveal.js&amp;rdquo;)  
+&amp;lt;p&amp;gt; That&amp;amp;rsquo;s all that&amp;amp;rsquo;s needed to get export working! I find it&amp;amp;rsquo;s really fast to prepare lectures. &amp;lt;/p&amp;gt;    Publishing   That&amp;rsquo;s great for giving lectures, and is all I really need at 9:55 when I&amp;rsquo;m trying to type my lecture and walk to class at the same time. But after lecture I want to put my slides somewhere my students can see them. Even if I wanted to, it would be impossible for me to post to Blackboard, which turns these files into garbage. What I want to do is publish them to the web; but I need to make sure that all the JS and CSS links are pointing to the web-based libraries and not my local copies, which of course no one but me can see. To do this I had to make one small change to org-reveal.el, which I have submitted as a pull request. This creates a new variable, org-reveal-extra-css, which I can refer to in my own functions. &amp;lt;p&amp;gt; Then I use org-mode&amp;amp;rsquo;s fantastic built-in &amp;lt;a href=&amp;quot;http://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.html&amp;quot;&amp;gt;Publishing functions&amp;lt;/a&amp;gt; to push my slides to a public website. Publishing allows you to perform an export on many files, and customize the output in powerful ways that are mostly beyond me, actually. Still, I have a setup that I like a lot. &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; First, my &amp;lt;code&amp;gt;org-publish-project-alist&amp;lt;/code&amp;gt;, which defines the publishing targets. Note especially the top part, which defines &amp;amp;ldquo;meta-projects&amp;amp;rdquo;: for instance, I can publish all the slides and source files for all my classes with one command, &amp;lt;code&amp;gt;M-x org-publish-projects [RET] courses&amp;lt;/code&amp;gt;. &amp;lt;/p&amp;gt; &amp;lt;div class=&amp;quot;org-src-container&amp;quot;&amp;gt; &amp;lt;pre class=&amp;quot;src src-emacs-lisp&amp;quot;&amp;gt;(&amp;lt;span style=&amp;quot;color: #a020f0;&amp;quot;&amp;gt;setq&amp;lt;/span&amp;gt; org-publish-project-alist &#39;( (&amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot;courses&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:components&amp;lt;/span&amp;gt; (&amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot;dh&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot;rlg231&amp;quot;&amp;lt;/span&amp;gt;)) (&amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot;rlg231&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:components&amp;lt;/span&amp;gt; (&amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot;rlg231-lecture-slides&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot;rlg231-lecture-source&amp;quot;&amp;lt;/span&amp;gt;)) (&amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot;dh&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:components&amp;lt;/span&amp;gt; (&amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot;digital-history-lecture-slides&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot;digital-history-lecture-source&amp;quot;&amp;lt;/span&amp;gt;)) (&amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot;rlg231-lecture-slides&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:base-directory&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot;~/RLG231/Lectures/&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:base-extension&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot;org&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:publishing-directory&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot;/ssh:matt@shimano:/var/www/sandbox/RLG231/Lectures/Slides&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:recursive&amp;lt;/span&amp;gt; t &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:publishing-function&amp;lt;/span&amp;gt; mwp-org-reveal-publish-to-html &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:preparation-function&amp;lt;/span&amp;gt; nil &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:completion-function&amp;lt;/span&amp;gt; nil &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:headline-levels&amp;lt;/span&amp;gt; 4 &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;Just the default for this project.&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:exclude&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot;LectureOutlines.org&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:exclude-tags&amp;lt;/span&amp;gt; note noexport &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:auto-preamble&amp;lt;/span&amp;gt; t) (&amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot;rlg231-lecture-source&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:base-directory&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot;~/RLG231/Lectures/&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:base-extension&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot;org&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:publishing-directory&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot;/ssh:matt@shimano:/var/www/sandbox/RLG231/Lectures/Source&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:recursive&amp;lt;/span&amp;gt; t &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:publishing-function&amp;lt;/span&amp;gt; org-org-publish-to-org &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:preparation-function&amp;lt;/span&amp;gt; nil &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:completion-function&amp;lt;/span&amp;gt; nil &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:headline-levels&amp;lt;/span&amp;gt; 4 &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;Just the default for this project.&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:exclude&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot;LecturePlans.org&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;:exclude &amp;quot;LectureOutlines.org&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:exclude-tags&amp;lt;/span&amp;gt; note noexport &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:auto-preamble&amp;lt;/span&amp;gt; t) (&amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot;digital-history-lecture-source&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:base-directory&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot;~/DH/Lectures&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:base-extension&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot;org&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:publishing-directory&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot;/ssh:matt@shimano:/var/www/sandbox/DigitalHistory/Lectures/Source&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:recursive&amp;lt;/span&amp;gt; t &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:publishing-function&amp;lt;/span&amp;gt; org-org-publish-to-org &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:preparation-function&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:completion-function&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:headline-levels&amp;lt;/span&amp;gt; 4 &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;Just the default for this project.&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;:exclude &amp;quot;LecturePlans.org&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:exclude&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot;LectureOutlines.org&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:exclude-tags&amp;lt;/span&amp;gt; note noexport &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:auto-preamble&amp;lt;/span&amp;gt; t) (&amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot;digital-history-lecture-slides&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:base-directory&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot;~/DH/Lectures&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:base-extension&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot;org&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:publishing-directory&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot;/ssh:matt@shimano:/var/www/sandbox/DigitalHistory/Lectures/Slides&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:recursive&amp;lt;/span&amp;gt; t &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:publishing-function&amp;lt;/span&amp;gt; mwp-org-reveal-publish-to-html &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:preparation-function&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:completion-function&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:headline-levels&amp;lt;/span&amp;gt; 4 &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;Just the default for this project.&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;:exclude &amp;quot;LecturePlans.org&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:exclude&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot;LectureOutlines.org&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:exclude-tags&amp;lt;/span&amp;gt; note noexport &amp;lt;span style=&amp;quot;color: #483d8b;&amp;quot;&amp;gt;:auto-preamble&amp;lt;/span&amp;gt; t) &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;(&amp;quot;newone-lecture-slides&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;:base-directory &amp;quot;~/NewOne/Lectures/&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;:base-extension &amp;quot;org&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;:publishing-directory &amp;quot;/ssh:matt@shimano:/var/www/sandbox/NewOne/Lectures&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;:recursive t&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;:publishing-function org-deck-publish-to-html&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;:headline-levels 4 ; Just the default for this project.&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;:exclude-tags note noexport&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;:auto-preamble t)&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;(&amp;quot;newone-lecture-notes&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;:base-directory &amp;quot;~/NewOne/Lectures/&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;:base-extension &amp;quot;org&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;:publishing-directory &amp;quot;/ssh:matt@shimano:/var/www/sandbox/NewOne/Lectures-with-notes&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;:recursive t&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;:publishing-function org-html-publish-to-html&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;:headline-levels 4 ; Just the default for this project.&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;:exclude-tags noexport&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;:auto-preamble t)&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;(&amp;quot;newone-images&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;:base-directory &amp;quot;~/NewOne/Images/&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;:base-extension &amp;quot;jpg\\|gif\\|png&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;:publishing-directory &amp;quot;/ssh:matt@shimano:/var/www/sandbox/NewOne/Images&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;:publishing-function org-publish-attachment)&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;(&amp;quot;newone&amp;quot; :components (&amp;quot;newone-lecture-slides&amp;quot; &amp;quot;newone-lecture-notes&amp;quot; &amp;quot;newone-images&amp;quot;) )&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;(&amp;quot;presentations&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;:base-directory &amp;quot;~/Dropbox/Work/Talks/&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;:base-extension &amp;quot;org&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;:publishing-directory &amp;quot;/ssh:matt@shimano:/var/www/sandbox/Presentations&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;:headline-levels 4 ; just the default for this project&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;:exclude-tags noexport&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;:auto-preamble t&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;:publishing-function mwp-org-deck-publish-to-html&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; :completion-function mwp-update-published-paths&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;;; &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: #b22222;&amp;quot;&amp;gt;)&amp;lt;/span&amp;gt; ))   
+&amp;lt;p&amp;gt; Notice the publishing function, which is set to &amp;lt;code&amp;gt;mwp-org-deck-publish-to-html&amp;lt;/code&amp;gt;. This is a simple function that resets the base url and &amp;lt;code&amp;gt;extra-css&amp;lt;/code&amp;gt; values to web-based ones before publication, so that the presentations work when online. Notice I&amp;amp;rsquo;ve also reset the &amp;lt;code&amp;gt;deck.js&amp;lt;/code&amp;gt; base url, in case I ever decide to change back to deck. &amp;lt;/p&amp;gt; &amp;lt;div class=&amp;quot;org-src-container&amp;quot;&amp;gt; &amp;lt;pre class=&amp;quot;src src-emacs-lisp&amp;quot;&amp;gt;(&amp;lt;span style=&amp;quot;color: #a020f0;&amp;quot;&amp;gt;defun&amp;lt;/span&amp;gt; &amp;lt;span style=&amp;quot;color: #0000ff;&amp;quot;&amp;gt;mwp-org-reveal-publish-to-html&amp;lt;/span&amp;gt; (plist filename pub-dir)  &amp;ldquo;Publish an org file to reveal.js HTML Presentation. FILENAME is the filename of the Org file to be published. PLIST is the property list for the given project. PUB-DIR is the publishing directory. Returns output file name.&amp;quot; (let ((org-deck-base-url &amp;ldquo;http://sandbox.hackinghistory.ca/Tools/deck.js/&amp;quot;) (org-reveal-root &amp;ldquo;http://sandbox.hackinghistory.ca/Tools/reveal.js/&amp;quot;) (org-reveal-extra-css &amp;ldquo;http://sandbox.hackinghistory.ca/Tools/reveal.js/css/local.css&amp;quot;))
+(org-publish-org-to &#39;reveal filename &amp;lt;span style=&amp;quot;color: #8b2252;&amp;quot;&amp;gt;&amp;quot;.html&amp;quot;&amp;lt;/span&amp;gt; plist pub-dir))  )  
+&amp;lt;p&amp;gt; And that&amp;amp;rsquo;s it, magic! &amp;lt;/p&amp;gt;    Still to do   I like this a lot, but there are a couple of pieces I&amp;rsquo;d still like to implement. &amp;lt;dl class=&amp;quot;org-dl&amp;quot;&amp;gt; &amp;lt;dt&amp;gt; Fix all local file URL&amp;amp;rsquo;s &amp;lt;/dt&amp;gt; &amp;lt;dd&amp;gt; I&amp;amp;rsquo;d like to write a function to take a final pass through all the links and change &amp;lt;code&amp;gt;file:///&amp;lt;/code&amp;gt; links to &amp;lt;b&amp;gt;HTML relative links&amp;lt;/b&amp;gt;. That will take some work though. &amp;lt;/dd&amp;gt; &amp;lt;dt&amp;gt; Export as standalone &amp;lt;/dt&amp;gt; &amp;lt;dd&amp;gt; There is work underway to allow presentations to be generated as stand-alone files that can be, e.g, sent by email. I like this idea a lot. &amp;lt;a href=&amp;quot;https://github.com/yjwen/org-reveal/issues/121&amp;quot;&amp;gt;See this Github issue&amp;lt;/a&amp;gt;. &amp;lt;/dd&amp;gt; &amp;lt;dt&amp;gt; Standardize notes, fragments &amp;lt;/dt&amp;gt; &amp;lt;dd&amp;gt; Every time I switch from one presentation framework to another, I have to learn a whole different syntax for things like fragments (bits of content that don&amp;amp;rsquo;t appear on the slide immediately, but are instead stepped through) and speaker notes (that don&amp;amp;rsquo;t appear on the slide that your viewers see, but are only visible to you in some kind of preview mode). It would be great if the various slide modes could work towards a common syntax for these things. If I have time, energy, and skills, I would like to help develop this a little. &amp;lt;/dd&amp;gt; &amp;lt;/dl&amp;gt;    See my slides   If you want to see some examples of the end product, here is a link to my Digital History lecture archive (still being built!). Many of my course materials are also online at Github.   </p> 
+      <div class="action has-text-right">
+        <a href="/2015/07/11/creating-and-publishing-presentations-with-org-reveal/" class="button is-primary">
+                Read more
+            </a>
+      </div>
+    </div>
+  </div>
+
+                  </div>
+                
+              </div>
+            
+          
+        </div>
+    </section><footer class="footer footer-dark">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <img src="/footer.svg" alt="">
+        
+      </div>
+      
+    <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+              <h3>Website</h3>
+          </div>
+          <ul class="link-list"><li></li>
+            <li><a href="/tags/">
+                <span class="icon"><i class="fa fa-tag"></i></span> 
+                All Tags
+              </a></li>
+          </ul>
+        </div>
+      </div>
+    
+      
+      <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+              <h3>Contacts</h3>
+          </div>
+          <ul class="link-list">
+            
+            <li>
+              <a href="https://www.linkedin.com/your_linkedin_profile" target="_blank">
+                <span class="icon"><i class="fa fa-linkedin"></i></span>
+                
+                  My LinkedIn
+                
+              </a>
+            </li>
+            
+                         
+            
+            <li>
+              <a href="mailto:name.surname@domain.com" target="_blank">
+                <span class="icon"><i class="fa fa-envelope"></i></span>
+                
+                  My Email
+                
+              </a>
+            </li>
+            
+                   
+                   
+                   
+          </ul>
+        </div>
+      </div>
+      
+
+      
+      <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+              <h3>Copyright</h3>
+          </div>
+          <ul class="link-list">
+            <li>
+              <a>
+                <span class="icon"><i class="fa fa-copyright"></i></span>
+                Matt Price - 2020
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+</footer>
+    <div id="backtotop"><a href="#"></a></div><div class="sidebar scroll">
+  <div class="sidebar-header"><img src="/sidebar.svg" alt="">
+    
+    <a class="sidebar-close" href="javascript:void(0);">
+      <i data-feather="x"></i>
+    </a>
+  </div>
+  <div class="inner">
+    <ul class="sidebar-menu">
+      <li class="no-children"><a href="/tags/"><div class="columns">
+              <table width="100%">  
+                <tr>
+                  <td class="">
+                    <span class="icon"><i class="fa fa-cubes"></i></span>
+                    All Tags
+                  </td>
+                  <td class="has-text-right" >
+                      
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </a></ul>
+  </div>
+</div>
+<script src="/js/jquery-2.2.4.893e90f6230962e42231635df650f20544ad22affc3ee396df768eaa6bc5a6a2.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="></script>
+  <script src="/js/feather.4.22.0.1ab07abeb9975f283f6b5f29451981be680fbf77ea778f991d457511d210476a.js" integrity="sha256-GrB6vrmXXyg/a18pRRmBvmgPv3fqd4&#43;ZHUV1EdIQR2o="></script>
+  <script src="/js/modernizr-3.6.0.e013a1e54e3c19d83537ba42b900d34451e5e4b2e789be27a02ac9b152edb741.js" integrity="sha256-4BOh5U48Gdg1N7pCuQDTRFHl5LLnib4noCrJsVLtt0E="></script>
+  <script src="/js/refresh.62c1a9b7d85bcf4d944cd585a01dfa8fb15112a7d2cf9fb819db20493bfe7484.js" integrity="sha256-YsGpt9hbz02UTNWFoB36j7FREqfSz5&#43;4GdsgSTv&#43;dIQ="></script><script>
+  window.MathJax = {
+    loader: {
+      load: ['core', 'input/tex-base', 'output/chtml'],  
+      source: {
+        'core': '\/js\/mathjax\/core.d48fedf25c74c54fa6bf79646de92b02155872bdc4f5f7d0bbfc662523d8b4f5.js',
+        'input/tex-base': '\/js\/mathjax\/tex-base.1b68b8741dfc54e8f7222f88bea8ffcfc57ac54b2a2d8f4edf6800aa44d49441.js',
+        'output/chtml': '\/js\/mathjax\/chtml.926cd166e0f8c1f8a566a718d60c9c58a2b7142b156d30d5f02cec7c3b0ad60a.js',
+        'output/chtml/fonts/tex': '\/js\/mathjax\/tex_out.b8b2bb939c0dae84bf1390bfe6d32af13e83f647cdac01d544d2a7a517477e9d.js'
+      },
+    },
+    chtml: {
+      fontURL: '/fonts' 
+    },
+  };
+</script><script src="/js/mathjax/startup.234a2513e6bdbc1eee06ca19abceca30fe4034e82afb373c08274c1ba2feb1a6.js" integrity="sha256-I0olE&#43;a9vB7uBsoZq87KMP5ANOgq&#43;zc8CCdMG6L&#43;saY="></script>
+  <script src="/js/highlight.9.18.1.b1c58829c55afcc1f568022af4b08ed8976da404d2990b7535bd8e19c0e3310c.js" integrity="sha256-scWIKcVa/MH1aAIq9LCO2JdtpATSmQt1Nb2OGcDjMQw="></script>
+  <script src="/js/highlightjs-line-numbers.2.7.0.min.ddfe282e07b7ec1ed069c23f92c7c8216ddb3f1879c4e962d37fd52adbd15a05.js" integrity="sha256-3f4oLge37B7QacI/ksfIIW3bPxh5xOli03/VKtvRWgU="></script><script>
+  hljs.initHighlightingOnLoad();
+  hljs.initLineNumbersOnLoad();
+  document.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelectorAll('.codeinline').forEach((block) => {
+      hljs.highlightBlock(block);
+    });
+  });
+</script>
+
+</body>
+</html>

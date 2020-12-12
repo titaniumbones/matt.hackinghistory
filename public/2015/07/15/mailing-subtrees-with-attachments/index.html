@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><link rel="icon" href="/favicon_main.svg"><meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" /><meta property="og:url"  content="https://example.com/2015/07/15/mailing-subtrees-with-attachments/" />
+    <meta property="og:type" content="article" /><meta property="og:title" content="Mailing subtrees with Attachments" /><meta property="og:description" content="" /><meta property="og:image:width"  content="375" />
+        <meta property="og:image:height" content="250" /><meta property="og:image" content="https://example.com/images/default_summary_hu2be732aee21a2469ead3fe1f2df8caca_2088687_600x0_resize_q75_box.jpg" /><title>History Hacker - Mailing subtrees with Attachments</title>
+
+    
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet"><link rel="stylesheet" type="text/css" href="/css/style.3924c953d2259a0f0beef52fc023daabdac50a4f62f4446859e57153d998e5b0.css" integrity="sha256-OSTJU9Ilmg8L7vUvwCPaq9rFCk9i9ERoWeVxU9mY5bA=">
+<link rel="stylesheet" type="text/css" href="/css/monokai-sublime.9.15.8.min.91376415864fdd3a92be524052267afece4bdb1bb8c6c754f5e60c5ac28e93be.css" integrity="sha256-kTdkFYZP3TqSvlJAUiZ6/s5L2xu4xsdU9eYMWsKOk74=">
+<link rel="stylesheet" type="text/css" href="/css/icons.f72c0103ff9598115ab2a76351494b950570479ce3f1795fec13fc62e4185dcf.css" integrity="sha256-9ywBA/&#43;VmBFasqdjUUlLlQVwR5zj8Xlf7BP8YuQYXc8=">
+<link rel="stylesheet" type="text/css" href="/css/refresh.ccfd23f8053a1571a3e474a6877f42a6a1924c6bbf1b64c7704b49a0353b4650.css" integrity="sha256-zP0j&#43;AU6FXGj5HSmh39CpqGSTGu/G2THcEtJoDU7RlA=">
+<link rel="stylesheet" type="text/css" href="/css/devicon.min.149016fbf45c8bc157d6f55ce3ee875feaa3f90446bf7d151fbc16a9f21a8859.css" integrity="sha256-FJAW&#43;/Rci8FX1vVc4&#43;6HX&#43;qj&#43;QRGv30VH7wWqfIaiFk=">
+    
+
+  </head>
+  <body>
+     
+
+    <div id="preloader">
+      <div id="status"></div>
+    </div><nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+
+      
+      
+      
+      <a class="navbar-item">
+        <div class="menu-icon-wrapper left-menu-icon-wrapper" style="visibility: visible;">
+          <svg width="1000px" height="1000px">
+            <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+            <path class="path2" d="M 300 500 L 700 500"></path>
+            <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+          </svg>
+          <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+        </div>
+        <div class="navbar-item left-menu-icon-wrapper">
+          Tags
+        </div>
+      </a>
+
+      <div class="navbar-item is-expanded"></div>
+      <a class="navbar-item is-hidden-desktop">  
+        <div data-target="navbar-menu" class="navbar-item right-menu-icon-wrapper is-hidden-desktop">
+          Menu
+        </div>
+        <div data-target="navbar-menu" class="menu-icon-wrapper right-menu-icon-wrapper" style="visibility: visible;">
+          <svg width="1000px" height="1000px">
+            <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+            <path class="path2" d="M 300 500 L 700 500"></path>
+            <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+          </svg>
+          <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+        </div>
+      </a>
+    </div><div id="navbar-menu" class="navbar-menu is-static">
+      
+      <div class="navbar-end">
+        
+          <a href="/" class="navbar-item is-secondary">Home</a><a href="/projects/" class="navbar-item is-secondary">Projects</a><a href="/cv/cv/" class="navbar-item is-secondary">CV</a><a href="/teaching/" class="navbar-item is-secondary">Teaching</a><a href="/posts/" class="navbar-item is-secondary">Posts</a><a href="/publication/" class="navbar-item is-secondary">Publications</a>
+        
+        
+        <div class="navbar-item">
+          <div class="dropdown is-hoverable is-centered" >
+            <div class="dropdown-trigger" >
+              <button class="button is-active" 
+              style="color:#999;  
+                    border-color:#F39200; 
+                    box-shadow: none ;
+                    padding-right: 0.625em ; 
+                    padding-left: 0.625em  ;
+                    ">
+
+                <span>EN</span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu" role="menu" style="min-width: 0em;">
+              <div class="dropdown-content" style="padding: 0rem;">
+                
+                  
+                
+                  
+                <a href="https://example.com/ru/" class="dropdown-item" 
+                style="text-align: center; color:#999; padding-right: 0.82em !important ; padding-left: 0.82em !important;">
+                  RU
+                </a>
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+<nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
+  <div class="container">
+      <div class="navbar-brand">
+  
+        
+        
+        
+        <a class="navbar-item">
+          <div class="menu-icon-wrapper left-menu-icon-wrapper" style="visibility: visible;">
+            <svg width="1000px" height="1000px">
+              <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+              <path class="path2" d="M 300 500 L 700 500"></path>
+              <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+            </svg>
+            <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+          </div>
+          <div class="navbar-item left-menu-icon-wrapper">
+            Tags
+          </div>
+        </a>
+  
+        <div class="navbar-item is-expanded"></div>
+        <a class="navbar-item is-hidden-desktop">  
+          <div data-target="cloned-navbar-menu" class="navbar-item right-menu-icon-wrapper is-hidden-desktop">
+            Menu
+          </div>
+          <div data-target="cloned-navbar-menu" class="menu-icon-wrapper right-menu-icon-wrapper" style="visibility: visible;">
+            <svg width="1000px" height="1000px">
+              <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+              <path class="path2" d="M 300 500 L 700 500"></path>
+              <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+            </svg>
+            <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+          </div>
+        </a>
+      </div><div id="cloned-navbar-menu" class="navbar-menu is-static">
+        <div class="navbar-end"><a href="/" class="navbar-item is-secondary">Home</a><a href="/projects/" class="navbar-item is-secondary">Projects</a><a href="/cv/cv/" class="navbar-item is-secondary">CV</a><a href="/teaching/" class="navbar-item is-secondary">Teaching</a><a href="/posts/" class="navbar-item is-secondary">Posts</a><a href="/publication/" class="navbar-item is-secondary">Publications</a>
+          
+          
+          <div class="navbar-item">
+            <div class="dropdown is-hoverable is-centered" >
+              <div class="dropdown-trigger" >
+                <button class="button is-active" 
+                style="color:#999;  
+                      border-color:#F39200; 
+                      box-shadow: none ;
+                      padding-right: 0.625em ; 
+                      padding-left: 0.625em  ;
+                      ">
+  
+                  <span>EN</span>
+                </button>
+              </div>
+              <div class="dropdown-menu" id="dropdown-menu" role="menu" style="min-width: 0em;">
+                <div class="dropdown-content" style="padding: 0rem;">
+                  
+                    
+                  
+                    
+                  <a href="https://example.com/ru/" class="dropdown-item" 
+                  style="text-align: center; color:#999; padding-right: 0.82em !important ; padding-left: 0.82em !important;">
+                    RU
+                  </a>
+                  
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        
+        </div>
+      </div>
+    </div>
+  </nav>
+<section class="section is-medium">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-centered-tablet-portrait">
+        <h1 class="title is-2 section-title">Mailing subtrees with Attachments</h1>
+        <h5 class="subtitle is-5 is-muted"></h5>
+        <div class="divider"></div>
+        
+        <section class="section content has-text-justified">
+          <p>This is pretty exciting; I’ve figured out how to quickly send org-mode subtrees as MIME-encoded emails. That means that, essentially, I can write in org, as plain text, and very quickly export to HTML, add attachments, and send. The exciting part about this for me is that it should streamline my communications with students, while also letting me stay in Org and keep my records in order. Let’s walk through the process.</p>
+<div id="outline-container-orgheadline1" class="outline-2">
+  <h2 id="orgheadline1">
+    Use-case
+  </h2>
+  <div class="outline-text-2" id="text-orgheadline1">
+    <p>
+      For the moment, I still use Thunderbird as my primary MUA. It&rsquo;s pretty easy to use, minimal configuration compared to all things Emacs, and if something goes wrong with it I don&rsquo;t have to quit Emacs (!), just Thunderbird.
+    </p>
+<pre><code>&lt;p&gt;
+  In some cases, though, Thunderbird makes for an awkward workflow. That&amp;rsquo;s certainly the case for grading, whih has many, poorly-integrated elements. To mark an assignment I need to:
+&lt;/p&gt;
+
+&lt;ul class=&quot;org-ul&quot;&gt;
+  &lt;li&gt;
+    log in to Blackboard (in Firefox; I wonder if I could do that in Emacs?)
+  &lt;/li&gt;
+  &lt;li&gt;
+    download the set of student papers (one at a time, 2 clicks per paper) to &lt;code&gt;Downlads&lt;/code&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    move papers to a directory (usually ~/COURSENAME/Grading/ASSIGNMENTNAME )
+  &lt;/li&gt;
+  &lt;li&gt;
+    Read papers in LigreOffice, comment inline
+  &lt;/li&gt;
+  &lt;li&gt;
+    record mark in Libreoffice Calc spreadsheet
+  &lt;/li&gt;
+  &lt;li&gt;
+    email paper back to student with comments
+  &lt;/li&gt;
+  &lt;li&gt;
+    upload marks back into Blackboard
+  &lt;/li&gt;
+  &lt;li&gt;
+    find a place to archive the student paper in case I need it later, e.g. for a contested grade.
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+  The while process basically sucks. I spend maybe 20% of my time fussing with paths and mouse clicks and email addresses. So I am experimenting with moving as much of this process into Emacs. So far, I don&amp;rsquo;t think there&amp;rsquo;s any way at all to bulk-download the papers &amp;#x2013; that sucks, but I can live with it I guess (I have to!). So I start the optimization at the point where I have all my papers ready to go in a subdir.
+&lt;/p&gt;
+</code></pre>
+  </div>
+</div>
+<div id="outline-container-orgheadline2" class="outline-2">
+  <h2 id="orgheadline2">
+    Org-mime
+  </h2>
+  <div class="outline-text-2" id="text-orgheadline2">
+    <p>
+      Org-mime is the library that allows org buffers and other elements to be quickly converted to HTML and prepared for multi-part messaging. Load it and set it up (see <a href="http://orgmode.org/worg/org-contrib/org-mime.html">http://orgmode.org/worg/org-contrib/org-mime.html</a>):
+    </p>
+<pre><code>&lt;div class=&quot;org-src-container&quot;&gt;
+  &lt;pre class=&quot;src src-emacs-lisp&quot;&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;;; &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;enable HTML email from org&lt;/span&gt;
+</code></pre>
+<p><span style="color: #707183;">(</span><span style="color: #a020f0;">require</span> &lsquo;<span style="color: #008b8b;">org-mime</span><span style="color: #707183;">)</span>
+<span style="color: #b22222;">;; </span><span style="color: #b22222;">setup org-mime for wanderlust</span>
+<span style="color: #b22222;">;; </span><span style="color: #b22222;">(setq org-mime-library &lsquo;semi)</span>
+<span style="color: #b22222;">;; </span><span style="color: #b22222;">or for gnus/message-mode</span>
+<span style="color: #707183;">(</span><span style="color: #a020f0;">setq</span> org-mime-library &lsquo;mml<span style="color: #707183;">)</span></p>
+<p><span style="color: #b22222;">;; </span><span style="color: #b22222;">easy access to htmlize in message-mode</span>
+<span style="color: #707183;">(</span>add-hook &lsquo;message-mode-hook
+<span style="color: #707183;">(</span><span style="color: #a020f0;">lambda</span> <span style="color: #707183;">()</span>
+<span style="color: #707183;">(</span>local-set-key <span style="color: #8b2252;">&quot;\C-c\M-o&quot;</span> &lsquo;org-mime-htmlize<span style="color: #707183;">)))</span></p>
+<p><span style="color: #b22222;">;; </span><span style="color: #b22222;">uncomment this to use the org-mome native functions for htmlizing.</span>
+<span style="color: #b22222;">;; </span><span style="color: #b22222;">(add-hook &lsquo;org-mode-hook</span>
+<span style="color: #b22222;">;;           </span><span style="color: #b22222;">(lambda ()</span>
+<span style="color: #b22222;">;;             </span><span style="color: #b22222;">(local-set-key &ldquo;\C-c\M-o&rdquo; &lsquo;org-mime-org-buffer-htmlize)))</span></p>
+<p><span style="color: #b22222;">;; </span><span style="color: #b22222;">uncomment to displyay src blocks with a dark background</span>
+<span style="color: #b22222;">;; </span><span style="color: #b22222;">(add-hook &lsquo;org-mime-html-hook</span>
+<span style="color: #b22222;">;;           </span><span style="color: #b22222;">(lambda ()</span>
+<span style="color: #b22222;">;;             </span><span style="color: #b22222;">(org-mime-change-element-style</span>
+<span style="color: #b22222;">;;              </span><span style="color: #b22222;">&ldquo;pre&rdquo; (format &ldquo;color: %s; background-color: %s; padding: 0.5em;&quot;</span>
+<span style="color: #b22222;">;;                            </span><span style="color: #b22222;">&quot;#E6E1DC&rdquo; &ldquo;#232323&rdquo;))))</span></p>
+<p><span style="color: #b22222;">;; </span><span style="color: #b22222;">pretty blockquotes</span>
+<span style="color: #707183;">(</span>add-hook &lsquo;org-mime-html-hook
+<span style="color: #707183;">(</span><span style="color: #a020f0;">lambda</span> <span style="color: #707183;">()</span>
+<span style="color: #707183;">(</span>org-mime-change-element-style</p>
+<pre><code>         &lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;blockquote&quot;&lt;/span&gt; &lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;border-left: 2px solid gray; padding-left: 4px;&quot;&lt;/span&gt;&lt;span style=&quot;color: #707183;&quot;&gt;)))&lt;/span&gt;
+</code></pre>
+<p></pre>
+</div></p>
+  </div>
+</div>
+<div id="outline-container-orgheadline3" class="outline-2">
+  <h2 id="orgheadline3">
+    Fix htmlization
+  </h2>
+  <div class="outline-text-2" id="text-orgheadline3">
+    <p>
+      Upstream org-mime-htmlize unfortunately can&rsquo;t be called uninteractively (bummer!), so we have to rewrite it to make programmatic calls work properly. I found the solution <a href="http://emacs.stackexchange.com/questions/13505/a-function-to-org-mime-subtree-then-org-mime-htmlize">Emacs Stackexchange</a>.
+    </p>
+<pre><code>&lt;div class=&quot;org-src-container&quot;&gt;
+  &lt;pre class=&quot;src src-emacs-lisp&quot;&gt;&lt;span style=&quot;color: #707183;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #a020f0;&quot;&gt;defun&lt;/span&gt; &lt;span style=&quot;color: #0000ff;&quot;&gt;org-mime-htmlize&lt;/span&gt; &lt;span style=&quot;color: #707183;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #228b22;&quot;&gt;&amp;optional&lt;/span&gt; arg&lt;span style=&quot;color: #707183;&quot;&gt;)&lt;/span&gt;
+</code></pre>
+<p><span style="color: #8b2252;">&ldquo;Export a portion of an email body composed using <code>&lt;/span&gt;&lt;span style=&quot;color: #008b8b;&quot;&gt;mml-mode&lt;/span&gt;&lt;span style=&quot;color: #8b2252;&quot;&gt;' to&lt;/span&gt; &lt;span style=&quot;color: #8b2252;&quot;&gt;html using </code></span><span style="color: #008b8b;">org-mode</span><span style="color: #8b2252;">&rsquo;.  If called with an active region only</span>
+<span style="color: #8b2252;">export that region, otherwise export the entire body.&quot;</span>
+<span style="color: #707183;">(</span><span style="color: #a020f0;">interactive</span> <span style="color: #8b2252;">&ldquo;P&rdquo;</span><span style="color: #707183;">)</span>
+<span style="color: #707183;">(</span><span style="color: #a020f0;">require</span> &lsquo;<span style="color: #008b8b;">ox-org</span><span style="color: #707183;">)</span>
+<span style="color: #707183;">(</span><span style="color: #a020f0;">require</span> &lsquo;<span style="color: #008b8b;">ox-html</span><span style="color: #707183;">)</span>
+<span style="color: #707183;">(</span><span style="color: #a020f0;">let*</span> <span style="color: #707183;">((</span>region-p <span style="color: #707183;">(</span>org-region-active-p<span style="color: #707183;">))</span>
+<span style="color: #707183;">(</span>html-start <span style="color: #707183;">(</span><span style="color: #a020f0;">or</span> <span style="color: #707183;">(</span><span style="color: #a020f0;">and</span> region-p <span style="color: #707183;">(</span>region-beginning<span style="color: #707183;">))</span>
+<span style="color: #707183;">(</span><span style="color: #a020f0;">save-excursion</span>
+<span style="color: #707183;">(</span>goto-char <span style="color: #707183;">(</span>point-min<span style="color: #707183;">))</span>
+<span style="color: #707183;">(</span>search-forward mail-header-separator<span style="color: #707183;">)</span>
+<span style="color: #707183;">(</span>+ <span style="color: #707183;">(</span>point<span style="color: #707183;">)</span> 1<span style="color: #707183;">))))</span>
+<span style="color: #707183;">(</span>html-end <span style="color: #707183;">(</span><span style="color: #a020f0;">or</span> <span style="color: #707183;">(</span><span style="color: #a020f0;">and</span> region-p <span style="color: #707183;">(</span>region-end<span style="color: #707183;">))</span>
+<span style="color: #b22222;">;; </span><span style="color: #b22222;">TODO: should catch signature&hellip;</span>
+<span style="color: #707183;">(</span>point-max<span style="color: #707183;">)))</span>
+<span style="color: #707183;">(</span>raw-body <span style="color: #707183;">(</span>concat org-mime-default-header
+<span style="color: #707183;">(</span>buffer-substring html-start html-end<span style="color: #707183;">)))</span>
+<span style="color: #707183;">(</span>tmp-file <span style="color: #707183;">(</span>make-temp-name <span style="color: #707183;">(</span>expand-file-name
+<span style="color: #8b2252;">&ldquo;mail&rdquo;</span> temporary-file-directory<span style="color: #707183;">)))</span>
+<span style="color: #707183;">(</span>body <span style="color: #707183;">(</span>org-export-string-as raw-body &lsquo;org t<span style="color: #707183;">))</span>
+<span style="color: #b22222;">;; </span><span style="color: #b22222;">because we probably don&rsquo;t want to export a huge style file</span>
+<span style="color: #707183;">(</span>org-export-htmlize-output-type &lsquo;inline-css<span style="color: #707183;">)</span>
+<span style="color: #b22222;">;; </span><span style="color: #b22222;">makes the replies with &ldquo;&gt;&ldquo;s look nicer</span>
+<span style="color: #707183;">(</span>org-export-preserve-breaks org-mime-preserve-breaks<span style="color: #707183;">)</span>
+<span style="color: #b22222;">;; </span><span style="color: #b22222;">dvipng for inline latex because MathJax doesn&rsquo;t work in mail</span>
+<span style="color: #707183;">(</span>org-html-with-latex &lsquo;dvipng<span style="color: #707183;">)</span>
+<span style="color: #b22222;">;; </span><span style="color: #b22222;">to hold attachments for inline html images</span>
+<span style="color: #707183;">(</span>html-and-images
+<span style="color: #707183;">(</span>org-mime-replace-images
+<span style="color: #707183;">(</span>org-export-string-as raw-body &lsquo;html t<span style="color: #707183;">)</span> tmp-file<span style="color: #707183;">))</span>
+<span style="color: #707183;">(</span>html-images <span style="color: #707183;">(</span><span style="color: #a020f0;">unless</span> arg <span style="color: #707183;">(</span>cdr html-and-images<span style="color: #707183;">)))</span>
+<span style="color: #707183;">(</span>html <span style="color: #707183;">(</span>org-mime-apply-html-hook
+<span style="color: #707183;">(</span><span style="color: #a020f0;">if</span> arg
+<span style="color: #707183;">(</span>format org-mime-fixedwith-wrap body<span style="color: #707183;">)</span>
+<span style="color: #707183;">(</span>car html-and-images<span style="color: #707183;">)))))</span>
+<span style="color: #707183;">(</span>delete-region html-start html-end<span style="color: #707183;">)</span>
+<span style="color: #707183;">(</span><span style="color: #a020f0;">save-excursion</span>
+<span style="color: #707183;">(</span>goto-char html-start<span style="color: #707183;">)</span>
+<span style="color: #707183;">(</span>insert <span style="color: #707183;">(</span>org-mime-multipart
+body html <span style="color: #707183;">(</span>mapconcat &lsquo;identity html-images <span style="color: #8b2252;">&quot;\n&rdquo;</span><span style="color: #707183;">))))))</span>
+</pre>
+</div></p>
+  </div>
+</div>
+<div id="outline-container-orgheadline4" class="outline-2">
+  <h2 id="orgheadline4">
+    Actually perform the export!
+  </h2>
+  <div class="outline-text-2" id="text-orgheadline4">
+    <p>
+      These functions are crude helpers that gather extra information about the org subtree, of which org-mime is unaware.
+    </p>
+<pre><code>&lt;ul class=&quot;org-ul&quot;&gt;
+  &lt;li&gt;
+    &lt;code&gt;mwp-org-get-parent-headline&lt;/code&gt; traverses the tree to the ancestor headline, because that&amp;rsquo;s what I want to set the subject to.
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;code&gt;mwp-org-attachment-list&lt;/code&gt; is stolen directly from the Gnorb package, which looks cool, awesome ,and kinda complex; it just iterates through a subtree&amp;rsquo;s attachments and grabs URLs.
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;code&gt;mwp-send-subtree-with-attachments&lt;/code&gt; performs the export and is bound to &lt;code&gt;C-c M-o&lt;/code&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+  So, if I want to mail a subtree, I just &lt;code&gt;C-c M-o&lt;/code&gt; and I&amp;rsquo;m almost done &amp;#x2013; the html mail is ready to go, and all org attachments are also attached to the email.
+&lt;/p&gt;
+
+&lt;p&gt;
+  Note there are some real weaknesses here: &lt;code&gt;mwp-org-get-parent-headline&lt;/code&gt; actually gets the top-level &lt;i&gt;ancestor&lt;/i&gt; &amp;#x2013; which only happens to be what I want right now. Better would be to use org-element to locate the parent (and other headline attributes) directly, but I&amp;rsquo;m not sure how to do that.
+&lt;/p&gt;
+
+&lt;p&gt;
+  Similarly, the initial greeting is generated from the current headline value &amp;#x2013; so this only works because I name my subtrees after the addressee (which I only do because of my use case).
+&lt;/p&gt;
+
+&lt;div class=&quot;org-src-container&quot;&gt;
+  &lt;pre class=&quot;src src-emacs-lisp&quot;&gt;&lt;span style=&quot;color: #707183;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #a020f0;&quot;&gt;defun&lt;/span&gt; &lt;span style=&quot;color: #0000ff;&quot;&gt;mwp-org-get-parent-headline&lt;/span&gt; &lt;span style=&quot;color: #707183;&quot;&gt;()&lt;/span&gt;
+</code></pre>
+<p><span style="color: #8b2252;">&ldquo;Acquire the parent headline &amp; return.&quot;</span>
+<span style="color: #707183;">(</span><span style="color: #a020f0;">save-excursion</span>
+<span style="color: #707183;">(</span>org-mark-subtree<span style="color: #707183;">)</span>
+<span style="color: #707183;">(</span>re-search-backward  <span style="color: #8b2252;">&quot;^\* &ldquo;</span><span style="color: #707183;">)</span>
+<span style="color: #707183;">(</span>nth 4 <span style="color: #707183;">(</span>org-heading-components<span style="color: #707183;">))))</span></p>
+<p><span style="color: #707183;">(</span><span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">mwp-send-subtree-with-attachments</span> <span style="color: #707183;">()</span>
+<span style="color: #8b2252;">&ldquo;org-mime-subtree and HTMLize&rdquo;</span>
+<span style="color: #707183;">(</span><span style="color: #a020f0;">interactive</span><span style="color: #707183;">)</span>
+<span style="color: #707183;">(</span>org-mark-subtree<span style="color: #707183;">)</span>
+<span style="color: #707183;">(</span><span style="color: #a020f0;">let</span> <span style="color: #707183;">((</span>attachments <span style="color: #707183;">(</span>mwp-org-attachment-list<span style="color: #707183;">))</span>
+<span style="color: #707183;">(</span>subject  <span style="color: #707183;">(</span>mwp-org-get-parent-headline<span style="color: #707183;">)))</span>
+<span style="color: #707183;">(</span>insert <span style="color: #8b2252;">&ldquo;Hello &ldquo;</span> <span style="color: #707183;">(</span>nth 4 org-heading-components<span style="color: #707183;">)</span> <span style="color: #8b2252;">&rdquo;,\n&rdquo;</span><span style="color: #707183;">)</span>
+<span style="color: #707183;">(</span>org-mime-subtree<span style="color: #707183;">)</span>
+<span style="color: #707183;">(</span>insert <span style="color: #8b2252;">&quot;\nBest,\nMP.\n&rdquo;</span><span style="color: #707183;">)</span>
+<span style="color: #707183;">(</span>message <span style="color: #8b2252;">&ldquo;subject is&rdquo;</span> <span style="color: #707183;">)</span>
+<span style="color: #707183;">(</span>message subject<span style="color: #707183;">)</span>
+<span style="color: #b22222;">;;</span><span style="color: #b22222;">(message-to)</span>
+<span style="color: #707183;">(</span>org-mime-htmlize<span style="color: #707183;">)</span>
+<span style="color: #b22222;">;; </span><span style="color: #b22222;">this comes from gnorb</span>
+<span style="color: #b22222;">;; </span><span style="color: #b22222;">I will reintroduce it if I want to reinstate questions.</span>
+<span style="color: #b22222;">;; </span><span style="color: #b22222;">(map-y-or-n-p</span>
+<span style="color: #b22222;">;;  </span><span style="color: #b22222;">;; (lambda (a) (format &ldquo;Attach %s to outgoing message? &ldquo;</span>
+<span style="color: #b22222;">;;  </span><span style="color: #b22222;">;;                    (file-name-nondirectory a)))</span>
+<span style="color: #b22222;">;; </span><span style="color: #b22222;">(lambda (a)</span>
+<span style="color: #b22222;">;;   </span><span style="color: #b22222;">(mml-attach-file a (mm-default-file-encoding a)</span>
+<span style="color: #b22222;">;;                    </span><span style="color: #b22222;">nil &ldquo;attachment&rdquo;))</span>
+<span style="color: #b22222;">;; </span><span style="color: #b22222;">attachments</span>
+<span style="color: #b22222;">;; </span><span style="color: #b22222;">'(&ldquo;file&rdquo; &ldquo;files&rdquo; &ldquo;attach&rdquo;))</span>
+<span style="color: #b22222;">;; </span><span style="color: #b22222;">(message &ldquo;Attachments: %s&rdquo; attachments)</span>
+<span style="color: #707183;">(</span><span style="color: #a020f0;">dolist</span> <span style="color: #707183;">(</span>a attachments<span style="color: #707183;">)</span> <span style="color: #707183;">(</span>message <span style="color: #8b2252;">&ldquo;Attachment: %s&rdquo;</span> a<span style="color: #707183;">)</span> <span style="color: #707183;">(</span>mml-attach-file a <span style="color: #707183;">(</span>mm-default-file-encoding a<span style="color: #707183;">)</span> nil <span style="color: #8b2252;">&ldquo;attachment&rdquo;</span><span style="color: #707183;">))</span>
+<span style="color: #707183;">(</span>message-goto-to<span style="color: #707183;">)</span>
+<span style="color: #707183;">))</span></p>
+<p><span style="color: #b22222;">;; </span><span style="color: #b22222;">add a keybinding for org-mode</span>
+<span style="color: #707183;">(</span>add-hook &lsquo;org-mode-hook
+<span style="color: #707183;">(</span><span style="color: #a020f0;">lambda</span> <span style="color: #707183;">()</span>
+<span style="color: #707183;">(</span>local-set-key <span style="color: #8b2252;">&quot;\C-c\M-o&rdquo;</span> &lsquo;mwp-send-subtree-with-attachments<span style="color: #707183;">)))</span></p>
+<p><span style="color: #b22222;">;; </span><span style="color: #b22222;">stolen from gnorb; finds attachments in subtree</span>
+<span style="color: #707183;">(</span><span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">mwp-org-attachment-list</span> <span style="color: #707183;">(</span><span style="color: #228b22;">&amp;optional</span> id<span style="color: #707183;">)</span>
+<span style="color: #8b2252;">&ldquo;Get a list of files (absolute filenames) attached to the</span>
+<span style="color: #8b2252;">current heading, or the heading indicated by optional argument ID.&quot;</span>
+<span style="color: #707183;">(</span><span style="color: #a020f0;">when</span> <span style="color: #707183;">(</span><span style="color: #a020f0;">featurep</span> &lsquo;<span style="color: #008b8b;">org-attach</span><span style="color: #707183;">)</span>
+<span style="color: #707183;">(</span><span style="color: #a020f0;">let*</span> <span style="color: #707183;">((</span>attach-dir <span style="color: #707183;">(</span><span style="color: #a020f0;">save-excursion</span>
+<span style="color: #707183;">(</span><span style="color: #a020f0;">when</span> id
+<span style="color: #707183;">(</span>org-id-goto id<span style="color: #707183;">))</span>
+<span style="color: #707183;">(</span>org-attach-dir t<span style="color: #707183;">)))</span>
+<span style="color: #707183;">(</span>files
+<span style="color: #707183;">(</span>mapcar
+<span style="color: #707183;">(</span><span style="color: #a020f0;">lambda</span> <span style="color: #707183;">(</span>f<span style="color: #707183;">)</span>
+<span style="color: #707183;">(</span>expand-file-name f attach-dir<span style="color: #707183;">))</span>
+<span style="color: #707183;">(</span>org-attach-file-list attach-dir<span style="color: #707183;">))))</span>
+files<span style="color: #707183;">)))</span>
+</pre>
+</div></p>
+  </div>
+</div>
+<div id="outline-container-orgheadline5" class="outline-2">
+  <h2 id="orgheadline5">
+    Contacts
+  </h2>
+  <div class="outline-text-2" id="text-orgheadline5">
+    <p>
+      That&rsquo;s a good start, but there are still some steps to make this truly convenient. For instance, I certainly don&rsquo;t want to type in students&rsquo; email addresses by hand. So I imported my contacts from thunderbird to org-contacts. This was a pain &#x2013; the process was Thunderbird &rarr; Gmail (via gsync plugin) &rarr; vcard (via gmail export) &rarr; org-contacts (via <a href="https://gist.github.com/tmalsburg/9747104">Titus&#8217;s python importer</a>). I wish there was a CSV importer for org-contacts; probably this would be easy to write but I&rsquo;m so slooooowwww at coding. My org contacts live in <code>GTD/Contacts.org</code>, which is set in <code>Customize</code>, and org reads them on startup with this line
+    </p>
+<pre><code>&lt;div class=&quot;org-src-container&quot;&gt;
+  &lt;pre class=&quot;src src-emacs-lisp&quot;&gt;&lt;span style=&quot;color: #707183;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #a020f0;&quot;&gt;require&lt;/span&gt; '&lt;span style=&quot;color: #008b8b;&quot;&gt;org-contacts&lt;/span&gt;&lt;span style=&quot;color: #707183;&quot;&gt;)&lt;/span&gt;
+</code></pre>
+<p></pre>
+</div></p>
+<pre><code>&lt;p&gt;
+  With this single line, org-contacts now provides &lt;kbd&gt;TAB&lt;/kbd&gt; completion in message-mode to headers. It&amp;rsquo;s very fast, so feels more convenient than Thunderbird.
+&lt;/p&gt;
+
+&lt;dl class=&quot;org-dl&quot;&gt;
+  &lt;dt&gt;
+    Making it better
+  &lt;/dt&gt;
+  
+  &lt;dd&gt;
+    I wish I could get org-contacts to provide tab completion in my subtrees (see below). I would need to access the completion function directly and somehow set the binding for &lt;kbd&gt;TAB&lt;/kbd&gt; to that completion function.
+  &lt;/dd&gt;
+&lt;/dl&gt;
+</code></pre>
+  </div>
+</div>
+<div id="outline-container-orgheadline6" class="outline-2">
+  <h2 id="orgheadline6">
+    <a id="ID-7c9d8afa-0b2d-4be6-94b4-b586b4ea3bd7"></a>Adding Attachments with Drag & Drop
+  </h2>
+  <div class="outline-text-2" id="text-orgheadline6">
+    <p>
+      After I make inline comments, I fill out a grading template and attach the paper to the resultant subtree (<kbd>C-c C-a a PATH</kbd>). This is OK, but sometimes it would nice to be able to drag and drom the files, so I am working on these functions.
+    </p>
+<pre><code>&lt;dl class=&quot;org-dl&quot;&gt;
+  &lt;dt&gt;
+    Even better
+  &lt;/dt&gt;
+  
+  &lt;dd&gt;
+    an even better solution be to add the attachments programmatically. The studnet papes follow a strict naming convention, so I should be able to crawl the directory and find the most recent paper with the student&amp;rsquo;s name in it&amp;#x2026; I&amp;rsquo;m worried it wil lbe too error prone though.
+  &lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;
+  Anyway: unfortunately the following code doesn&amp;rsquo;t work right, so &lt;b&gt;don&amp;#8217;t just cut and paste this code!). I *ought&lt;/b&gt; to be able to bind the drag and drop action to a function &amp;#x2013; even several functions &amp;#x2013; and, if conditions are right, attach the dragged file to the current org header. John Kitchin describes this method &lt;a href=&quot;http://kitchingroup.cheme.cmu.edu/blog/2015/07/10/Drag-images-and-files-onto-org-mode-and-insert-a-link-to-them/&quot;&gt;here&lt;/a&gt;. But I do the following instead, which is also broken right now:
+&lt;/p&gt;
+
+&lt;p&gt;
+  Start by loading org-download, which downloads dragged images as attachments and inserts a link. (yay). THen a modification which fixes handling of file links allowing me to drag-n-drop files links onto org as attachments. Unfortunately, I can&amp;rsquo;t get org-attach to process the URI&amp;rsquo;s properly. Darn it.
+&lt;/p&gt;
+
+&lt;div class=&quot;org-src-container&quot;&gt;
+  &lt;pre class=&quot;src src-emacs-lisp&quot;&gt;&lt;span style=&quot;color: #707183;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #a020f0;&quot;&gt;require&lt;/span&gt; '&lt;span style=&quot;color: #008b8b;&quot;&gt;org-download&lt;/span&gt;&lt;span style=&quot;color: #707183;&quot;&gt;)&lt;/span&gt;
+</code></pre>
+<p><span style="color: #707183;">(</span><span style="color: #a020f0;">require</span> &lsquo;<span style="color: #008b8b;">org-attach</span><span style="color: #707183;">)</span>
+<span style="color: #b22222;">;; </span><span style="color: #b22222;">extending the dnd functionality</span>
+<span style="color: #b22222;">;; </span><span style="color: #b22222;">but doesn&rsquo;t actually work&hellip; </span>
+<span style="color: #707183;">(</span><span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">mwp-org-file-link-dnd</span> <span style="color: #707183;">(</span>uri action<span style="color: #707183;">)</span>
+<span style="color: #8b2252;">&ldquo;When in `</span><span style="color: #008b8b;">org-mode</span><span style="color: #8b2252;">&rsquo; and URI points to local file, </span>
+<span style="color: #8b2252;">  add as attachment and also add a link. Otherwise, </span>
+<span style="color: #8b2252;">  pass URI and Action back to dnd dispatch&rdquo;</span>
+<span style="color: #707183;">(</span><span style="color: #a020f0;">let</span> <span style="color: #707183;">((</span>img-regexp <span style="color: #8b2252;">&quot;</span><span style="color: #8b2252; font-weight: bold;">\</span><span style="color: #8b2252; font-weight: bold;">(</span><span style="color: #8b2252;">png$</span><span style="color: #8b2252; font-weight: bold;">\</span><span style="color: #8b2252; font-weight: bold;">|</span><span style="color: #8b2252;">jp[e]?g$</span><span style="color: #8b2252; font-weight: bold;">\</span><span style="color: #8b2252; font-weight: bold;">)</span><span style="color: #8b2252;">&quot;</span><span style="color: #707183;">)</span>
+<span style="color: #707183;">(</span>newuri <span style="color: #707183;">(</span>replace-regexp-in-string <span style="color: #8b2252;">&ldquo;file:///&quot;</span> <span style="color: #8b2252;">&quot;/&quot;</span> uri<span style="color: #707183;">)))</span>
+<span style="color: #707183;">(</span><span style="color: #a020f0;">cond</span> <span style="color: #707183;">((</span>eq major-mode &lsquo;org-mode<span style="color: #707183;">)</span>
+<span style="color: #707183;">(</span>message <span style="color: #8b2252;">&ldquo;Hi! newuri: %s &ldquo;</span> <span style="color: #707183;">(</span>file-relative-name newuri<span style="color: #707183;">))</span>
+<span style="color: #707183;">(</span><span style="color: #a020f0;">cond</span> <span style="color: #707183;">((</span>string-match img-regexp newuri<span style="color: #707183;">)</span>
+<span style="color: #707183;">(</span>insert <span style="color: #8b2252;">&quot;#+ATTR_ORG: :width 300\n&rdquo;</span><span style="color: #707183;">)</span>
+<span style="color: #707183;">(</span>insert <span style="color: #707183;">(</span>concat  <span style="color: #8b2252;">&quot;#+CAPTION: &ldquo;</span> <span style="color: #707183;">(</span>read-input <span style="color: #8b2252;">&ldquo;Caption: &ldquo;</span><span style="color: #707183;">)</span> <span style="color: #8b2252;">&quot;\n&rdquo;</span><span style="color: #707183;">))</span>
+<span style="color: #707183;">(</span>insert <span style="color: #707183;">(</span>format <span style="color: #8b2252;">&quot;[[%s]]&quot;</span> uri<span style="color: #707183;">))</span>
+<span style="color: #707183;">(</span>org-display-inline-images t t<span style="color: #707183;">))</span>
+<span style="color: #707183;">(</span>t
+<span style="color: #707183;">(</span>org-attach-new newuri<span style="color: #707183;">)</span>
+<span style="color: #707183;">(</span>insert <span style="color: #707183;">(</span>format <span style="color: #8b2252;">&quot;[[%s]]&quot;</span> uri<span style="color: #707183;">))))</span>
+<span style="color: #707183;">)</span>
+<span style="color: #707183;">(</span>t
+<span style="color: #707183;">(</span><span style="color: #a020f0;">let</span> <span style="color: #707183;">((</span>dnd-protocol-alist
+<span style="color: #707183;">(</span>rassq-delete-all
+&lsquo;mwp-org-file-link-dnd
+<span style="color: #707183;">(</span>copy-alist dnd-protocol-alist<span style="color: #707183;">))))</span>
+<span style="color: #707183;">(</span>dnd-handle-one-url nil action uri<span style="color: #707183;">)))</span>
+<span style="color: #707183;">)))</span></p>
+<p><span style="color: #b22222;">;; </span><span style="color: #b22222;">add a new function that DOESN&rsquo;T open the attachment!</span>
+<span style="color: #707183;">(</span><span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">org-attach-new-dont-open</span> <span style="color: #707183;">(</span>file<span style="color: #707183;">)</span>
+<span style="color: #8b2252;">&ldquo;Create a new attachment FILE for the current task.</span>
+<span style="color: #8b2252;">  The attachment is created as an Emacs buffer.&quot;</span>
+<span style="color: #707183;">(</span><span style="color: #a020f0;">interactive</span> <span style="color: #8b2252;">&ldquo;sCreate attachment named: &ldquo;</span><span style="color: #707183;">)</span>
+<span style="color: #707183;">(</span><span style="color: #a020f0;">when</span> <span style="color: #707183;">(</span><span style="color: #a020f0;">and</span> org-attach-file-list-property <span style="color: #707183;">(</span>not org-attach-inherited<span style="color: #707183;">))</span>
+<span style="color: #707183;">(</span>org-entry-add-to-multivalued-property
+<span style="color: #707183;">(</span>point<span style="color: #707183;">)</span> org-attach-file-list-property file<span style="color: #707183;">))</span>
+<span style="color: #707183;">)</span></p>
+<p><span style="color: #707183;">(</span><span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">mwp-org-file-link-enable</span> <span style="color: #707183;">()</span>
+<span style="color: #8b2252;">&ldquo;Enable file drag and drop attachments.&quot;</span>
+<span style="color: #707183;">(</span><span style="color: #a020f0;">unless</span> <span style="color: #707183;">(</span>eq <span style="color: #707183;">(</span>cdr <span style="color: #707183;">(</span>assoc <span style="color: #8b2252;">&quot;^</span><span style="color: #8b2252; font-weight: bold;">\</span><span style="color: #8b2252; font-weight: bold;">(</span><span style="color: #8b2252;">file</span><span style="color: #8b2252; font-weight: bold;">\</span><span style="color: #8b2252; font-weight: bold;">)</span><span style="color: #8b2252;">://&quot;</span> dnd-protocol-alist<span style="color: #707183;">))</span>
+&lsquo;mwp-org-file-link-dnd<span style="color: #707183;">)</span>
+<span style="color: #707183;">(</span><span style="color: #a020f0;">setq</span> dnd-protocol-alist
+`<span style="color: #707183;">((</span><span style="color: #8b2252;">&quot;^</span><span style="color: #8b2252; font-weight: bold;">\</span><span style="color: #8b2252; font-weight: bold;">(</span><span style="color: #8b2252;">file</span><span style="color: #8b2252; font-weight: bold;">\</span><span style="color: #8b2252; font-weight: bold;">)</span><span style="color: #8b2252;">://&quot;</span> . mwp-org-file-link-dnd<span style="color: #707183;">)</span> ,@dnd-protocol-alist<span style="color: #707183;">))))</span></p>
+<p><span style="color: #707183;">(</span><span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">mwp-org-file-link-disable</span> <span style="color: #707183;">()</span>
+<span style="color: #8b2252;">&ldquo;Enable file drag and drop attachments.&quot;</span>
+<span style="color: #707183;">(</span><span style="color: #a020f0;">if</span> <span style="color: #707183;">(</span>eq <span style="color: #707183;">(</span>cdr <span style="color: #707183;">(</span>assoc <span style="color: #8b2252;">&quot;^</span><span style="color: #8b2252; font-weight: bold;">\</span><span style="color: #8b2252; font-weight: bold;">(</span><span style="color: #8b2252;">file</span><span style="color: #8b2252; font-weight: bold;">\</span><span style="color: #8b2252; font-weight: bold;">)</span><span style="color: #8b2252;">://&quot;</span> dnd-protocol-alist<span style="color: #707183;">))</span>
+&lsquo;mwp-org-file-link-dnd<span style="color: #707183;">)</span>
+<span style="color: #707183;">(</span>rassq-delete-all
+&lsquo;mwp-org-file-link-dnd
+dnd-protocol-alist<span style="color: #707183;">)</span></p>
+<pre><code>&lt;span style=&quot;color: #707183;&quot;&gt;))&lt;/span&gt;
+</code></pre>
+<p><span style="color: #707183;">(</span>mwp-org-file-link-enable<span style="color: #707183;">)</span>
+</pre>
+</div></p>
+  </div>
+</div>
+        </section>
+      </div>
+    </div>
+  </div>  
+  <div class="container">
+    <div class="columns">
+      <div class="column has-text-right is-family-monospace is-centered-tablet-portrait">
+        Last modified:&nbsp;15 July 2015</div>
+    </div>
+  </div></section>
+<footer class="footer footer-dark">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <img src="/footer.svg" alt="">
+        
+      </div>
+      
+    <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+              <h3>Website</h3>
+          </div>
+          <ul class="link-list"><li>
+              <a href="/"><span class="icon"><i class="fa fa-home"></i></span> Home</a>
+            </li><li></li>
+            <li><a href="/tags/">
+                <span class="icon"><i class="fa fa-tag"></i></span> 
+                All Tags
+              </a></li>
+          </ul>
+        </div>
+      </div>
+    
+      
+      <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+              <h3>Contacts</h3>
+          </div>
+          <ul class="link-list">
+            
+            <li>
+              <a href="https://www.linkedin.com/your_linkedin_profile" target="_blank">
+                <span class="icon"><i class="fa fa-linkedin"></i></span>
+                
+                  My LinkedIn
+                
+              </a>
+            </li>
+            
+                         
+            
+            <li>
+              <a href="mailto:name.surname@domain.com" target="_blank">
+                <span class="icon"><i class="fa fa-envelope"></i></span>
+                
+                  My Email
+                
+              </a>
+            </li>
+            
+                   
+                   
+                   
+          </ul>
+        </div>
+      </div>
+      
+
+      
+      <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+              <h3>Copyright</h3>
+          </div>
+          <ul class="link-list">
+            <li>
+              <a>
+                <span class="icon"><i class="fa fa-copyright"></i></span>
+                Matt Price - 2020
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+</footer>
+    <div id="backtotop"><a href="#"></a></div><div class="sidebar scroll">
+  <div class="sidebar-header"><img src="/sidebar.svg" alt="">
+    
+    <a class="sidebar-close" href="javascript:void(0);">
+      <i data-feather="x"></i>
+    </a>
+  </div>
+  <div class="inner">
+    <ul class="sidebar-menu">
+      <li class="no-children"><a href="/tags/"><div class="columns">
+              <table width="100%">  
+                <tr>
+                  <td class="">
+                    <span class="icon"><i class="fa fa-cubes"></i></span>
+                    All Tags
+                  </td>
+                  <td class="has-text-right" >
+                      
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </a></ul>
+  </div>
+</div>
+<script src="/js/jquery-2.2.4.893e90f6230962e42231635df650f20544ad22affc3ee396df768eaa6bc5a6a2.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="></script>
+  <script src="/js/feather.4.22.0.1ab07abeb9975f283f6b5f29451981be680fbf77ea778f991d457511d210476a.js" integrity="sha256-GrB6vrmXXyg/a18pRRmBvmgPv3fqd4&#43;ZHUV1EdIQR2o="></script>
+  <script src="/js/modernizr-3.6.0.e013a1e54e3c19d83537ba42b900d34451e5e4b2e789be27a02ac9b152edb741.js" integrity="sha256-4BOh5U48Gdg1N7pCuQDTRFHl5LLnib4noCrJsVLtt0E="></script>
+  <script src="/js/refresh.62c1a9b7d85bcf4d944cd585a01dfa8fb15112a7d2cf9fb819db20493bfe7484.js" integrity="sha256-YsGpt9hbz02UTNWFoB36j7FREqfSz5&#43;4GdsgSTv&#43;dIQ="></script><script>
+  window.MathJax = {
+    loader: {
+      load: ['core', 'input/tex-base', 'output/chtml'],  
+      source: {
+        'core': '\/js\/mathjax\/core.d48fedf25c74c54fa6bf79646de92b02155872bdc4f5f7d0bbfc662523d8b4f5.js',
+        'input/tex-base': '\/js\/mathjax\/tex-base.1b68b8741dfc54e8f7222f88bea8ffcfc57ac54b2a2d8f4edf6800aa44d49441.js',
+        'output/chtml': '\/js\/mathjax\/chtml.926cd166e0f8c1f8a566a718d60c9c58a2b7142b156d30d5f02cec7c3b0ad60a.js',
+        'output/chtml/fonts/tex': '\/js\/mathjax\/tex_out.b8b2bb939c0dae84bf1390bfe6d32af13e83f647cdac01d544d2a7a517477e9d.js'
+      },
+    },
+    chtml: {
+      fontURL: '/fonts' 
+    },
+  };
+</script><script src="/js/mathjax/startup.234a2513e6bdbc1eee06ca19abceca30fe4034e82afb373c08274c1ba2feb1a6.js" integrity="sha256-I0olE&#43;a9vB7uBsoZq87KMP5ANOgq&#43;zc8CCdMG6L&#43;saY="></script>
+  <script src="/js/highlight.9.18.1.b1c58829c55afcc1f568022af4b08ed8976da404d2990b7535bd8e19c0e3310c.js" integrity="sha256-scWIKcVa/MH1aAIq9LCO2JdtpATSmQt1Nb2OGcDjMQw="></script>
+  <script src="/js/highlightjs-line-numbers.2.7.0.min.ddfe282e07b7ec1ed069c23f92c7c8216ddb3f1879c4e962d37fd52adbd15a05.js" integrity="sha256-3f4oLge37B7QacI/ksfIIW3bPxh5xOli03/VKtvRWgU="></script><script>
+  hljs.initHighlightingOnLoad();
+  hljs.initLineNumbersOnLoad();
+  document.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelectorAll('.codeinline').forEach((block) => {
+      hljs.highlightBlock(block);
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><link rel="icon" href="/favicon_main.svg"><meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" /><meta property="og:url"  content="https://example.com/2015/07/11/creating-and-publishing-presentations-with-org-reveal/" />
+    <meta property="og:type" content="article" /><meta property="og:title" content="Creating and Publishing Presentations with Org-reveal" /><meta property="og:description" content="" /><meta property="og:image:width"  content="375" />
+        <meta property="og:image:height" content="250" /><meta property="og:image" content="https://example.com/images/default_summary_hu2be732aee21a2469ead3fe1f2df8caca_2088687_600x0_resize_q75_box.jpg" /><title>History Hacker - Creating and Publishing Presentations with Org-reveal</title>
+
+    
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet"><link rel="stylesheet" type="text/css" href="/css/style.3924c953d2259a0f0beef52fc023daabdac50a4f62f4446859e57153d998e5b0.css" integrity="sha256-OSTJU9Ilmg8L7vUvwCPaq9rFCk9i9ERoWeVxU9mY5bA=">
+<link rel="stylesheet" type="text/css" href="/css/monokai-sublime.9.15.8.min.91376415864fdd3a92be524052267afece4bdb1bb8c6c754f5e60c5ac28e93be.css" integrity="sha256-kTdkFYZP3TqSvlJAUiZ6/s5L2xu4xsdU9eYMWsKOk74=">
+<link rel="stylesheet" type="text/css" href="/css/icons.f72c0103ff9598115ab2a76351494b950570479ce3f1795fec13fc62e4185dcf.css" integrity="sha256-9ywBA/&#43;VmBFasqdjUUlLlQVwR5zj8Xlf7BP8YuQYXc8=">
+<link rel="stylesheet" type="text/css" href="/css/refresh.ccfd23f8053a1571a3e474a6877f42a6a1924c6bbf1b64c7704b49a0353b4650.css" integrity="sha256-zP0j&#43;AU6FXGj5HSmh39CpqGSTGu/G2THcEtJoDU7RlA=">
+<link rel="stylesheet" type="text/css" href="/css/devicon.min.149016fbf45c8bc157d6f55ce3ee875feaa3f90446bf7d151fbc16a9f21a8859.css" integrity="sha256-FJAW&#43;/Rci8FX1vVc4&#43;6HX&#43;qj&#43;QRGv30VH7wWqfIaiFk=">
+    
+
+  </head>
+  <body>
+     
+
+    <div id="preloader">
+      <div id="status"></div>
+    </div><nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+
+      
+      
+      
+      <a class="navbar-item">
+        <div class="menu-icon-wrapper left-menu-icon-wrapper" style="visibility: visible;">
+          <svg width="1000px" height="1000px">
+            <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+            <path class="path2" d="M 300 500 L 700 500"></path>
+            <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+          </svg>
+          <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+        </div>
+        <div class="navbar-item left-menu-icon-wrapper">
+          Tags
+        </div>
+      </a>
+
+      <div class="navbar-item is-expanded"></div>
+      <a class="navbar-item is-hidden-desktop">  
+        <div data-target="navbar-menu" class="navbar-item right-menu-icon-wrapper is-hidden-desktop">
+          Menu
+        </div>
+        <div data-target="navbar-menu" class="menu-icon-wrapper right-menu-icon-wrapper" style="visibility: visible;">
+          <svg width="1000px" height="1000px">
+            <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+            <path class="path2" d="M 300 500 L 700 500"></path>
+            <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+          </svg>
+          <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+        </div>
+      </a>
+    </div><div id="navbar-menu" class="navbar-menu is-static">
+      
+      <div class="navbar-end">
+        
+          <a href="/" class="navbar-item is-secondary">Home</a><a href="/projects/" class="navbar-item is-secondary">Projects</a><a href="/cv/cv/" class="navbar-item is-secondary">CV</a><a href="/teaching/" class="navbar-item is-secondary">Teaching</a><a href="/posts/" class="navbar-item is-secondary">Posts</a><a href="/publication/" class="navbar-item is-secondary">Publications</a>
+        
+        
+        <div class="navbar-item">
+          <div class="dropdown is-hoverable is-centered" >
+            <div class="dropdown-trigger" >
+              <button class="button is-active" 
+              style="color:#999;  
+                    border-color:#F39200; 
+                    box-shadow: none ;
+                    padding-right: 0.625em ; 
+                    padding-left: 0.625em  ;
+                    ">
+
+                <span>EN</span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu" role="menu" style="min-width: 0em;">
+              <div class="dropdown-content" style="padding: 0rem;">
+                
+                  
+                
+                  
+                <a href="https://example.com/ru/" class="dropdown-item" 
+                style="text-align: center; color:#999; padding-right: 0.82em !important ; padding-left: 0.82em !important;">
+                  RU
+                </a>
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+<nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
+  <div class="container">
+      <div class="navbar-brand">
+  
+        
+        
+        
+        <a class="navbar-item">
+          <div class="menu-icon-wrapper left-menu-icon-wrapper" style="visibility: visible;">
+            <svg width="1000px" height="1000px">
+              <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+              <path class="path2" d="M 300 500 L 700 500"></path>
+              <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+            </svg>
+            <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+          </div>
+          <div class="navbar-item left-menu-icon-wrapper">
+            Tags
+          </div>
+        </a>
+  
+        <div class="navbar-item is-expanded"></div>
+        <a class="navbar-item is-hidden-desktop">  
+          <div data-target="cloned-navbar-menu" class="navbar-item right-menu-icon-wrapper is-hidden-desktop">
+            Menu
+          </div>
+          <div data-target="cloned-navbar-menu" class="menu-icon-wrapper right-menu-icon-wrapper" style="visibility: visible;">
+            <svg width="1000px" height="1000px">
+              <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+              <path class="path2" d="M 300 500 L 700 500"></path>
+              <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+            </svg>
+            <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+          </div>
+        </a>
+      </div><div id="cloned-navbar-menu" class="navbar-menu is-static">
+        <div class="navbar-end"><a href="/" class="navbar-item is-secondary">Home</a><a href="/projects/" class="navbar-item is-secondary">Projects</a><a href="/cv/cv/" class="navbar-item is-secondary">CV</a><a href="/teaching/" class="navbar-item is-secondary">Teaching</a><a href="/posts/" class="navbar-item is-secondary">Posts</a><a href="/publication/" class="navbar-item is-secondary">Publications</a>
+          
+          
+          <div class="navbar-item">
+            <div class="dropdown is-hoverable is-centered" >
+              <div class="dropdown-trigger" >
+                <button class="button is-active" 
+                style="color:#999;  
+                      border-color:#F39200; 
+                      box-shadow: none ;
+                      padding-right: 0.625em ; 
+                      padding-left: 0.625em  ;
+                      ">
+  
+                  <span>EN</span>
+                </button>
+              </div>
+              <div class="dropdown-menu" id="dropdown-menu" role="menu" style="min-width: 0em;">
+                <div class="dropdown-content" style="padding: 0rem;">
+                  
+                    
+                  
+                    
+                  <a href="https://example.com/ru/" class="dropdown-item" 
+                  style="text-align: center; color:#999; padding-right: 0.82em !important ; padding-left: 0.82em !important;">
+                    RU
+                  </a>
+                  
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        
+        </div>
+      </div>
+    </div>
+  </nav>
+<section class="section is-medium">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-centered-tablet-portrait">
+        <h1 class="title is-2 section-title">Creating and Publishing Presentations with Org-reveal</h1>
+        <h5 class="subtitle is-5 is-muted"></h5>
+        <div class="divider"></div>
+        
+        <section class="section content has-text-justified">
+          <p>For several years, I’ve been using Org-mode to compose slides for my lectures. This method is great, because I get to work in plain-text and focus on the content of my lectures rather than animations; but it’s meant that when I want to share my presentations with others, there’s a certain amount of work involved as I move from a local copy on my computer to a web-based version. (This has largely been an issue because I sometimes <em>compose</em> my lectures sitting in a café with lousy Internet, and I sometimes <em>give</em> my lectures in a horrible classroom at U of T with terrible Internet reception.) I’ve now largely solved this problem, though there is hopefully an improvement coming down the pipe which will make it even easier.</p>
+<p>Org-mode has the capacity to export to a number of slide-like formats, including the <a href="http://orgmode.org/worg/exporters/beamer/beamer-dual-format.html">LaTeX-based Beamer format</a>, which also makes good PDF presentations, a couple of Emacs-based presentation tools, and a number of HTML5 formats. Since I teach about the web all the time, the HTML5 formats have always been the most appealing to me.</p>
+<div id="outline-container-orgheadline1" class="outline-2">
+  <h2 id="orgheadline1">
+    Org-Reveal Setup
+  </h2>
+  <div class="outline-text-2" id="text-orgheadline1">
+    <p>
+      I have used and still very much like <a href="https://github.com/imakewebthings/deck.js/wiki">deck.js</a> (<a href="https://github.com/cybercode/org-slides">exporter here</a>), but have recently switched to <a href="https://github.com/yjwen/org-reveal">org-reveal</a>, which I really like a lot. It&rsquo;s not part of the official org distribution, so installation and setup are a little more involved, but not difficult. I just cloned the org-reveal and reveal.js repositories:
+    </p>
+<pre><code>&lt;div class=&quot;org-src-container&quot;&gt;
+  &lt;pre class=&quot;src src-sh&quot;&gt;&lt;span style=&quot;color: #483d8b;&quot;&gt;cd&lt;/span&gt; ~/src
+</code></pre>
+<p>git clone <a href="https://github.com/hakimel/reveal.js.git">https://github.com/hakimel/reveal.js.git</a>
+git clone <a href="https://github.com/yjwen/org-reveal.git">https://github.com/yjwen/org-reveal.git</a>
+</pre>
+</div></p>
+<pre><code>&lt;p&gt;
+  and put this in my &lt;code&gt;emacs-init.el&lt;/code&gt;:
+&lt;/p&gt;
+
+&lt;div class=&quot;org-src-container&quot;&gt;
+  &lt;pre class=&quot;src src-emacs-lisp&quot;&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;;; &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;org-reveal&lt;/span&gt;
+</code></pre>
+<p>(add-to-list &lsquo;load-path <span style="color: #8b2252;">&quot;~/src/org-reveal&quot;</span>)
+(<span style="color: #a020f0;">require</span> &lsquo;<span style="color: #008b8b;">ox-reveal</span>)
+<span style="color: #b22222;">;; </span><span style="color: #b22222;">set local root</span>
+(<span style="color: #a020f0;">setq</span> org-reveal-root <span style="color: #8b2252;">&ldquo;file:///home/matt/src/reveal.js&rdquo;</span>)
+</pre>
+</div></p>
+<pre><code>&lt;p&gt;
+  That&amp;rsquo;s all that&amp;rsquo;s needed to get export working! I find it&amp;rsquo;s really fast to prepare lectures.
+&lt;/p&gt;
+</code></pre>
+  </div>
+</div>
+<div id="outline-container-orgheadline2" class="outline-2">
+  <h2 id="orgheadline2">
+    Publishing
+  </h2>
+  <div class="outline-text-2" id="text-orgheadline2">
+    <p>
+      That&rsquo;s great for <i>giving</i> lectures, and is all I really need at 9:55 when I&rsquo;m trying to type my lecture and walk to class at the same time. But after lecture I want to put my slides somewhere my students can see them. Even if I wanted to, it would be impossible for me to post to Blackboard, which turns these files into garbage. What I want to do is publish them to the web; but I need to make sure that all the JS and CSS links are pointing to the web-based libraries and not my local copies, which of course no one but me can see. To do this I had to make one small change to <code>org-reveal.el</code>, which I have submitted as a <a href="https://github.com/yjwen/org-reveal/pull/125/files">pull request</a>. This creates a new variable, <code>org-reveal-extra-css</code>, which I can refer to in my own functions.
+    </p>
+<pre><code>&lt;p&gt;
+  Then I use org-mode&amp;rsquo;s fantastic built-in &lt;a href=&quot;http://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.html&quot;&gt;Publishing functions&lt;/a&gt; to push my slides to a public website. Publishing allows you to perform an export on many files, and customize the output in powerful ways that are mostly beyond me, actually. Still, I have a setup that I like a lot.
+&lt;/p&gt;
+
+&lt;p&gt;
+  First, my &lt;code&gt;org-publish-project-alist&lt;/code&gt;, which defines the publishing targets. Note especially the top part, which defines &amp;ldquo;meta-projects&amp;rdquo;: for instance, I can publish all the slides and source files for all my classes with one command, &lt;code&gt;M-x org-publish-projects [RET] courses&lt;/code&gt;.
+&lt;/p&gt;
+
+&lt;div class=&quot;org-src-container&quot;&gt;
+  &lt;pre class=&quot;src src-emacs-lisp&quot;&gt;(&lt;span style=&quot;color: #a020f0;&quot;&gt;setq&lt;/span&gt; org-publish-project-alist
+  '(
+    (&lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;courses&quot;&lt;/span&gt;
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:components&lt;/span&gt; (&lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;dh&quot;&lt;/span&gt; &lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;rlg231&quot;&lt;/span&gt;))
+    (&lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;rlg231&quot;&lt;/span&gt;
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:components&lt;/span&gt; (&lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;rlg231-lecture-slides&quot;&lt;/span&gt; &lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;rlg231-lecture-source&quot;&lt;/span&gt;))
+    (&lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;dh&quot;&lt;/span&gt;
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:components&lt;/span&gt; (&lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;digital-history-lecture-slides&quot;&lt;/span&gt; &lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;digital-history-lecture-source&quot;&lt;/span&gt;))
+
+    (&lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;rlg231-lecture-slides&quot;&lt;/span&gt;
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:base-directory&lt;/span&gt; &lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;~/RLG231/Lectures/&quot;&lt;/span&gt;
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:base-extension&lt;/span&gt; &lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;org&quot;&lt;/span&gt;
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:publishing-directory&lt;/span&gt; &lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;/ssh:matt@shimano:/var/www/sandbox/RLG231/Lectures/Slides&quot;&lt;/span&gt;
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:recursive&lt;/span&gt; t
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:publishing-function&lt;/span&gt; mwp-org-reveal-publish-to-html
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:preparation-function&lt;/span&gt; nil 
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:completion-function&lt;/span&gt; nil
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:headline-levels&lt;/span&gt; 4             &lt;span style=&quot;color: #b22222;&quot;&gt;; &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;Just the default for this project.&lt;/span&gt;
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:exclude&lt;/span&gt; &lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;LectureOutlines.org&quot;&lt;/span&gt;
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:exclude-tags&lt;/span&gt; note noexport
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:auto-preamble&lt;/span&gt; t)
+
+    (&lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;rlg231-lecture-source&quot;&lt;/span&gt;
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:base-directory&lt;/span&gt; &lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;~/RLG231/Lectures/&quot;&lt;/span&gt;
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:base-extension&lt;/span&gt; &lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;org&quot;&lt;/span&gt;
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:publishing-directory&lt;/span&gt; &lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;/ssh:matt@shimano:/var/www/sandbox/RLG231/Lectures/Source&quot;&lt;/span&gt;
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:recursive&lt;/span&gt; t
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:publishing-function&lt;/span&gt; org-org-publish-to-org
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:preparation-function&lt;/span&gt; nil
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:completion-function&lt;/span&gt; nil
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:headline-levels&lt;/span&gt; 4             &lt;span style=&quot;color: #b22222;&quot;&gt;; &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;Just the default for this project.&lt;/span&gt;
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:exclude&lt;/span&gt; &lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;LecturePlans.org&quot;&lt;/span&gt;
+     &lt;span style=&quot;color: #b22222;&quot;&gt;;; &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;:exclude &quot;LectureOutlines.org&quot;&lt;/span&gt;
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:exclude-tags&lt;/span&gt; note noexport
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:auto-preamble&lt;/span&gt; t)
+
+    (&lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;digital-history-lecture-source&quot;&lt;/span&gt;
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:base-directory&lt;/span&gt; &lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;~/DH/Lectures&quot;&lt;/span&gt;
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:base-extension&lt;/span&gt; &lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;org&quot;&lt;/span&gt;
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:publishing-directory&lt;/span&gt; &lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;/ssh:matt@shimano:/var/www/sandbox/DigitalHistory/Lectures/Source&quot;&lt;/span&gt;
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:recursive&lt;/span&gt; t
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:publishing-function&lt;/span&gt; org-org-publish-to-org
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:preparation-function&lt;/span&gt; 
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:completion-function&lt;/span&gt; 
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:headline-levels&lt;/span&gt; 4             &lt;span style=&quot;color: #b22222;&quot;&gt;; &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;Just the default for this project.&lt;/span&gt;
+     &lt;span style=&quot;color: #b22222;&quot;&gt;;; &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;:exclude &quot;LecturePlans.org&quot;&lt;/span&gt;
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:exclude&lt;/span&gt; &lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;LectureOutlines.org&quot;&lt;/span&gt;
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:exclude-tags&lt;/span&gt; note noexport
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:auto-preamble&lt;/span&gt; t)
+
+    (&lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;digital-history-lecture-slides&quot;&lt;/span&gt;
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:base-directory&lt;/span&gt; &lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;~/DH/Lectures&quot;&lt;/span&gt;
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:base-extension&lt;/span&gt; &lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;org&quot;&lt;/span&gt;
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:publishing-directory&lt;/span&gt; &lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;/ssh:matt@shimano:/var/www/sandbox/DigitalHistory/Lectures/Slides&quot;&lt;/span&gt;
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:recursive&lt;/span&gt; t
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:publishing-function&lt;/span&gt; mwp-org-reveal-publish-to-html
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:preparation-function&lt;/span&gt; 
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:completion-function&lt;/span&gt; 
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:headline-levels&lt;/span&gt; 4             &lt;span style=&quot;color: #b22222;&quot;&gt;; &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;Just the default for this project.&lt;/span&gt;
+     &lt;span style=&quot;color: #b22222;&quot;&gt;;; &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;:exclude &quot;LecturePlans.org&quot;&lt;/span&gt;
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:exclude&lt;/span&gt; &lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;LectureOutlines.org&quot;&lt;/span&gt;
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:exclude-tags&lt;/span&gt; note noexport
+     &lt;span style=&quot;color: #483d8b;&quot;&gt;:auto-preamble&lt;/span&gt; t)
+
+    &lt;span style=&quot;color: #b22222;&quot;&gt;;; &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;(&quot;newone-lecture-slides&quot;&lt;/span&gt;
+    &lt;span style=&quot;color: #b22222;&quot;&gt;;;  &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;:base-directory &quot;~/NewOne/Lectures/&quot;&lt;/span&gt;
+    &lt;span style=&quot;color: #b22222;&quot;&gt;;;  &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;:base-extension &quot;org&quot;&lt;/span&gt;
+    &lt;span style=&quot;color: #b22222;&quot;&gt;;;  &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;:publishing-directory &quot;/ssh:matt@shimano:/var/www/sandbox/NewOne/Lectures&quot;&lt;/span&gt;
+    &lt;span style=&quot;color: #b22222;&quot;&gt;;;  &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;:recursive t&lt;/span&gt;
+    &lt;span style=&quot;color: #b22222;&quot;&gt;;;  &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;:publishing-function org-deck-publish-to-html&lt;/span&gt;
+    &lt;span style=&quot;color: #b22222;&quot;&gt;;;  &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;:headline-levels 4             ; Just the default for this project.&lt;/span&gt;
+    &lt;span style=&quot;color: #b22222;&quot;&gt;;;  &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;:exclude-tags note noexport&lt;/span&gt;
+    &lt;span style=&quot;color: #b22222;&quot;&gt;;;  &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;:auto-preamble t)&lt;/span&gt;
+
+    &lt;span style=&quot;color: #b22222;&quot;&gt;;; &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;(&quot;newone-lecture-notes&quot;&lt;/span&gt;
+    &lt;span style=&quot;color: #b22222;&quot;&gt;;;  &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;:base-directory &quot;~/NewOne/Lectures/&quot;&lt;/span&gt;
+    &lt;span style=&quot;color: #b22222;&quot;&gt;;;  &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;:base-extension &quot;org&quot;&lt;/span&gt;
+    &lt;span style=&quot;color: #b22222;&quot;&gt;;;  &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;:publishing-directory &quot;/ssh:matt@shimano:/var/www/sandbox/NewOne/Lectures-with-notes&quot;&lt;/span&gt;
+    &lt;span style=&quot;color: #b22222;&quot;&gt;;;  &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;:recursive t&lt;/span&gt;
+    &lt;span style=&quot;color: #b22222;&quot;&gt;;;  &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;:publishing-function org-html-publish-to-html&lt;/span&gt;
+    &lt;span style=&quot;color: #b22222;&quot;&gt;;;  &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;:headline-levels 4             ; Just the default for this project.&lt;/span&gt;
+    &lt;span style=&quot;color: #b22222;&quot;&gt;;;  &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;:exclude-tags noexport&lt;/span&gt;
+    &lt;span style=&quot;color: #b22222;&quot;&gt;;;  &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;:auto-preamble t)&lt;/span&gt;
+
+    &lt;span style=&quot;color: #b22222;&quot;&gt;;;  &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;(&quot;newone-images&quot;&lt;/span&gt;
+    &lt;span style=&quot;color: #b22222;&quot;&gt;;;        &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;:base-directory &quot;~/NewOne/Images/&quot;&lt;/span&gt;
+    &lt;span style=&quot;color: #b22222;&quot;&gt;;;        &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;:base-extension &quot;jpg\\|gif\\|png&quot;&lt;/span&gt;
+    &lt;span style=&quot;color: #b22222;&quot;&gt;;;        &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;:publishing-directory &quot;/ssh:matt@shimano:/var/www/sandbox/NewOne/Images&quot;&lt;/span&gt;
+    &lt;span style=&quot;color: #b22222;&quot;&gt;;;        &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;:publishing-function org-publish-attachment)&lt;/span&gt;
+
+    &lt;span style=&quot;color: #b22222;&quot;&gt;;;  &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;(&quot;newone&quot; :components (&quot;newone-lecture-slides&quot; &quot;newone-lecture-notes&quot; &quot;newone-images&quot;) )&lt;/span&gt;
+
+    &lt;span style=&quot;color: #b22222;&quot;&gt;;;  &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;(&quot;presentations&quot;&lt;/span&gt;
+    &lt;span style=&quot;color: #b22222;&quot;&gt;;;   &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;:base-directory &quot;~/Dropbox/Work/Talks/&quot;&lt;/span&gt;
+    &lt;span style=&quot;color: #b22222;&quot;&gt;;;   &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;:base-extension &quot;org&quot;&lt;/span&gt;
+    &lt;span style=&quot;color: #b22222;&quot;&gt;;;   &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;:publishing-directory &quot;/ssh:matt@shimano:/var/www/sandbox/Presentations&quot;&lt;/span&gt;
+    &lt;span style=&quot;color: #b22222;&quot;&gt;;;   &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;:headline-levels 4 ; just the default for this project&lt;/span&gt;
+    &lt;span style=&quot;color: #b22222;&quot;&gt;;;   &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;:exclude-tags noexport&lt;/span&gt;
+    &lt;span style=&quot;color: #b22222;&quot;&gt;;;   &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;:auto-preamble t&lt;/span&gt;
+    &lt;span style=&quot;color: #b22222;&quot;&gt;;;   &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;:publishing-function mwp-org-deck-publish-to-html&lt;/span&gt;
+    &lt;span style=&quot;color: #b22222;&quot;&gt;;;   &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;;; :completion-function mwp-update-published-paths&lt;/span&gt;
+    &lt;span style=&quot;color: #b22222;&quot;&gt;;;   &lt;/span&gt;&lt;span style=&quot;color: #b22222;&quot;&gt;)&lt;/span&gt;
+
+  ))
+</code></pre>
+<p></pre>
+</div></p>
+<pre><code>&lt;p&gt;
+  Notice the publishing function, which is set to &lt;code&gt;mwp-org-deck-publish-to-html&lt;/code&gt;. This is a simple function that resets the base url and &lt;code&gt;extra-css&lt;/code&gt; values to web-based ones before publication, so that the presentations work when online. Notice I&amp;rsquo;ve also reset the &lt;code&gt;deck.js&lt;/code&gt; base url, in case I ever decide to change back to deck.
+&lt;/p&gt;
+
+&lt;div class=&quot;org-src-container&quot;&gt;
+  &lt;pre class=&quot;src src-emacs-lisp&quot;&gt;(&lt;span style=&quot;color: #a020f0;&quot;&gt;defun&lt;/span&gt; &lt;span style=&quot;color: #0000ff;&quot;&gt;mwp-org-reveal-publish-to-html&lt;/span&gt; (plist filename pub-dir)
+</code></pre>
+<p><span style="color: #8b2252;">&ldquo;Publish an org file to reveal.js HTML Presentation.</span>
+<span style="color: #8b2252;">FILENAME is the filename of the Org file to be published.  PLIST</span>
+<span style="color: #8b2252;">is the property list for the given project.  PUB-DIR is the</span>
+<span style="color: #8b2252;">publishing directory. Returns output file name.&quot;</span>
+(<span style="color: #a020f0;">let</span> ((org-deck-base-url <span style="color: #8b2252;">&ldquo;<a href="http://sandbox.hackinghistory.ca/Tools/deck.js/%22">http://sandbox.hackinghistory.ca/Tools/deck.js/&quot;</a></span>)
+(org-reveal-root <span style="color: #8b2252;">&ldquo;<a href="http://sandbox.hackinghistory.ca/Tools/reveal.js/%22">http://sandbox.hackinghistory.ca/Tools/reveal.js/&quot;</a></span>)
+(org-reveal-extra-css <span style="color: #8b2252;">&ldquo;<a href="http://sandbox.hackinghistory.ca/Tools/reveal.js/css/local.css%22">http://sandbox.hackinghistory.ca/Tools/reveal.js/css/local.css&quot;</a></span>))</p>
+<pre><code>(org-publish-org-to 'reveal filename &lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;.html&quot;&lt;/span&gt; plist pub-dir))
+</code></pre>
+<p>)
+</pre>
+</div></p>
+<pre><code>&lt;p&gt;
+  And that&amp;rsquo;s it, magic!
+&lt;/p&gt;
+</code></pre>
+  </div>
+</div>
+<div id="outline-container-orgheadline3" class="outline-2">
+  <h2 id="orgheadline3">
+    Still to do
+  </h2>
+  <div class="outline-text-2" id="text-orgheadline3">
+    <p>
+      I like this a lot, but there are a couple of pieces I&rsquo;d still like to implement.
+    </p>
+<pre><code>&lt;dl class=&quot;org-dl&quot;&gt;
+  &lt;dt&gt;
+    Fix all local file URL&amp;rsquo;s
+  &lt;/dt&gt;
+  
+  &lt;dd&gt;
+    I&amp;rsquo;d like to write a function to take a final pass through all the links and change &lt;code&gt;file:///&lt;/code&gt; links to &lt;b&gt;HTML relative links&lt;/b&gt;. That will take some work though.
+  &lt;/dd&gt;
+  
+  &lt;dt&gt;
+    Export as standalone
+  &lt;/dt&gt;
+  
+  &lt;dd&gt;
+    There is work underway to allow presentations to be generated as stand-alone files that can be, e.g, sent by email. I like this idea a lot. &lt;a href=&quot;https://github.com/yjwen/org-reveal/issues/121&quot;&gt;See this Github issue&lt;/a&gt;.
+  &lt;/dd&gt;
+  
+  &lt;dt&gt;
+    Standardize notes, fragments
+  &lt;/dt&gt;
+  
+  &lt;dd&gt;
+    Every time I switch from one presentation framework to another, I have to learn a whole different syntax for things like fragments (bits of content that don&amp;rsquo;t appear on the slide immediately, but are instead stepped through) and speaker notes (that don&amp;rsquo;t appear on the slide that your viewers see, but are only visible to you in some kind of preview mode). It would be great if the various slide modes could work towards a common syntax for these things. If I have time, energy, and skills, I would like to help develop this a little.
+  &lt;/dd&gt;
+&lt;/dl&gt;
+</code></pre>
+  </div>
+</div>
+<div id="outline-container-orgheadline4" class="outline-2">
+  <h2 id="orgheadline4">
+    See my slides
+  </h2>
+  <div class="outline-text-2" id="text-orgheadline4">
+    <p>
+      If you want to see some examples of the end product, <a href="http://sandbox.hackinghistory.ca/DigitalHistory/Lectures/">here is a link to my Digital History lecture archive</a> (still being built!). Many of my course materials are also <a href="https://github.com/titaniumbones?tab=repositories">online at Github</a>.
+    </p>
+  </div>
+</div>
+
+        </section>
+      </div>
+    </div>
+  </div>  
+  <div class="container">
+    <div class="columns">
+      <div class="column has-text-right is-family-monospace is-centered-tablet-portrait">
+        Last modified:&nbsp;11 July 2015</div>
+    </div>
+  </div></section>
+<footer class="footer footer-dark">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <img src="/footer.svg" alt="">
+        
+      </div>
+      
+    <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+              <h3>Website</h3>
+          </div>
+          <ul class="link-list"><li>
+              <a href="/"><span class="icon"><i class="fa fa-home"></i></span> Home</a>
+            </li><li></li>
+            <li><a href="/tags/">
+                <span class="icon"><i class="fa fa-tag"></i></span> 
+                All Tags
+              </a></li>
+          </ul>
+        </div>
+      </div>
+    
+      
+      <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+              <h3>Contacts</h3>
+          </div>
+          <ul class="link-list">
+            
+            <li>
+              <a href="https://www.linkedin.com/your_linkedin_profile" target="_blank">
+                <span class="icon"><i class="fa fa-linkedin"></i></span>
+                
+                  My LinkedIn
+                
+              </a>
+            </li>
+            
+                         
+            
+            <li>
+              <a href="mailto:name.surname@domain.com" target="_blank">
+                <span class="icon"><i class="fa fa-envelope"></i></span>
+                
+                  My Email
+                
+              </a>
+            </li>
+            
+                   
+                   
+                   
+          </ul>
+        </div>
+      </div>
+      
+
+      
+      <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+              <h3>Copyright</h3>
+          </div>
+          <ul class="link-list">
+            <li>
+              <a>
+                <span class="icon"><i class="fa fa-copyright"></i></span>
+                Matt Price - 2020
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+</footer>
+    <div id="backtotop"><a href="#"></a></div><div class="sidebar scroll">
+  <div class="sidebar-header"><img src="/sidebar.svg" alt="">
+    
+    <a class="sidebar-close" href="javascript:void(0);">
+      <i data-feather="x"></i>
+    </a>
+  </div>
+  <div class="inner">
+    <ul class="sidebar-menu">
+      <li class="no-children"><a href="/tags/"><div class="columns">
+              <table width="100%">  
+                <tr>
+                  <td class="">
+                    <span class="icon"><i class="fa fa-cubes"></i></span>
+                    All Tags
+                  </td>
+                  <td class="has-text-right" >
+                      
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </a></ul>
+  </div>
+</div>
+<script src="/js/jquery-2.2.4.893e90f6230962e42231635df650f20544ad22affc3ee396df768eaa6bc5a6a2.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="></script>
+  <script src="/js/feather.4.22.0.1ab07abeb9975f283f6b5f29451981be680fbf77ea778f991d457511d210476a.js" integrity="sha256-GrB6vrmXXyg/a18pRRmBvmgPv3fqd4&#43;ZHUV1EdIQR2o="></script>
+  <script src="/js/modernizr-3.6.0.e013a1e54e3c19d83537ba42b900d34451e5e4b2e789be27a02ac9b152edb741.js" integrity="sha256-4BOh5U48Gdg1N7pCuQDTRFHl5LLnib4noCrJsVLtt0E="></script>
+  <script src="/js/refresh.62c1a9b7d85bcf4d944cd585a01dfa8fb15112a7d2cf9fb819db20493bfe7484.js" integrity="sha256-YsGpt9hbz02UTNWFoB36j7FREqfSz5&#43;4GdsgSTv&#43;dIQ="></script><script>
+  window.MathJax = {
+    loader: {
+      load: ['core', 'input/tex-base', 'output/chtml'],  
+      source: {
+        'core': '\/js\/mathjax\/core.d48fedf25c74c54fa6bf79646de92b02155872bdc4f5f7d0bbfc662523d8b4f5.js',
+        'input/tex-base': '\/js\/mathjax\/tex-base.1b68b8741dfc54e8f7222f88bea8ffcfc57ac54b2a2d8f4edf6800aa44d49441.js',
+        'output/chtml': '\/js\/mathjax\/chtml.926cd166e0f8c1f8a566a718d60c9c58a2b7142b156d30d5f02cec7c3b0ad60a.js',
+        'output/chtml/fonts/tex': '\/js\/mathjax\/tex_out.b8b2bb939c0dae84bf1390bfe6d32af13e83f647cdac01d544d2a7a517477e9d.js'
+      },
+    },
+    chtml: {
+      fontURL: '/fonts' 
+    },
+  };
+</script><script src="/js/mathjax/startup.234a2513e6bdbc1eee06ca19abceca30fe4034e82afb373c08274c1ba2feb1a6.js" integrity="sha256-I0olE&#43;a9vB7uBsoZq87KMP5ANOgq&#43;zc8CCdMG6L&#43;saY="></script>
+  <script src="/js/highlight.9.18.1.b1c58829c55afcc1f568022af4b08ed8976da404d2990b7535bd8e19c0e3310c.js" integrity="sha256-scWIKcVa/MH1aAIq9LCO2JdtpATSmQt1Nb2OGcDjMQw="></script>
+  <script src="/js/highlightjs-line-numbers.2.7.0.min.ddfe282e07b7ec1ed069c23f92c7c8216ddb3f1879c4e962d37fd52adbd15a05.js" integrity="sha256-3f4oLge37B7QacI/ksfIIW3bPxh5xOli03/VKtvRWgU="></script><script>
+  hljs.initHighlightingOnLoad();
+  hljs.initLineNumbersOnLoad();
+  document.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelectorAll('.codeinline').forEach((block) => {
+      hljs.highlightBlock(block);
+    });
+  });
+</script>
+
+</body>
+</html>
