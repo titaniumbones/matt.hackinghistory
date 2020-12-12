@@ -15,6 +15,9 @@ theme: hugo-refresh
 # I.e., the landing language of your root 
 DefaultContentLanguage: en
 
+# enable publication to docs folder for gh-pages
+publishDir: docs
+
 ## Option to disable additional language in your site.
 # disableLanguages: ["ru"]
 
