@@ -1,9 +1,9 @@
 ---
-title: "Matthew Price"
-author: ["Matt Price"]
-lastmod: 2020-12-09T15:38:48-05:00
-draft: false
 title: "CV"
+author: ["Matt Price"]
+lastmod: 2020-12-12T16:14:23-05:00
+draft: false
+weight: -100
 showInMenu: true
 ---
 
@@ -41,7 +41,7 @@ Unless otherwise noted, courses have been taught at the University of Toronto St
 -   "[The Current Plague](https://github.com/DigitalHistory/current-plague)" (2020) Woodsworth College. Capstone class in Digital Humanities with a focus on pandemic disease in history.
 -   "[Maps and History](https://github.com/DigitalHistory/maps-and-history)" (2020). History Department. A social and cultural history of cartographic ideas/practice; final project is a born-digital map-based research paper.
 -   "[Introduction to Digital Humanities](https://fas.calendar.utoronto.ca/course/wdw235h1)" and "[Virtual Worlds](https://fas.calendar.utoronto.ca/course/wdw236h1)". (2018-2021). Woodsworth College. Core courses in the Digital humanities minor on the St. George campus.
--   “[Hacking History](https://github.com/HackingHistory/)” (2010-2021) and “[Digital History](https://digitalhistory.github.io/dh-website/)” (2012-20). Woodsworth College. 2-course sequence teaching digital humanities methods to history students ("Digital History") and applying them to a public-facing history project in collaboration with a community partner ("Hacking History").
+-   “[Hacking History](https://github.com/HackingHistory/)” (2010-2021) and “[Digital History](https://digitalhistory.github.io/)” (2012-20). Woodsworth College. 2-course sequence teaching digital humanities methods to history students ("Digital History") and applying them to a public-facing history project in collaboration with a community partner ("Hacking History").
 -   “[Wild Waters](https://wildwaters.github.io/)” (2017-18). Department for the Study of Religion (2017) and New College (2018). Two-part sequence on the history and culture of rivers, with a strong emphasis on outdoor education, including a 2-day canoe trip on the Madawaska River.
 -   “Himalayan Borderlands” (2017). Department for the Study of Religion. Study Abroad course focused on the history and culture of Sikkim, India, with outdoor and community service components.
 -   “[Religion and Science](https://github.com/titaniumbones/Religion-and-Science)” (2015-2017). Department for the Study of Religion. Greatest hits in religion and science, with efforts to decentre Christianity from the usual narrative.
