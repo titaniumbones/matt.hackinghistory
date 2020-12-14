@@ -1,9 +1,9 @@
 ---
 title: "CV"
 author: ["Matt Price"]
-lastmod: 2020-12-12T16:14:23-05:00
+lastmod: 2020-12-13T22:46:17-05:00
 draft: false
-weight: -100
+weight: 1000
 showInMenu: true
 ---
 

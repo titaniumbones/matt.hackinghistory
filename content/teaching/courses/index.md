@@ -2,10 +2,12 @@
 title: "Courses"
 author: ["Matt Price"]
 summary: "Brief desciptions of some courses I teach"
-lastmod: 2020-12-13T21:49:28-05:00
+lastmod: 2020-12-13T23:11:34-05:00
 draft: false
 summaryImage: "bike.jpg"
 ---
+
+It seems tedious to discuss all the classes I've taught over the last twenty years; instead, this page briefly describes a few of the courses that best represent my idiosyncratic teaching style.  
 
 <section class="outline-1">
   <section></section>
@@ -14,23 +16,23 @@ summaryImage: "bike.jpg"
 
 These two courses have been my most consistent pedagogical focus for the past decade; they are the best examples of my idiosyncratic approach to teaching digital methods and programmings kills to humanities students.  
 
-</section>
+<div class="outline-2">
+  <div></div>
 
-<section class="outline-1">
-  <section></section>
-
-## [Digital History](https://digitalhistory.github.io/dh-website/) (HIS393) {#digital-history--his393}
+### [Digital History](https://digitalhistory.github.io/dh-website/) (HIS393) {#digital-history--his393}
 
 An introduction to methods and problems in digital history with an emphasis on hands-on coding experiences and practical projects.  Students learn basic web development skills alongside critical perspectives on digital media and historiography; in the last portion of the course, they apply these new skills to [a series of historical projects](https://github.com/DigitalHistory/advanced-topics).  
 
-</section>
+</div>
 
-<section class="outline-1">
-  <section></section>
+<div class="outline-2">
+  <div></div>
 
-## [Hacking History](https://github.com/HackingHistory/) (HIS455/HIS495) {#hacking-history--his455-his495}
+### [Hacking History](https://github.com/HackingHistory/) (HIS455/HIS495) {#hacking-history--his455-his495}
 
 Intended primarily for graduates of HIS393, this course offers students the opportunity to work together on a substantial web project, usually in collaboration with a community partner. Topics for 2021 have not yet been determined.  
+
+</div>
 
 </section>
 
@@ -40,6 +42,24 @@ Intended primarily for graduates of HIS393, this course offers students the oppo
 ## "Immersive" Experiential Education (Various Programs, University of Toronto) {#immersive-experiential-education--various-programs-university-of-toronto}
 
 Over the last half-decade I have explored a pedagogical interest in immersive experiences and their relationship to humanities learning, especially critical awareness. Often in collaboration with [Frances Garrett](http://francesgarrett.chass.utoronto.ca/),  
+
+<div class="outline-2">
+  <div></div>
+
+### [Wild Waters](https://wildwaters.github.io/) (NEW271/RLG239) {#wild-waters--new271-rlg239}
+
+Approaches to the study of river cultures, ranging from archaeology to sociology. The course is organized around a weekend excursion to the Madawaska River in the unceded Algonquin territory. where students participate in a canoe trip down the moderate (Class II+) whitewater section of the Lower Madawaska.  
+
+</div>
+
+<div class="outline-2">
+  <div></div>
+
+### [Encounters in Sikkim](https://sikkim.hackinghistory.ca/) and [Himalayan Borderlands](http://francesgarrett.chass.utoronto.ca/himalayan-borderlands/) {#encounters-in-sikkim-and-himalayan-borderlands}
+
+Each year from 2016-2019, Frances Garrett and I co-led a trip to the Indian Himalayan state of Sikkim, usually involving a long hike in the vicinity of Khangchendzonga, the third-highest mountain in the world. Students participated in teaching projects in local schools & collaborations with local NGO's, while also learning about local ecological and cultural systems.  
+
+</div>
 
 </section>
 
