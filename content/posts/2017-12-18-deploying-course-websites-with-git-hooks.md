@@ -39,7 +39,8 @@ For this post I&rsquo;ll take my [Digital History][3] course as an example, but 
       Each course has two repositories:
     </p>
     
-    <ul class="org-ul">
+    
+<ul class="org-ul">
       <li>
         <a href="https://github.com/titaniumbones/Digital-History">a main repo</a>, mostly for my own use, but potentially of use to colleagues. These sites are small, with one file per content type &#x2013; usually one each for syllabus, assignments, lectures, and some kind of &ldquo;other&rdquo; category.
       </li>
@@ -48,11 +49,11 @@ For this post I&rsquo;ll take my [Digital History][3] course as an example, but 
       </li>
     </ul>
     
-    <p>
+<p>
       The website repo has two relevant branches: a <code>master</code> branch that contains the uncompiled source files, and a <code>gh-pages</code> branch that holds the Hugo-generated files that are actually served on the server. The gh-pages branch is checked out as a git worktree <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">as described in the Hugo docs</a>. It took me a little while to figure this out, but once you understand the concept of git worktrees it&rsquo;s kind of fun to do things this way.
     </p>
     
-    <p>
+<p>
       For Digital History, I&rsquo;m using the excellent <a href="http://docdock.netlify.com/">docdock theme</a>, and as they suggest, <a href="http://docdock.netlify.com/getting-start/installation/#1-install-docdock-as-git-submodule">I&rsquo;ve installed the theme as a git submodule</a>.
     </p>
   </div>
@@ -68,7 +69,7 @@ For this post I&rsquo;ll take my [Digital History][3] course as an example, but 
       I do all my editing inside Emacs, in the original org-mode files that live in the &ldquo;main&rdquo; repo. Usually changes belong to one of two categories:
     </p>
     
-    <ul class="org-ul">
+<ul class="org-ul">
       <li>
         &ldquo;features&rdquo; &#x2013; planned updates to assignments, course materials, due dates, etc.
       </li>
@@ -77,11 +78,11 @@ For this post I&rsquo;ll take my [Digital History][3] course as an example, but 
       </li>
     </ul>
     
-    <p>
+<p>
       In either case, the workflow <b>should</b> look like this:
-    </p>
+  </p>
     
-    <ul class="org-ul">
+<ul class="org-ul">
       <li>
         make the change in source (.org) text
       </li>
@@ -102,15 +103,15 @@ For this post I&rsquo;ll take my [Digital History][3] course as an example, but 
       </li>
     </ul>
     
-    <p>
+<p>
       There are a lot of steps there! Fortunately we can automate or semi-automate them.
     </p>
     
-    <p>
+<p>
       I&rsquo;ve left the first two as manual stages, because it&rsquo;s smart to check changes before committing. However, I now make it a little easier by <a href="https://github.com/kaushalmodi/ox-hugo/issues/109#issuecomment-352510810">following Kaushal&rsquo;s advice</a> to run hugo server with the <code>-p</code> and <code>--navigateToChanged</code> switches. I now keep a pinned tab up in Firefox at <code>localhost:xxxx</code> (choose your own port with <code>-p</code>), and as soon as I export a page, that tab will update to the appropriate page. Fantastic! Makes checking my work much quicker. As for the rest, those steps are all done via 2 git <code>post-commit</code> hooks, one for each repo:
     </p>
     
-    <ul class="org-ul">
+<ul class="org-ul">
       <li>
         in the main repo, I have a post-commit hook that checks if the commit was made on the master branch, and if so, then grabs the commit message & commit hash, then cd&rsquo;s to the website directory & creates a new commit on master with references to the original commit.
       </li>
@@ -122,11 +123,11 @@ For this post I&rsquo;ll take my [Digital History][3] course as an example, but 
       </li>
     </ul>
     
-    <p>
+<p>
       Here&rsquo;s the first, somewhat simpler script from the main repo:
     </p>
     
-    <div class="org-src-container">
+<div class="org-src-container">
       <pre class="src src-sh"><span style="color: #a0522d;">push_branch</span>=master
 <span style="color: #a0522d;">cur_branch</span>=$<span style="color: #707183;">(</span>git rev-parse --abbrev-ref HEAD<span style="color: #707183;">)</span>
 <span style="color: #a0522d;">cur_hash</span>=$<span style="color: #707183;">(</span>git log -1 --pretty=%h<span style="color: #707183;">)</span>
@@ -155,15 +156,15 @@ For this post I&rsquo;ll take my [Digital History][3] course as an example, but 
 </pre>
     </div>
     
-    <p>
+<p>
       And the slightly more baroque version from the website repo, which pushes to both gh-pages and to hackinghistory (<code>shimano</code> is just an alias for hackinghistory.ca).
     </p>
     
-    <p>
+<p>
       Note that I had to set up the hackinghistory repo as a non-bare repo with <code>receive.denyCurrentBranch</code> set to <code>updateInstead</code>. <a href="https://stackoverflow.com/a/28381311/1220983">Thank you, stackoverflow!</a>.
     </p>
     
-    <div class="org-src-container">
+<div class="org-src-container">
       <pre class="src src-sh"><span style="color: #a0522d;">push_branch</span>=master
 <span style="color: #a0522d;">cur_branch</span>=$<span style="color: #707183;">(</span>git rev-parse --abbrev-ref HEAD<span style="color: #707183;">)</span>
 <span style="color: #a0522d;">cur_hash</span>=$<span style="color: #707183;">(</span>git log -1 --pretty=%h<span style="color: #707183;">)</span>
@@ -195,10 +196,10 @@ For this post I&rsquo;ll take my [Digital History][3] course as an example, but 
         git push -f origin gh-pages && <span style="color: #483d8b;">echo</span> <span style="color: #8b2252;">"successfully pushed gh-pages"</span>
       <span style="color: #483d8b;">cd</span> ..
 
-      sed -i.gh <span style="color: #8b2252;">'s/baseURL = \"https:\/\/digitalhistory.github.io\/dh-website\/\"/baseURL = \"https:\/\/digital.hackinghistory.ca\/\"/'</span> config.toml
+sed -i.gh <span style="color: #8b2252;">'s/baseURL = \"https:\/\/digitalhistory.github.io\/dh-website\/\"/baseURL = \"https:\/\/digital.hackinghistory.ca\/\"/'</span> config.toml
       hugo -s ~/DH/dh-website/ -d ~/DH/dh-website/shimano/
 
-      <span style="color: #b22222;"># </span><span style="color: #b22222;">now shimano dir, shimano-deploy branch, shimano remote</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">now shimano dir, shimano-deploy branch, shimano remote</span>
       <span style="color: #483d8b;">cd</span> shimano &&
         <span style="color: #483d8b;">echo</span> <span style="color: #8b2252;">"changing env variables"</span> &&
         <span style="color: #a0522d;">GIT_WORK_TREE</span>=<span style="color: #8b2252;">"../.git/worktrees/shimano"</span> &&
@@ -213,7 +214,7 @@ For this post I&rsquo;ll take my [Digital History][3] course as an example, but 
       git push -f shimano shimano-deploy && <span style="color: #483d8b;">echo</span> <span style="color: #8b2252;">"successfully pushed shimano"</span>
       <span style="color: #483d8b;">cd</span> ..
 
-      <span style="color: #b22222;"># </span><span style="color: #b22222;">rsync -azvbP ~/DH/dh-website/shimano/ shimano:/var/www/digital.hackinghistory.ca/</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">rsync -azvbP ~/DH/dh-website/shimano/ shimano:/var/www/digital.hackinghistory.ca/</span>
       mv config.toml.gh config.toml
     <span style="color: #a020f0;">fi</span>    
 <span style="color: #a020f0;">fi</span>
