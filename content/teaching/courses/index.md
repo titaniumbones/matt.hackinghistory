@@ -1,9 +1,10 @@
 ---
 title: "Courses"
 author: ["Matt Price"]
-summary: "An annotated list of (some of) the courses I teach or used to teach"
-lastmod: 2020-12-12T06:47:11-05:00
+summary: "Brief desciptions of some courses I teach"
+lastmod: 2020-12-13T21:49:28-05:00
 draft: false
+summaryImage: "bike.jpg"
 ---
 
 <section class="outline-1">

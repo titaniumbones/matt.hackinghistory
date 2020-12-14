@@ -1,15 +1,9 @@
 ---
-title: Teaching
-
-# View.
-#   1 = List
-#   2 = Compact
-#   3 = Card
-#   4 = Citation
-view: 4
-
-# Optional header image (relative to `static/media/` folder).
-header:
-  caption: ""
-  image: ""
+title: "Teaching"
+author: ["Matt Price"]
+lastmod: 2020-12-12T19:47:29-05:00
+draft: false
+weight: 1
 ---
+
+Some stuff
