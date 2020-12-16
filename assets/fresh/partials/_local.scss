@@ -1,1 +1,15 @@
 .column {max-width: 100%}
+.container section.projects.content
+{figure {
+        float:left;
+        max-width:250px;
+        margin-top: 0;
+        margin-left: 0.75em;
+        // margin-bottom: 0;
+    }
+ h1, h2, h3 {
+     clear: both;
+ }
+}
+
+

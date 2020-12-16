@@ -6882,6 +6882,15 @@ Color variables
 .column {
   max-width: 100%; }
 
+.container section.projects.content figure {
+  float: left;
+  max-width: 250px;
+  margin-top: 0;
+  margin-left: 0.75em; }
+
+.container section.projects.content h1, .container section.projects.content h2, .container section.projects.content h3 {
+  clear: both; }
+
 /* ==========================================================================
 Navbar
 ========================================================================== */
@@ -7844,6 +7853,15 @@ body #backtotop a {
 
 .column {
   max-width: 100%; }
+
+.container section.projects.content figure {
+  float: left;
+  max-width: 250px;
+  margin-top: 0;
+  margin-left: 0.75em; }
+
+.container section.projects.content h1, .container section.projects.content h2, .container section.projects.content h3 {
+  clear: both; }
 
 /* last line */
 
