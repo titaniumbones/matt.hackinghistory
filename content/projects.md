@@ -1,12 +1,12 @@
 ---
 title: "Projects"
 author: ["Matt Price"]
-lastmod: 2020-12-16T14:09:48-05:00
+lastmod: 2021-02-12T16:27:15-05:00
 draft: false
 showInMenu: true
 ---
 
-The projects below are all currently active. Older projects are described in my CV and can generally be found in one of my Github accounts (cf. [Web Precence](../web-presence)).  
+The projects below are all currently active. Older projects are described in my CV and can generally be found in one of my Github accounts (cf. [Web Presence](../web-presence)).  
 
 <section class="outline-1">
   <section></section>
