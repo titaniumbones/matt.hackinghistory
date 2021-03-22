@@ -1,7 +1,7 @@
 ---
 title: "Outside"
 author: ["Matt Price"]
-lastmod: 2020-12-14T08:00:59-05:00
+lastmod: 2021-03-22T12:34:14-04:00
 draft: false
 showInMenu: true
 ---
@@ -31,7 +31,7 @@ I kayak competitively (sprint, marathon, ultramarathon) and recreationally (whit
 
 ## Climbing {#climbing}
 
-I climb a lot less than I used to, but there is passable ice for the middle-aged as nearby as Elora. In February and March it is sometimes possible to climb 2 or 3 short pitches in the morning and paddle down the Gorge (ideally via the Irvine) in the arternoon.  Better climbing is mostly further North, in the Batchawana region or in the Ottawa valley.  
+I climb a lot less than I used to, but there is passable ice for the middle-aged as nearby as Elora. In February and March it is sometimes possible to climb 2 or 3 short pitches in the morning and paddle down the Gorge (ideally via the Irvine) in the afternoon.  Better climbing is mostly further North, in the Batchawana region or in the Ottawa valley.  
 
 </section>
 
