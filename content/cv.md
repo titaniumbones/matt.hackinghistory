@@ -1,7 +1,7 @@
 ---
-title: "CV"
+title: "Matthew Price"
 author: ["Matt Price"]
-lastmod: 2020-12-13T22:46:17-05:00
+lastmod: 2021-03-22T11:18:27-04:00
 draft: false
 weight: 1000
 showInMenu: true
@@ -24,7 +24,7 @@ showInMenu: true
 
 ## Academic Positions {#academic-positions}
 
--   University of Toronto, Lecturer (History Dept, New College, Dept for the Study of Religion, Faculty of Information) (2010-20)
+-   University of Toronto, Lecturer (History Dept, Woodsworth College, New College, Dept for the Study of Religion, Faculty of Information) (2010-21)
 -   University of Toronto, Visiting Assistant Professor, History Department (2001-2007)
 -   Max Planck Institute for History of Science, Postdoctoral Fellow (1999-2001)
 -   Cornell University, Science and Technology Studies, Postdoctoral Fellow (1998-1999)
@@ -41,7 +41,7 @@ Unless otherwise noted, courses have been taught at the University of Toronto St
 -   "[The Current Plague](https://github.com/DigitalHistory/current-plague)" (2020) Woodsworth College. Capstone class in Digital Humanities with a focus on pandemic disease in history.
 -   "[Maps and History](https://github.com/DigitalHistory/maps-and-history)" (2020). History Department. A social and cultural history of cartographic ideas/practice; final project is a born-digital map-based research paper.
 -   "[Introduction to Digital Humanities](https://fas.calendar.utoronto.ca/course/wdw235h1)" and "[Virtual Worlds](https://fas.calendar.utoronto.ca/course/wdw236h1)". (2018-2021). Woodsworth College. Core courses in the Digital humanities minor on the St. George campus.
--   “[Hacking History](https://github.com/HackingHistory/)” (2010-2021) and “[Digital History](https://digitalhistory.github.io/)” (2012-20). Woodsworth College. 2-course sequence teaching digital humanities methods to history students ("Digital History") and applying them to a public-facing history project in collaboration with a community partner ("Hacking History").
+-   “[Hacking History](https://github.com/HackingHistory/)” (2010-2021) and “[Digital History](https://digitalhistory.github.io/)” (2012-20). History Dept. 2-course sequence teaching digital humanities methods to history students ("Digital History") and applying them to a public-facing history project in collaboration with a community partner ("Hacking History").
 -   “[Wild Waters](https://wildwaters.github.io/)” (2017-18). Department for the Study of Religion (2017) and New College (2018). Two-part sequence on the history and culture of rivers, with a strong emphasis on outdoor education, including a 2-day canoe trip on the Madawaska River.
 -   “Himalayan Borderlands” (2017). Department for the Study of Religion. Study Abroad course focused on the history and culture of Sikkim, India, with outdoor and community service components.
 -   “[Religion and Science](https://github.com/titaniumbones/Religion-and-Science)” (2015-2017). Department for the Study of Religion. Greatest hits in religion and science, with efforts to decentre Christianity from the usual narrative.
@@ -67,9 +67,9 @@ Unless otherwise noted, courses have been taught at the University of Toronto St
 -   “ATLAS Grant: Immersive Experiential Learning”, 2017, FAS ($14,800, co-applicant)
 -   “Dean's International Initiatives Fund”, 2016, 2017 ($10,000 + $16,000, co-applicant)
 -   “Web Basics Curriculum Development,” CIRA Community Technology Fund, 2014-15 ($45,000)
--   “Networked Academic Profiles for Student-Faculty Collaboration,” Provost's ITIF fund, 2011-13 ($15,000).
--   “Networked Academic Profiles for Student-Faculty Collaboration”, HEQCO, 2011-14 ($60,000).
--   “History and the Digital Public Sphere,” Curriculum Renewal Fund Grant, University of Toronto. Funds a broad initiative to augment digital pedagogy in the Department of History ($40,000) .
+-   “Networked Academic Profiles for Student-Faculty Collaboration,” Provost's ITIF fund, 2011-13 ($15,000)
+-   “Networked Academic Profiles for Student-Faculty Collaboration”, HEQCO, 2011-14 ($60,000)
+-   “History and the Digital Public Sphere,” Curriculum Renewal Fund Grant, University of Toronto, 2011=13. Funded a broad initiative to augment digital pedagogy in the Department of History ($40,000)
 -   “City Life and Well-Being: The Grey Zone of Health and Illness,” investigator on 5-year CIHR Grant, $319K/annum (2006-2008)
 -   Certificate of Distinction in Teaching, Derek Bok Center, Harvard University (1998)
 -   Mabelle McLeod Lewis Memorial Dissertation Fellow (1996-97)
@@ -139,8 +139,7 @@ Unless otherwise noted, courses have been taught at the University of Toronto St
 -   “The Value of Nature” (University College Faculty Seminars, Toronto, Nov. 2002)
 -   “Economics According to Nature. The History of Ecological Economics” (Institute Colloquium, Max Planck Institute for the History of Science, Berlin, March 2001)
 -   “Hände, Menschlichkeit, Prothesen, Normen” (Kolloquium zur neueren Geschichte, Technische Universität Braunschweig, Jan. 2001)
--   “Economics, Ethics and the Value of Nature” (Wissenchaftlicher Beirat des Max Planck Instituts für
--   Wissenschaftsgeschichte/Scholarly Governing Board of the Max Planck Institute for History of Science, Berlin, Oct. 2000)
+-   “Economics, Ethics and the Value of Nature” (Wissenchaftlicher Beirat des Max Planck Institut für Wissenschaftsgeschichte/Scholarly Governing Board of the Max Planck Institute for History of Science, Berlin, Oct. 2000)
 -   “Bikes Not Bombs: The Politics of Trashed Bicycles” (Society for the Social Study of Science Annual Meeting , Vienna, Sept. 2000)
 -   “Nation, Body and Soul: Remaking the Maimed Soldier in the First World War” (Society for the Social Study of Science Annual Meeting , Vienna, Sept. 2000)
 -   “Body, Soul and the Industrial Organization of the Maimed” (Colloquium Department II, Max Planck Institute for the History of Science, June 2000)
