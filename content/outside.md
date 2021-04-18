@@ -1,12 +1,21 @@
 ---
 title: "Outside"
 author: ["Matt Price"]
-lastmod: 2021-03-22T12:34:14-04:00
+lastmod: 2021-04-18T13:58:44-04:00
 draft: false
 showInMenu: true
 ---
 
 When I'm not working, I'm trying to take care of my family. When I'm not taking care of my family, I am doing my best to be outside. Unless I am baking bread, in which case I am doing my best to rise to the level of almost-good-enough.  
+
+<section class="outline-1">
+  <section></section>
+
+## Outdoor Education {#outdoor-education}
+
+As described in my teaching statement, I have a passion for outdoor education; my work in this field is mostly described at [the UofT Outdoors website](https://outdoors.hackinghistory.ca).  
+
+</section>
 
 <section class="outline-1">
   <section></section>
