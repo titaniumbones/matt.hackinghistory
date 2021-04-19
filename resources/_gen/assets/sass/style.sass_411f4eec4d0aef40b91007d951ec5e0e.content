@@ -7863,6 +7863,12 @@ body #backtotop a {
 .container section.projects.content h1, .container section.projects.content h2, .container section.projects.content h3 {
   clear: both; }
 
+.navbar .container {
+  flex-direction: row-reverse; }
+
+#navbar-clone div.navbar-brand {
+  display: none; }
+
 /* last line */
 
 /*# sourceMappingURL=style.css.map */
