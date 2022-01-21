@@ -2,8 +2,9 @@
 title: "Teaching Statement"
 author: ["Matt Price"]
 summary: "My full-length statement of pedagogical principles"
-lastmod: 2020-12-12T06:45:38-05:00
+lastmod: 2022-01-21T16:45:28-05:00
 draft: false
+weight: 1
 ---
 
 I am a historian of science and technology with a specialty in the modern and contemporary periods, and experience in a number of related fields. At present I teach in several units at U of T, in programs that place a high priority on innovative pedagogical methods. At New College I was a founding member of the teaching team for the New One program established in 2012; in the History Department I have taught HIS455 “Hacking History,” for 5 of the last seven years, and also teach HIS393 “Digital History”, as well as a number of occasional classes; and at the Faculty of Information I planned and taught core courses in the Faculty's “Culture and Technology” stream of its professional Masters of Information program from its initiation in 2013 through 2017. For the past two years I have taught both 200-level core courses in the new Digital Humanities Program at Woodsworth College, WDW235 "Introduction to Digital Humanities", and WDW236 "Virtual Worlds." In the Department of Religion, I taught “Religion and Science” for three years, as well as two additional courses, “Himalayan Borderlands” and “Wild Waters” (repeated in 2018 in New College). These latter courses extend my interest in “immersive” experiential education, which was initially developed in my jointleadership in May 2016 of a Dean's International Initiatives Fund (DIIF)-funded student trip to Sikkim, a Himalayan state in northeastern India. “Himalayan Borderlands” expanded that first teaching trip into a month-long Study Abroad course taught in the shadow of the world's 3<sup>rd</sup> largest mountain, Khangchendzonga. A group of students from 2017-18's “Hacking History” accompanied me and my co-lead, Frances Garrett, on a return trip to Khangchendzonga in April 2018. “Wild Waters” and the Himalayan projects were key parts of “U of T Outdoors,” a LEAF-funded project to explore immersive and extended outdoor education in the context of Humanities and Social Science teaching at U of T; Prof. Garrett and I were the co-founders of that initiative.  
@@ -103,7 +104,7 @@ McNely, B., Teston, C., Cox, G., Olorunda, B., and Dunker, N. (2010).
 Digital publics and participatory education. Digital Culture and  
 Education, 2(2), 144--164.  
 
-Pannapacker, William (2011). “'Big Tent Digital Humanities,' a View From  
+Pannabpacker, William (2011). “'Big Tent Digital Humanities,' a View From  
 the Edge, Part 1” Chronicle of Higher Education, July 31, 2011  
 
 Spinuzzi, C. (2006). What do we need to teach about knowledge work?  

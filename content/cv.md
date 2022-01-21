@@ -1,7 +1,7 @@
 ---
 title: "CV"
 author: ["Matt Price"]
-lastmod: 2021-03-22T11:18:27-04:00
+lastmod: 2022-01-21T17:07:59-05:00
 draft: false
 weight: 1000
 showInMenu: true
@@ -37,11 +37,13 @@ showInMenu: true
 
 Unless otherwise noted, courses have been taught at the University of Toronto St. George Campus. With the exceptions of WDW235/6 and HIS241, all courses were developed by myself, or in a few cases with a collaborator.  
 
+-   "[Themes in World History](https://q.utoronto.ca/courses/219372)" (2021) International Foundations Year Program. World History course for students entering University with an English language deficit; emphasis on writing skills.
 -   "[Senior Thesis Seminar](https://www.history.utoronto.ca/undergraduate/curriculum-course-information/current-undergraduate-fallwinter-courses/400-level#HIS475H1/HIS476Y1)" (2020) History Department. Methods class for senior thesis students in the History Department.
--   "[The Current Plague](https://github.com/DigitalHistory/current-plague)" (2020) Woodsworth College. Capstone class in Digital Humanities with a focus on pandemic disease in history.
+-   "[Pandemics and Human History](https://www.history.utoronto.ca/undergraduate/curriculum-course-information/current-undergraduate-fallwinter-courses/100-level#100-level-his-course-accordion-5)" (2021) History Department. Introduction to historical thinking through the lens of illness and contagion, from ancient times to the COVID-19 pandemic.
+-   "[The Current Plague](https://github.com/DigitalHistory/current-plague)" (2020-21) Woodsworth College. Capstone class in Digital Humanities with a focus on pandemic disease in history.
 -   "[Maps and History](https://github.com/DigitalHistory/maps-and-history)" (2020). History Department. A social and cultural history of cartographic ideas/practice; final project is a born-digital map-based research paper.
--   "[Introduction to Digital Humanities](https://fas.calendar.utoronto.ca/course/wdw235h1)" and "[Virtual Worlds](https://fas.calendar.utoronto.ca/course/wdw236h1)". (2018-2021). Woodsworth College. Core courses in the Digital humanities minor on the St. George campus.
--   “[Hacking History](https://github.com/HackingHistory/)” (2010-2021) and “[Digital History](https://digitalhistory.github.io/)” (2012-20). History Dept. 2-course sequence teaching digital humanities methods to history students ("Digital History") and applying them to a public-facing history project in collaboration with a community partner ("Hacking History").
+-   "[Introduction to Digital Humanities](https://fas.calendar.utoronto.ca/course/wdw235h1)" and "[Virtual Worlds](https://fas.calendar.utoronto.ca/course/wdw236h1)". (2018-2022). Woodsworth College. Core courses in the Digital humanities minor on the St. George campus.
+-   “[Hacking History](https://github.com/HackingHistory/)” (2010-2022) and “[Digital History](https://digitalhistory.github.io/)” (2012-21). History Dept. 2-course sequence teaching digital humanities methods to history students ("Digital History") and applying them to a public-facing history project in collaboration with a community partner ("Hacking History").
 -   “[Wild Waters](https://wildwaters.github.io/)” (2017-18). Department for the Study of Religion (2017) and New College (2018). Two-part sequence on the history and culture of rivers, with a strong emphasis on outdoor education, including a 2-day canoe trip on the Madawaska River.
 -   “Himalayan Borderlands” (2017). Department for the Study of Religion. Study Abroad course focused on the history and culture of Sikkim, India, with outdoor and community service components.
 -   “[Religion and Science](https://github.com/titaniumbones/Religion-and-Science)” (2015-2017). Department for the Study of Religion. Greatest hits in religion and science, with efforts to decentre Christianity from the usual narrative.
@@ -63,6 +65,7 @@ Unless otherwise noted, courses have been taught at the University of Toronto St
 -   "ATLAS Grant: Digital History", 2018 ($30,000, co-applicant)
 -   "Kathleen O'Connell Teaching Excellence Award", 2018, New College, University of Toronto
 -   “Dean's Fund for Indigenous and International Initiatives”, 2018 ($12,000, co-applicant)
+-   "SSHRC Insight Grant", co-applicant, 2017 ($198,000)
 -   “LEAF Grant: University of Toronto Outdoors”, 2017, Provost's Office ($9,427, co-applicant)
 -   “ATLAS Grant: Immersive Experiential Learning”, 2017, FAS ($14,800, co-applicant)
 -   “Dean's International Initiatives Fund”, 2016, 2017 ($10,000 + $16,000, co-applicant)
@@ -115,6 +118,7 @@ Unless otherwise noted, courses have been taught at the University of Toronto St
 
 ## Presentations and Workshops {#presentations-and-workshops}
 
+-   "The Pandemic as a Time Machine", _MIT-Harvard Health Sciences & Technology (HST) Introduction to Clinical Medicine_, June 2021
 -   "Code Without the Internet: Teaching Web Dev in the Remote Himalaya", _Teaching Tech Together_, Toronto, Dec. 2018
 -   “Teaching Digital Humanities with Git and Github”, _Teaching Tech Together_, Toronto, Feb. 2018
 -   “Archival Advocacy and Awareness Amid Social/Political Upheaval” (Panel), _Archives 2017_, Portland OR July 2017
@@ -149,3 +153,7 @@ Unless otherwise noted, courses have been taught at the University of Toronto St
 
 -   Wilderness First Responder
 -   Whitewater Safety Technician, Level III
+-   NOLS Risk Management Training
+
+
+## Sources {#bibliography}
